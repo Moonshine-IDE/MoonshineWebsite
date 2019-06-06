@@ -1,27 +1,27 @@
-repository: tomjoht/documentation-theme-jekyll
+repository: prominic/MoonshineWebsite
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Jekyll Documentation Theme
+topnav_title: Moonshine IDE
 # this appears on the top navigation bar next to the home button
 
-site_title: Jekyll theme for documentation
+site_title: Moonshine IDE
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: Your company
+company_name: Moonshine IDE
 # this appears in the footer
 
-github_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
+github_editme_path: prominic/MoonshineWebsite
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
 # if you're using GitLab, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-disqus_shortname: idratherbewriting
+disqus_shortname:
 # if you're using disqus for comments, add the shortname here. if not, leave this value blank.
 
-google_analytics: UA-66296557-1
+google_analytics:
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 host: 127.0.0.1
@@ -36,9 +36,9 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: Jekyll documentation theme
+feedback_subject_line: Moonshie IDE
 
-feedback_email: tomjoht@gmail.com
+feedback_email:
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -103,12 +103,8 @@ defaults:
 
 sidebars:
 - home_sidebar
-- mydoc_sidebar
-- product1_sidebar
-- product2_sidebar
-- other
 
-description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+description: "Moonshine IDE"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
