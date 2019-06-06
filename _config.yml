@@ -34,6 +34,8 @@ exclude:
   - .idea/
   - .gitignore
   - vendor
+  - _build.sh
+  - _serve.sh
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: Moonshie IDE
