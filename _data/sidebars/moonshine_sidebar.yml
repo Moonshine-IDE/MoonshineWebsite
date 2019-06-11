@@ -8,8 +8,8 @@ entries:
   - title: Moonshine IDE
     output: web
     folderitems:
-    - title: Page 1
-      url: /moonshine_page_1.html
+    - title: Set SDK in Moonshine
+      url: /moonshine_set_sdk.html
       output: web
     - title: Page 2
       url: /moonshine_page_2.html

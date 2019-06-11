@@ -15,4 +15,4 @@ topnav_dropdowns:
     - title: Docs
       folderitems:
         - title: Moonshine IDE
-          url: /moonshine_page_1.html
+          url: /moonshine_set_sdk.html
