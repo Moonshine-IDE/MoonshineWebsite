@@ -7,16 +7,12 @@ topnav:
       url:
     - title: GitHub
       external_url: https://github.com/prominic/MoonshineWebsite
-    - title: Docs
-      url:
 
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title:
+    - title: Docs
       folderitems:
-        - title:
-          external_url:
-        - title:
-          url:
+        - title: Moonshine IDE
+          url: /moonshine_page_1.html

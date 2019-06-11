@@ -78,7 +78,7 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      sidebar: home_sidebar
+      sidebar:
       topnav: topnav
   -
     scope:
@@ -104,7 +104,7 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
+- moonshine_sidebar
 
 description: "Moonshine IDE"
 # the description is used in the feed.xml file
