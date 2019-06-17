@@ -11,8 +11,8 @@ entries:
     - title: Set SDK in Moonshine
       url: /moonshine_set_sdk.html
       output: web
-    - title: Page 2
-      url: /moonshine_page_2.html
+    - title: Create and Build Projects
+      url: /moonshine_create_and_build_projects.html
       output: web
     - title: Page 3
       url: /moonshine_page_3.html
