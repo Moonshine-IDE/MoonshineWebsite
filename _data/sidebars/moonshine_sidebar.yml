@@ -17,3 +17,6 @@ entries:
     - title: Debug a Project in Moonshine
       url: /moonshine_debug_project.html
       output: web
+    - title: Apache Ant Build
+      url: /moonshine_apache_ant_build.html
+      output: web
