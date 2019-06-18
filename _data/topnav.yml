@@ -4,7 +4,7 @@ topnav:
 - title: Topnav
   items:
     - title: FAQ
-      url:
+      url: faq.html
     - title: GitHub
       external_url: https://github.com/prominic/MoonshineWebsite
 
