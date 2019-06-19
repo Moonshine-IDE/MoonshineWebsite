@@ -1,0 +1,139 @@
+$color5: white;
+$color9: #f0f0f0;
+$color6: #FAFAFA;
+$color1: #808080;
+$color10: #595959;
+
+$color2: #ED1951;
+$color11: #E50E51;
+
+$color7: #649345;
+
+$color3: #347DBE;
+$color4: #248ec2;
+$color12: #679DCE;
+$color13: #216f9b;
+$color8: #015CAE;
+
+
+.summary {
+    color: $color1;
+    border-left: 5px solid $color2;
+    font-size:16px;
+}
+
+
+h3 {color: $color2; }
+h4 {color: $color1; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: $color4;
+    color: $color5;
+}
+
+.nav > li.active > a {
+    background-color: $color3;
+}
+
+.nav > li > a:hover {
+    background-color: $color4;
+}
+
+div.navbar-collapse .dropdown-menu > li > a:hover {
+    background-color: $color3;
+}
+
+.nav li.thirdlevel > a {
+    background-color: $color6 !important;
+    color: $color4;
+    font-weight: bold;
+}
+
+a[data-toggle="tooltip"] {
+    color: $color7;
+    font-style: italic;
+    cursor: default;
+}
+
+.navbar-inverse {
+    background-color: $color3;
+    border-color: $color8;
+}
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
+    color: $color5;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
+     color: $color9;
+}
+
+a.navbar-brand:hover {
+  color: $color9;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: $color8;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: $color8;
+    color: $color5;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: $color4 !important;
+}
+
+.btn-primary {
+    color: $color5;
+    background-color: $color3;
+    border-color: $color3;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: $color3;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-color: $color4;
+    border-color: $color3;
+}
+
+.printTitle {
+    color: $color8 !important;
+}
+
+body.print h1 {color: $color8 !important; font-size:28px !important;}
+body.print h2 {color: $color10 !important; font-size:20px !important;}
+body.print h3 {color: $color11 !important; font-size:14px !important;}
+body.print h4 {color: $color12 !important; font-size:14px; font-style: italic !important;}
+
+.anchorjs-link:hover {
+    color: $color13;
+}
+
+div.sidebarTitle {
+    color: $color8;
+}
+
+li.sidebarTitle {
+  margin-top:20px;
+    font-weight:normal;
+    font-size:130%;
+    color: $color2;
+    margin-bottom:10px;
+    margin-left: 5px;
+
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: $color8;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: $color8;
+}
