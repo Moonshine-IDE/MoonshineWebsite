@@ -8,15 +8,35 @@ entries:
   - title: Moonshine IDE
     output: web
     folderitems:
-    - title: Set SDK in Moonshine
+    - title: Set SDK
       url: /moonshine_set_sdk.html
       output: web
-    - title: Create and Build Projects
-      url: /moonshine_create_and_build_projects.html
-      output: web
-    - title: Debug a Project in Moonshine
+
+      subfolders:
+      - title: Create and Build Projects
+        output: web
+        subfolderitems:
+
+        - title: For Desktop
+          url: /moonshine_create_and_build_desktop_projects.html
+          output: web
+
+        - title: For Web
+          url: /moonshine_create_and_build_web_projects.html
+          output: web
+
+        - title: For Mobile
+          url: /moonshine_create_and_build_mobile_projects.html
+          output: web
+
+        - title: With Apache Royale
+          url: /moonshine_create_and_build_royale_projects.html
+          output: web
+
+    - title: Debug
       url: /moonshine_debug_project.html
       output: web
+      
     - title: Apache Ant Build
       url: /moonshine_apache_ant_build.html
       output: web
