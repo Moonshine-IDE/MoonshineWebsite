@@ -1,5 +1,11 @@
-$color5: white;
-$color9: #f0f0f0;
+$background-color: #2D3D5C;
+$text-color: #B1B6C6;
+$topnav-background-color: #ffffbf;
+$topnav-accent: #015CAE;
+$topnav-text-color: #56472b;
+$topnav-text-highlight: #f0f0f0;
+$sidebar-title-highlight: #248ec2;
+
 $color6: #FAFAFA;
 $color1: #808080;
 $color10: #595959;
@@ -9,12 +15,13 @@ $color11: #E50E51;
 
 $color7: #649345;
 
-$color3: #347DBE;
-$color4: #248ec2;
 $color12: #679DCE;
 $color13: #216f9b;
-$color8: #015CAE;
 
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
 
 .summary {
     color: $color1;
@@ -27,25 +34,26 @@ h3 {color: $color2; }
 h4 {color: $color1; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: $color4;
-    color: $color5;
+    background-color: $sidebar-title-highlight;
+    color: $topnav-text-color;
 }
 
 .nav > li.active > a {
-    background-color: $color3;
+    background-color: $topnav-background-color;
+    color: $topnav-text-color;
 }
 
 .nav > li > a:hover {
-    background-color: $color4;
+    background-color: $sidebar-title-highlight;
 }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
-    background-color: $color3;
+    background-color: $topnav-background-color;
 }
 
 .nav li.thirdlevel > a {
     background-color: $color6 !important;
-    color: $color4;
+    color: $sidebar-title-highlight;
     font-weight: bold;
 }
 
@@ -56,42 +64,42 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: $color3;
-    border-color: $color8;
+    background-color: $topnav-background-color;
+    border-color: $topnav-accent;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
-    color: $color5;
+    color: $topnav-text-color;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
-     color: $color9;
+     color: $topnav-text-highlight;
 }
 
 a.navbar-brand:hover {
-  color: $color9;
+  color: $topnav-text-highlight;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    color: $color8;
+    color: $topnav-accent;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: $color8;
-    color: $color5;
+    background-color: $topnav-accent;
+    color: $topnav-text-color;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: $color4 !important;
+    border-color: $sidebar-title-highlight !important;
 }
 
 .btn-primary {
-    color: $color5;
-    background-color: $color3;
-    border-color: $color3;
+    color: $topnav-text-color;
+    background-color: $topnav-background-color;
+    border-color: $topnav-background-color;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    background-color: $color3;
+    background-color: $topnav-background-color;
 }
 
 .btn-primary:hover,
@@ -99,15 +107,15 @@ a.navbar-brand:hover {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-color: $color4;
-    border-color: $color3;
+    background-color: $sidebar-title-highlight;
+    border-color: $topnav-background-color;
 }
 
 .printTitle {
-    color: $color8 !important;
+    color: $topnav-accent !important;
 }
 
-body.print h1 {color: $color8 !important; font-size:28px !important;}
+body.print h1 {color: $topnav-accent !important; font-size:28px !important;}
 body.print h2 {color: $color10 !important; font-size:20px !important;}
 body.print h3 {color: $color11 !important; font-size:14px !important;}
 body.print h4 {color: $color12 !important; font-size:14px; font-style: italic !important;}
@@ -117,7 +125,7 @@ body.print h4 {color: $color12 !important; font-size:14px; font-style: italic !i
 }
 
 div.sidebarTitle {
-    color: $color8;
+    color: $topnav-accent;
 }
 
 li.sidebarTitle {
@@ -131,9 +139,9 @@ li.sidebarTitle {
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: $color8;
+    background-color: $topnav-accent;
 }
 
 .navbar-inverse .navbar-toggle {
-    border-color: $color8;
+    border-color: $topnav-accent;
 }
