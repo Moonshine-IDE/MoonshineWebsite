@@ -1,4 +1,14 @@
 body {
   background-color: #121212;
+  color: green;
+}
+
+#banner {
+  background-color: white;
+}
+
+#moonshine-screen {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=landing.css.map */
