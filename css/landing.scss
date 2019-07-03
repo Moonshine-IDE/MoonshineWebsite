@@ -1,6 +1,19 @@
 body {
-    background-color: #121212;
+    background-color: #131719;
     color: green;
+}
+
+nav {
+    background-color: #FFFBCE;
+}
+
+a.btn {
+    background-color: #FFFBCE;
+    color: #333229 !important;
+}
+
+nav a {
+    color: #333229 !important;
 }
 
 #banner {
@@ -10,12 +23,30 @@ body {
 .width-scaled-image {
     width: 100%;
     height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.card {
-    margin: 20px;
+.card, 
+.card-panel {
+    background-color: #282C2E;
+    color: #E3E3E3;
+}
+
+#banner {
+    background-image: url("../images/andromeda.png");
 }
 
 .card-image {
     padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #E0E0E0;
+}
+
+h3 {
+    font-size: 20px;
+    color: #A0A0A0;
 }
