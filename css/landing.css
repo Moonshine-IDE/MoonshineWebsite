@@ -4,7 +4,7 @@ body {
 }
 
 nav {
-  background-color: #FFF2AC;
+  background-color: #E3E3E3;
   -webkit-box-shadow: 0px 0px 5px white;
           box-shadow: 0px 0px 5px white;
 }
@@ -15,7 +15,7 @@ a.btn {
 }
 
 nav a {
-  color: #5C552B !important;
+  color: #222832 !important;
 }
 
 #banner {
