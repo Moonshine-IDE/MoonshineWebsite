@@ -1,19 +1,21 @@
 body {
-  background-color: #131719;
+  background-color: #191E22;
   color: green;
 }
 
 nav {
-  background-color: #FFFBCE;
+  background-color: #FFF2AC;
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
 }
 
 a.btn {
-  background-color: #FFFBCE;
-  color: #333229 !important;
+  background-color: #FFF2AC;
+  color: #5C552B !important;
 }
 
 nav a {
-  color: #333229 !important;
+  color: #5C552B !important;
 }
 
 #banner {
@@ -25,16 +27,18 @@ nav a {
   height: auto;
   margin-top: 100px;
   margin-bottom: 100px;
+  -webkit-box-shadow: 0px 0px 10px white;
+          box-shadow: 0px 0px 10px white;
 }
 
 .card,
 .card-panel {
-  background-color: #282C2E;
+  background-color: #222832;
   color: #E3E3E3;
 }
 
 #banner {
-  background-image: url("../images/andromeda.png");
+  background-image: url("../images/andromeda.jpg");
 }
 
 .card-image {
@@ -49,5 +53,10 @@ h1 {
 h3 {
   font-size: 20px;
   color: #A0A0A0;
+}
+
+h4 {
+  font-size: 20px;
+  color: white;
 }
 /*# sourceMappingURL=landing.css.map */
