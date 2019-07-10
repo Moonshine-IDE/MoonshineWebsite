@@ -14,6 +14,11 @@ a.btn {
   color: #5C552B !important;
 }
 
+a.btn:hover {
+  background-color: #FFF9D7;
+  color: #2E2A16;
+}
+
 nav a {
   color: #222832 !important;
 }
