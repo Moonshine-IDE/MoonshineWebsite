@@ -24,7 +24,10 @@ permalink: index.html
     <nav>
         <div class="container">
             <a href="#" class="brand-logo navtext">Moonshine IDE</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="https://github.com/prominic/MoonshineWebsite">GitHub</a></li>
                 <li><a href="moonshine_set_sdk.html">Docs</a></li>
@@ -32,6 +35,13 @@ permalink: index.html
             </ul>
         </div>
     </nav>
+
+    <ul id="nav-mobile" class="sidenav">
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="https://github.com/prominic/MoonshineWebsite">GitHub</a></li>
+        <li><a href="moonshine_set_sdk.html">Docs</a></li>
+        <li><a href="#">Feedback</a></li>
+    </ul>
 
     <section id="banner">
       <div class="container">
@@ -179,6 +189,9 @@ permalink: index.html
     <script>
       const collapsible = document.querySelector('.collapsible');
       M.Collapsible.init(collapsible, {});
+
+      const sidenav = document.querySelector('.sidenav');
+      M.Sidenav.init(sidenav, {});
     </script>
 
   </body>
