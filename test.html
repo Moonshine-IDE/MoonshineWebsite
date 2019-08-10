@@ -21,20 +21,50 @@
         <h2>The Quickest IDE to Get You Started!</h2>
     </header>
 
+    <!-- Navbar Dropdown for Mobile -->
+    <ul id="nav-dropdown" class="dropdown-content">
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="https://github.com/prominic/MoonshineWebsite">GitHub</a></li>
+        <li><a href="moonshine_set_sdk.html">Docs</a></li>
+        <li><a href="#">Feedback</a></li>
+    </ul>
+
     <nav>
         <div class="container nav-wrapper">
             <ul class="left">
-                <li><a href="#"><i class="material-icons">menu</i></a></li>
                 <li><a href="#"><i class="material-icons">home</i></a></li>
             </ul>
-            <ul class="right">
+            <ul class="right hide-on-small-only">
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="https://github.com/prominic/MoonshineWebsite">GitHub</a></li>
                 <li><a href="moonshine_set_sdk.html">Docs</a></li>
                 <li><a href="#">Feedback</a></li>
             </ul>
+            <ul class="right hide-on-med-and-up">
+                <li>
+                    <a class="dropdown-trigger" href="#!" data-target="nav-dropdown">
+                        MORE<i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="js/bin/materialize.min.js"></script>
+    <script>
+        const collapsible = document.querySelector('.collapsible');
+        M.Collapsible.init(collapsible, {});
+
+        const sidenav = document.querySelector('.sidenav');
+        M.Sidenav.init(sidenav, {});
+
+        const dropdown = document.querySelector('.dropdown-trigger');
+        M.Dropdown.init(dropdown, {
+            alignment: 'right',
+            coverTrigger: false
+        });
+    </script>
 
 </body>
 
