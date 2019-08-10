@@ -76,3 +76,23 @@ h4 {
 .material-icons{
     font-size: 50px;
 }
+
+.mega {
+    min-width: 500px !important;
+}
+
+.mega li {
+    margin: 0px;
+    padding: 20px;
+}
+
+#dl-table{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "os st nl"
+        "dv1 dv2 dv3"
+        "win stwin nlwin"
+        "mac stmac nlmac";
+}
