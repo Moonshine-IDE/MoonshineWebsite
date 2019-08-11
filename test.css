@@ -51,3 +51,17 @@ nav i {
     background-image: url("images/andromeda-wide.jpg");
     background-position-x: center;
 }
+
+.download {
+    height: 3.5em;
+}
+
+.span-1 {
+    font-size: 1em;
+    line-height: 2rem;
+}
+
+.span-2 {
+    font-size: 0.5em;
+    line-height: 1rem;
+}
