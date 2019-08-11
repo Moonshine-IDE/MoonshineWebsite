@@ -4,7 +4,7 @@
   border: $button-border;
   border-radius: $button-radius;
   display: inline-block;
-  height: $button-height;
+  min-height: $button-height;
   line-height: $button-height;
   padding: $button-padding;
   text-transform: uppercase;
@@ -91,7 +91,7 @@
       bottom: -$button-floating-large-size / 2;
     }
     width: $button-floating-large-size;
-    height: $button-floating-large-size;
+    min-height: $button-floating-large-size;
     padding: 0;
     i {
       line-height: $button-floating-large-size;
@@ -103,7 +103,7 @@
       bottom: -$button-floating-small-size / 2;
     }
     width: $button-floating-small-size;
-    height: $button-floating-small-size;
+    min-height: $button-floating-small-size;
     i {
       line-height: $button-floating-small-size;
     }
@@ -124,7 +124,7 @@
   overflow: hidden;
   z-index: 1;
   width: $button-floating-size;
-  height: $button-floating-size;
+  min-height: $button-floating-size;
   line-height: $button-floating-size;
   padding: 0;
   background-color: $button-floating-background;
@@ -206,7 +206,7 @@ button.btn-floating {
       }
     }
     padding: 0;
-    height: $button-floating-large-size;
+    min-height: $button-floating-large-size;
     ul {
       display: flex;
       top: 0;
@@ -263,7 +263,7 @@ button.btn-floating {
     left: 0;
     z-index: -1;
     width: $button-floating-size;
-    height: $button-floating-size;
+    min-height: $button-floating-size;
     background-color: $button-floating-background;
     border-radius: $button-floating-radius;
     transform: scale(0);
@@ -295,7 +295,7 @@ button.btn-floating {
 // Large button
 .btn-large {
   @extend .btn;
-  height: $button-large-height;
+  min-height: $button-large-height;
   line-height: $button-large-height;
   font-size: $button-large-font-size;
   padding: 0 28px;
@@ -308,7 +308,7 @@ button.btn-floating {
 // Small button
 .btn-small {
   @extend .btn;
-  height: $button-small-height;
+  min-height: $button-small-height;
   line-height: $button-small-height;
   font-size: $button-small-font-size;
   i {

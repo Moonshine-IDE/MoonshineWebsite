@@ -4803,7 +4803,7 @@ small {
   border: none;
   border-radius: 2px;
   display: inline-block;
-  height: 36px;
+  min-height: 36px;
   line-height: 36px;
   padding: 0 16px;
   text-transform: uppercase;
@@ -4893,7 +4893,7 @@ small {
   overflow: hidden;
   z-index: 1;
   width: 40px;
-  height: 40px;
+  min-height: 40px;
   line-height: 40px;
   padding: 0;
   background-color: #26a69a;
@@ -4910,7 +4910,7 @@ small {
 }
 .btn-floating.btn-large {
   width: 56px;
-  height: 56px;
+  min-height: 56px;
   padding: 0;
 }
 .btn-floating.btn-large.halfway-fab {
@@ -4921,7 +4921,7 @@ small {
 }
 .btn-floating.btn-small {
   width: 32.4px;
-  height: 32.4px;
+  min-height: 32.4px;
 }
 .btn-floating.btn-small.halfway-fab {
   bottom: -16.2px;
@@ -5005,7 +5005,7 @@ button.btn-floating {
 }
 .fixed-action-btn.toolbar {
   padding: 0;
-  height: 56px;
+  min-height: 56px;
 }
 .fixed-action-btn.toolbar.active > a i {
   opacity: 0;
@@ -5059,7 +5059,7 @@ button.btn-floating {
   left: 0;
   z-index: -1;
   width: 40px;
-  height: 40px;
+  min-height: 40px;
   background-color: #26a69a;
   border-radius: 50%;
   transform: scale(0);
@@ -5085,7 +5085,7 @@ button.btn-floating {
 }
 
 .btn-large {
-  height: 54px;
+  min-height: 54px;
   line-height: 54px;
   font-size: 15px;
   padding: 0 28px;
@@ -5095,7 +5095,7 @@ button.btn-floating {
 }
 
 .btn-small {
-  height: 32.4px;
+  min-height: 32.4px;
   line-height: 32.4px;
   font-size: 13px;
 }
