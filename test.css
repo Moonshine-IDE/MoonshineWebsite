@@ -28,12 +28,15 @@ body {
 
 h1 {
     font-size: 2em;
-    margin: 0.5em 0.5rem;
+    font-weight: 600;
+    line-height: 64px;
+    margin: 0em 1rem;
 }
 
 h2 {
-    font-size: 1em;
-    margin: 1em 0.5rem;
+    font-size: 2em;
+    font-weight: 200;
+    margin: 1em 1rem;
 }
 
 nav i {
