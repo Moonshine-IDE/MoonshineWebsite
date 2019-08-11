@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #132026;
+    color: white;
 }
 
 #layout {
@@ -39,4 +41,10 @@ nav i {
     padding: 0px;
     height: 64px;
     line-height: 64px;
+}
+
+#banner {
+    height: 600px;
+    background-image: url("images/andromeda-wide.jpg");
+    background-position-x: center;
 }
