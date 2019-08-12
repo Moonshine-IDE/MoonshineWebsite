@@ -53,10 +53,10 @@
         <div class="container center">
             <h2>The Quickest IDE to Get You Started!</h2>
             <div class="dropdown-button">
-                <a href="#" class="btn button-part">
+                <a id="download-button" href="#" class="btn button-part">
                     <div>
                         <span class="span-1">DOWNLOAD</span>
-                        <span class="span-2">For Windows</span>
+                        <span id="download-button-text" class="span-2">For Selected OS</span>
                     </div>
                 </a>
                 <a href="#" class="dropdown-trigger btn dropdown-part" data-target="download-dropdown">
@@ -70,10 +70,10 @@
                         <span class="top-row">Stable</span>
                         <span class="top-row">Nightly</span>
                         <span>Win</span>
-                        <li><a href="#"><i class="material-icons">file_download</i></a></li>
+                        <li><a href="https://moonshine-ide.com/downloads/releases/windows/Moonshine-2.4.0.exe"><i class="material-icons">file_download</i></a></li>
                         <li><a href="#"><i class="material-icons">file_download</i></a></li>
                         <span>Mac</span>
-                        <li><a href="#"><i class="material-icons">file_download</i></a></li>
+                        <li><a href="https://apps.apple.com/us/app/moonshine/id1099109346" target="_blank"><i class="material-icons">file_download</i></a></li>
                         <li><a href="#"><i class="material-icons">file_download</i></a></li>
                     </div>
                 </ul>
@@ -84,6 +84,22 @@
     <!--JavaScript at end of body for optimized loading-->
     <script src="js/bin/materialize.min.js"></script>
     <script>
+
+        function findOS() {
+            var button =  document.getElementById("download-button");
+            var text =  document.getElementById("download-button-text");
+            if (navigator.appVersion.indexOf("Win") != -1) {
+                text.textContent = "For Windows";
+                button.setAttribute("href", "https://moonshine-ide.com/downloads/releases/windows/Moonshine-2.4.0.exe");
+                button.setAttribute("target", "_blank");
+            }
+            if (navigator.appVersion.indexOf("Mac") != -1) {
+                text.textContent = "For MacOS";
+                button.setAttribute("href", "https://apps.apple.com/us/app/moonshine/id1099109346");
+            }
+        }
+
+        findOS();
 
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.dropdown-trigger');
