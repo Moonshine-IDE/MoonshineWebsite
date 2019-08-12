@@ -102,6 +102,30 @@ nav i {
 
 .mega span {
     color: black;
+    padding: 20px;
+    margin: 0px;
+}
+
+.mega > div > li {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.mega > div > li > a {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mega > div > li > a > i {
+    padding: 20px;
+    float: unset;
+}
+
+.mega span.top-row {
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #AAA;
 }
 
 #dropdown-layout {
@@ -112,4 +136,6 @@ nav i {
         "os     stable      nightly"
         "win    win-stable  win-nightly"
         "mac    mac-stable  mac-nightly";
+    align-items: center;
+    justify-items: left;
 }
