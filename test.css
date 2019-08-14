@@ -160,3 +160,76 @@ nav i {
 .card .card-content .card-title {
     margin-bottom: 1em;
 }
+
+.cards-layout {
+    margin-top: 3em;
+}
+
+.adaptive {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 2fr;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    grid-template-areas: 
+        "image      title"
+        "text       text"
+        "action     action";
+}
+
+@media screen and (min-width: 600px) {
+    .adaptive {
+        grid-template-columns: minmax(300px, 3fr) 12fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "image    title"
+            "image    text"
+            "image    action";
+    }
+}
+
+.adaptive-rigth {
+    display: grid;
+    grid-template-columns: 2fr minmax(100px, 1fr);
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    grid-template-areas: 
+        "title      image"
+        "text       text"
+        "action     action";
+}
+
+@media screen and (min-width: 600px) {
+    .adaptive-right {
+        grid-template-columns: 12fr minmax(300px, 3fr);
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "title     image"
+            "text      image"
+            "action    image";
+    }
+}
+
+.card-image {
+    grid-area: image;
+    padding: 16px;
+    align-self: center;
+}
+
+.adaptive .card-title {
+    grid-area: title;
+    padding: 16px 24px;
+}
+
+.card-text {
+    grid-area: text;
+    padding: 16px 24px;
+    margin: 0px;
+}
+
+.card-action {
+    grid-area: action;
+}
+
+.card .card-action a {
+    color: #E5CA50 !important;
+}
