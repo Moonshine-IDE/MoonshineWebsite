@@ -126,3 +126,37 @@ nav i {
     line-height: 2em;
     text-transform: initial;
 }
+
+.tiles-layout {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-column-gap: 24px;
+}
+
+@media screen and (min-width: 600px) {
+    .tiles-layout {
+        width: 85%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .tiles-layout {
+        width: 70%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.card {
+    background-color: #2F3F46;
+}
+
+.card i {
+    font-size: 2em;
+}
+
+.card .card-content .card-title {
+    margin-bottom: 1em;
+}
