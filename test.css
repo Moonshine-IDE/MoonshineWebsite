@@ -55,88 +55,15 @@ nav i {
     padding: 1em;
 }
 
-.dropdown-button {
-    display: inline-grid;
-    grid-template-columns: auto, auto;
-    grid-template-areas: "button dropdown";
-}
-
-.button-part {
-    grid-area: button;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    margin-right: 1px;
-    box-shadow: none;
-    padding: 0.25em 2em 0.5em 2em;
-}
-
-.dropdown-part {
-    grid-area: dropdown;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    margin-left: 1px;
-    box-shadow: none;
-    padding: 0em 0.25em;
-}
-
-.span-1 {
+.download-button-span-1 {
     display: block;
     font-size: 1.5em;
     line-height: 1.5em;
 }
 
-.span-2 {
+.download-button-span-2 {
     display: block;
     font-size: 0.75em;
-    line-height: 1.5em;
+    line-height: 2em;
     text-transform: initial;
-}
-
-.btn > i {
-    margin: 0px;
-    line-height: 2.75em;
-}
-
-.mega {
-    width: auto !important;
-}
-
-.mega span {
-    color: black;
-    padding: 20px;
-    margin: 0px;
-}
-
-.mega > div > li {
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-}
-
-.mega > div > li > a {
-    margin: 0px;
-    padding: 0px;
-}
-
-.mega > div > li > a > i {
-    padding: 20px;
-    float: unset;
-}
-
-.mega span.top-row {
-    font-weight: 600;
-    padding: 10px 20px;
-    background-color: #AAA;
-}
-
-#dropdown-layout {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "os     stable      nightly"
-        "win    win-stable  win-nightly"
-        "mac    mac-stable  mac-nightly";
-    align-items: center;
-    justify-items: left;
 }

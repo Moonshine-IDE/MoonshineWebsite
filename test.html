@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/materialize.css">
     <!--Customize material-->
     <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="css/mega-button.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,32 +53,36 @@
     <div id="banner">
         <div class="container center">
             <h2>The Quickest IDE to Get You Started!</h2>
-            <div class="dropdown-button">
-                <a id="download-button" href="#" class="btn button-part">
-                    <div>
-                        <span class="span-1">DOWNLOAD</span>
-                        <span id="download-button-text" class="span-2">For Selected OS</span>
-                    </div>
-                </a>
-                <a href="#" class="dropdown-trigger btn dropdown-part" data-target="download-dropdown">
-                    <i id="dropdown-arrow" class="material-icons right">arrow_drop_down</i>
-                </a>
 
-                <!-- Download Dropdown -->
-                <ul id="download-dropdown" class="dropdown-content mega">
-                    <div id="dropdown-layout">
-                        <span class="top-row">Operating System</span>
-                        <span class="top-row">Stable</span>
-                        <span class="top-row">Nightly</span>
-                        <span>Win</span>
-                        <li><a href="https://moonshine-ide.com/downloads/releases/windows/Moonshine-2.4.0.exe"><i class="material-icons">file_download</i></a></li>
-                        <li><a href="#"><i class="material-icons">file_download</i></a></li>
-                        <span>Mac</span>
-                        <li><a href="https://apps.apple.com/us/app/moonshine/id1099109346" target="_blank"><i class="material-icons">file_download</i></a></li>
-                        <li><a href="#"><i class="material-icons">file_download</i></a></li>
-                    </div>
-                </ul>
-                </div>
+            <!-- Mega Button -->
+            <div class="mega-button">
+                <a href="#" class="download-button mega-button-content btn">
+                    <span class="download-button-span-1">DOWNLOAD</span>
+                    <span class="download-button-span-2">For Selected OS</span>
+                </a>
+                <a href="#" class="dropdown-trigger mega-button-arrow btn" data-target="banner-download-dropdown"><i
+                        class="material-icons">arrow_drop_down</i></a>
+                <table id="banner-download-dropdown" class="dropdown-content">
+                    <tr>
+                        <th>Operating System</th>
+                        <th>Stable</th>
+                        <th>Nightly</th>
+                    </tr>
+                    <tr>
+                        <td>Win</td>
+                        <td><a href="https://moonshine-ide.com/downloads/releases/windows/Moonshine-2.4.0.exe"><i
+                                    class="material-icons">file_download</i></a></td>
+                        <td><a href="#"><i class="material-icons">file_download</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>MacOS</td>
+                        <td><a href="https://apps.apple.com/us/app/moonshine/id1099109346" target="_blank"><i
+                                    class="material-icons">file_download</i></a></td>
+                        <td><a href="#"><i class="material-icons">file_download</i></a></td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
     </div>
 
@@ -85,21 +90,35 @@
     <script src="js/bin/materialize.min.js"></script>
     <script>
 
-        function findOS() {
-            var button =  document.getElementById("download-button");
-            var text =  document.getElementById("download-button-text");
+        function detectOS() {
+            var downloadButtons = document.querySelectorAll('.download-button');
+            var downloadSpans = document.querySelectorAll('.download-button-span-2');
+
             if (navigator.appVersion.indexOf("Win") != -1) {
-                text.textContent = "For Windows";
-                button.setAttribute("href", "https://moonshine-ide.com/downloads/releases/windows/Moonshine-2.4.0.exe");
-                button.setAttribute("target", "_blank");
+                // Set link to Windows build
+                downloadButtons.forEach(button => {
+                    button.setAttribute("href", "https://moonshine-ide.com/downloads/releases/windows/Moonshine-2.4.0.exe");
+                    button.setAttribute("target", "_blank");
+                });
+                // Set button text to Windows
+                downloadSpans.forEach(span => {
+                    span.textContent = "For Windows"
+                });
             }
+
             if (navigator.appVersion.indexOf("Mac") != -1) {
-                text.textContent = "For MacOS";
-                button.setAttribute("href", "https://apps.apple.com/us/app/moonshine/id1099109346");
+                // Set link to Mac OS build
+                downloadButtons.forEach(button => {
+                    button.setAttribute("href", "https://apps.apple.com/us/app/moonshine/id1099109346");
+                });
+                // Set button text to Mac OS
+                downloadSpans.forEach(span => {
+                    span.textContent = "For MacOS"
+                });
             }
         }
 
-        findOS();
+        detectOS();
 
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.dropdown-trigger');

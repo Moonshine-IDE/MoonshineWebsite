@@ -1,0 +1,39 @@
+.mega-button {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2px;
+}
+
+.mega-button-content {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 5px 30px;
+}
+
+.mega-button-arrow {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  display: grid;
+  align-items: center;
+}
+
+.dropdown-content {
+  width: auto !important;
+  color: black;
+}
+
+.dropdown-content tr th {
+  padding: 10px 20px;
+  background-color: #EEEEEE;
+  border-radius: 0px;
+}
+
+.dropdown-content tr td {
+  padding: 10px 20px;
+}
+
+.dropdown-content i {
+  color: #E5CA50;
+}
