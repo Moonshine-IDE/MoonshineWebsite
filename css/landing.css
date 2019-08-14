@@ -48,7 +48,7 @@ nav i {
 }
 
 #banner {
-    background-image: url("images/andromeda-wide.jpg");
+    background-image: url("../images/andromeda-wide.jpg");
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
@@ -102,7 +102,7 @@ nav i {
 }
 
 #screenshot {
-    background-image: url("images/screen.jpg");
+    background-image: url("../images/screen.jpg");
     grid-area: screen;
 }
 
