@@ -1,0 +1,127 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+}
+
+/* TOP */
+
+.grid {
+    width: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.dark {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 12;
+    background-color: #182931;
+}
+
+.light {
+    grid-column: 9 / span 8;
+    grid-row: 1 / span 12;
+    background-color: #DAECF4;
+}
+
+.primary {
+    grid-column: 1 / span 16;
+    grid-row: 2 / span 1;
+    background-color: #41567F;
+    color: white;
+    text-align: center;
+    padding: 0.25em;
+}
+
+.secondary {    
+    background-color: #E5CA50;
+    padding: 0.25em;
+    text-align: center;
+}
+
+#id1 {
+    grid-column: 3 / span 4;
+    grid-row: 4 / span 1;
+    color: black;
+}
+
+#id2 {
+    grid-column: 11 / span 4;
+    grid-row: 4 / span 1;
+    color: white;
+}
+
+/* LEFT */
+
+.dark-lightened-1 {
+    grid-column: 2 / span 6;
+    grid-row: 6 / span 6;
+    background-color: #2F3F46;
+}
+
+.dark-lightened-2 {    
+    background-color: #445359;
+}
+
+#id3 {
+    grid-column: 3 / span 1;
+    grid-row: 7 / span 1;
+}
+
+#id4 {
+    grid-column: 3 / span 1;
+    grid-row: 9 / span 1;
+}
+
+.text-light {
+    grid-column: 3 / span 4;
+    grid-row: 7 / span 1;
+    color: white;
+    opacity: 0.6;
+    margin: 0.25em 0.5em;
+}
+
+.text-lighter {
+    grid-column: 3 / span 4;
+    grid-row: 9 / span 1;
+    color: white;
+    margin: 0.25em 0.5em;
+}
+
+/* RIGHT */
+
+.light-darkened-1 {
+    grid-column: 10 / span 6;
+    grid-row: 6 / span 6;
+    background-color: #C4D4DB;
+}
+
+.light-darkened-2 {
+    background-color: #B0BEC5;
+}
+
+#id5 {
+    grid-column: 11 / span 1;
+    grid-row: 7 / span 1;
+}
+
+#id6 {
+    grid-column: 11 / span 1;
+    grid-row: 9 / span 1;
+}
+
+.text-dark {
+    grid-column: 11 / span 4;
+    grid-row: 7 / span 1;
+    color: black;
+    opacity: 0.6;
+    margin: 0.25em 0.5em;
+}
+
+.text-darker {
+    grid-column: 11 / span 4;
+    grid-row: 9 / span 1;
+    color: black;
+    margin: 0.25em 0.5em;
+}
