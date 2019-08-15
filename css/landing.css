@@ -194,6 +194,14 @@ nav i {
             "image  action";
     }
 
+    .flipped {
+        grid-template-columns: 65% 35%;
+        grid-template-areas: 
+            "title  image"
+            "text   image"
+            "action image";
+    }
+
     .card-image {
         border-top-right-radius: 0px;
         border-top-left-radius: 2px;
