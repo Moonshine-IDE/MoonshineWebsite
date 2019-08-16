@@ -1,9 +1,7 @@
 ---
 title: Create and Build Apache Royale® Projects
-sidebar: moonshine_sidebar
-permalink: moonshine_create_and_build_royale_projects.html
 folder: moonshine
-toc: false
+layout: docpage
 ---
 
 ## Create and Build Apache Royale® Projects

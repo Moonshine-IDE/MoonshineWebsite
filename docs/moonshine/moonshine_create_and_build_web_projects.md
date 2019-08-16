@@ -1,9 +1,7 @@
 ---
 title: Create and Build Web Projects
-sidebar: moonshine_sidebar
-permalink: moonshine_create_and_build_web_projects.html
 folder: moonshine
-toc: false
+layout: docpage
 ---
 
 ## Create and Build Web Projects

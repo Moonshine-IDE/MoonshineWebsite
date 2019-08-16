@@ -1,9 +1,7 @@
 ---
 title: Set Apache Flex®, Apache Royale® or Feathers SDK in Moonshine
-sidebar: moonshine_sidebar
-permalink: moonshine_set_sdk.html
 folder: moonshine
-toc: true
+layout: docpage
 ---
 
 ## Set default SDK:

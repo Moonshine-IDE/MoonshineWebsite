@@ -1,6 +1,5 @@
 ---
 title: FAQ
-layout: topnav
 permalink: faq.html
 hide_sidebar: true
 toc: false

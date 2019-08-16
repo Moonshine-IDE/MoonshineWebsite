@@ -1,9 +1,7 @@
 ---
 title: Apache Ant® build
-sidebar: moonshine_sidebar
-permalink: moonshine_apache_ant_build.html
 folder: moonshine
-toc: false
+layout: docpage
 ---
 
 ## Apache Ant® build

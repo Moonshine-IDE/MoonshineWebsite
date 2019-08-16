@@ -1,9 +1,7 @@
 ---
 title: Debug a Project in Moonshine
-sidebar: moonshine_sidebar
-permalink: moonshine_debug_project.html
 folder: moonshine
-toc: false
+layout: docpage
 ---
 
 ## How to Debug a Project in Moonshine IDE

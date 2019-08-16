@@ -1,9 +1,7 @@
 ---
 title: Create and Build Mobile Projects
-sidebar: moonshine_sidebar
-permalink: moonshine_create_and_build_mobile_projects.html
 folder: moonshine
-toc: false
+layout: docpage
 ---
 
 ## Create and Build Mobile Projects

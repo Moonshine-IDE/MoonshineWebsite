@@ -1,0 +1,7 @@
+<ul>
+    {% for docpage in site.data.moonshine-docs %}
+    <li>
+        <a href="{{ site.baseurl }}{{ docpage.folder }}">{{ docpage.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
