@@ -20,9 +20,17 @@
 
     {% include navbar.html %}
 
-    {% include sidebar.html %}
+    <div class="container docpage-layout">
+        <div class="sidebar">
+            {% include sidebar.html %}
+        </div>
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
 
-    {{ content }}
+
+
 
 
     <!--JavaScript at end of body for optimized loading-->
