@@ -101,6 +101,10 @@ nav i {
     margin: 1em;
 }
 
+.mega-button-arrow {
+    color: black;
+}
+
 #screenshot {
     background-image: url("../images/screen.jpg");
     grid-area: screen;
@@ -118,6 +122,7 @@ nav i {
     display: block;
     font-size: 1.5em;
     line-height: 1.5em;
+    color: black;
 }
 
 .download-button-span-2 {
@@ -125,6 +130,7 @@ nav i {
     font-size: 0.75em;
     line-height: 2em;
     text-transform: initial;
+    color: black;
 }
 
 .tiles-layout {
