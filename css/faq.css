@@ -11,3 +11,14 @@ h1 {
     line-height: 64px;
     margin: 0em 1rem;
 }
+
+.card {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    color: #464C4F;
+}
+
+.card .card-title {
+    font-weight: 600;
+    /* color: black; */
+}
