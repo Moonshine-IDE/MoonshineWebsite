@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="/css/materialize.css">
+    <!--Customize material-->
+    <link rel="stylesheet" href="/css/faq.css">
+
+</head>
+
+<body>
+
+    {% include navbar.html %}
+
+    <div class="container docpage-layout">
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="{{ site.baseurl }}/js/bin/materialize.min.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var options = {
+                alignment: 'right',
+                coverTrigger: false
+            };
+            var instances = M.Dropdown.init(elems, options);
+        });
+
+    </script>
+
+</body>
+
+</html>

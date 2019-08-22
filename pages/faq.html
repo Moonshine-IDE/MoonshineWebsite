@@ -1,0 +1,9 @@
+---
+title: FAQ
+permalink: faq.html
+layout: faq
+---
+{% for qna in site.data.faq %}
+    <h4>{{ qna.question }}</h4>
+    <p>{{ qna.answer }}</p>    
+{% endfor %}
