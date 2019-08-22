@@ -1,8 +1,6 @@
 ---
 title: FAQ
 permalink: faq.html
-hide_sidebar: true
-toc: false
 ---
 <div class="panel-group" id="accordion">
     <!-- PANEL -->
