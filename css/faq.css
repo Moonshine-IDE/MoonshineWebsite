@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 64px;
+    margin: 0em 1rem;
+}
+
+.card {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    color: #464C4F;
+}
+
+.card .card-title {
+    font-weight: 600;
+    /* color: black; */
+}
