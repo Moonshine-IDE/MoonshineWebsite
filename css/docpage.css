@@ -18,6 +18,11 @@ body {
     grid-area: title;
 }
 
+nav {
+    position: sticky;
+    top: 0px;
+}
+
 #navbar {
     grid-area: 2 / 1 / span 1 / span 3;
     margin: 0px;
