@@ -29,10 +29,10 @@ h1 {
     margin-bottom: 24px;
 }
 
-a {
+.card a {
     color: #E5CA50;
 }
 
-a:hover {
+.card a:hover {
     color: #F3E4A5;
 }
