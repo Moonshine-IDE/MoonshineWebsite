@@ -1,0 +1,50 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        "header     header"
+        "navbar     navbar"
+        "sidebar    content";
+}
+
+.header {
+    background-color: lightcoral;
+    height: 30px;
+    grid-area: header;
+}
+
+.navbar {
+    background-color: lightgreen;
+    height: 30px;
+    position: sticky;
+    top: 0px;
+    grid-area: navbar;
+    z-index: 1;
+}
+
+.side-wrapper {
+    grid-area: sidebar;
+    height: calc(100vh - 2*30px);
+    position: sticky;
+    top: 30px;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.sidebar {
+    background-color: lightblue;
+    height: 1300px;
+}
+
+.content {
+    background-color: lightyellow;
+    grid-area: content;
+    height: 1000px;
+}
