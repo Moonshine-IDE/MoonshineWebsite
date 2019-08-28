@@ -1,8 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: white;
-    color: black;
+    background-color: #182931;
+    color: white;
 }
 
 h1 {
@@ -13,12 +13,26 @@ h1 {
 }
 
 .card {
+    background-color: #2F3F46;
     margin-top: 48px;
     margin-bottom: 48px;
-    color: #464C4F;
+    color: #B4BABD;
 }
 
 .card .card-title {
     font-weight: 600;
-    /* color: black; */
+    color: white;
+}
+
+.card {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.card a {
+    color: #E5CA50;
+}
+
+.card a:hover {
+    color: #F3E4A5;
 }
