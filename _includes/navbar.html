@@ -13,6 +13,9 @@
 <nav>
     <div class="container nav-wrapper">
         <ul class="left">
+            {% if page.url contains "docs" %}
+            <li><a href="#"><i class="material-icons">menu</i></a></li>
+            {% endif %}
             <li><a href="{{site.baseurl}}/index.html"><i class="material-icons">home</i></a></li>
         </ul>
         <ul class="right hide-on-small-only">
