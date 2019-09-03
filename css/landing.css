@@ -178,3 +178,7 @@ nav i {
 .card .card-action a {
     color: #E5CA50 !important;
 }
+
+.input-field {
+    margin-top: 48px;
+}
