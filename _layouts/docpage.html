@@ -28,14 +28,14 @@
 
     
 
-    <!-- <div class="container docpage-layout">
+    <div class="container docpage-layout">
         <div class="sidebar">
             {% include sidebar.html %}
         </div>
         <div class="content">
             {{ content }}
         </div>
-    </div> -->
+    </div>
 
 
 
@@ -46,11 +46,11 @@
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.sidenav-trigger');
+            var elems = document.querySelectorAll('.sidenav');
             var options = {
-                edge: 'right',
+                edge: 'left',
             };
-            var instances = M.Dropdown.init(elems, options);
+            var instances = M.Sidenav.init(elems, options);
         });
 
         // document.addEventListener('DOMContentLoaded', function () {

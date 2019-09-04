@@ -203,3 +203,8 @@ nav i {
     width: 100%;
     height: auto;
 }
+
+#slide-out {
+    background-color: red;
+    height: calc(100vh - 2*54px);
+}
