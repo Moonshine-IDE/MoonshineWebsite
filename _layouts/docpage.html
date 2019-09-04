@@ -18,16 +18,24 @@
 
 <body>
 
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#">item</a></li>
+        <li><a href="#">item</a></li>
+        <li><a href="#">item</a></li>
+    </ul>
+
     {% include navbar.html %}
 
-    <div class="container docpage-layout">
+    
+
+    <!-- <div class="container docpage-layout">
         <div class="sidebar">
             {% include sidebar.html %}
         </div>
         <div class="content">
             {{ content }}
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -38,13 +46,21 @@
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.dropdown-trigger');
+            var elems = document.querySelectorAll('.sidenav-trigger');
             var options = {
-                alignment: 'right',
-                coverTrigger: false
+                edge: 'right',
             };
             var instances = M.Dropdown.init(elems, options);
         });
+
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     var elems = document.querySelectorAll('.dropdown-trigger');
+        //     var options = {
+        //         alignment: 'right',
+        //         coverTrigger: false
+        //     };
+        //     var instances = M.Dropdown.init(elems, options);
+        // });
 
     </script>
 
