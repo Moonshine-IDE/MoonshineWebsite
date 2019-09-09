@@ -31,7 +31,7 @@
     
 
     <div class="container docpage-layout">
-        <div class="sidebar">
+        <div id="sidenav-wrapper" class="sidebar">
             {% include sidebar.html %}
         </div>
         <div class="content">
@@ -40,32 +40,44 @@
     </div>
 
 
-
-
-
     <!--JavaScript at end of body for optimized loading-->
     <script src="{{ site.baseurl }}/js/bin/materialize.min.js"></script>
     <script>
+        var navbar = $("#navbar");
+        var sidebar = $("#sidenav-wrapper");
+        var headerHeight;
+        var navbarHeight;
+        var windowHeight;
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.sidenav');
-            var options = {
-                edge: 'left',
-            };
-            var instances = M.Sidenav.init(elems, options);
-        });
+        function init() {
+            headerHeight = navbar.offset().top;
+            navbarHeight = navbar.height();
+            windowHeight = $(window).height();
+        }
 
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     var elems = document.querySelectorAll('.dropdown-trigger');
-        //     var options = {
-        //         alignment: 'right',
-        //         coverTrigger: false
-        //     };
-        //     var instances = M.Dropdown.init(elems, options);
-        // });
+        function adjustSidenav() {
+            var remainingHeaderHeight = Math.max(headerHeight - $(document).scrollTop(), 0);
+            var newTop = remainingHeaderHeight + navbarHeight;
+            var newHeight = windowHeight - remainingHeaderHeight - navbarHeight;
+            sidebar.css({
+                position: "fixed",
+                top: newTop,
+                height: newHeight,
+            });
+        }
 
         $(document).ready(function () {
-            var top = $("sidenav")
+            init();
+            adjustSidenav();
+        });
+
+        $(window).resize(function () {
+            init();
+            adjustSidenav();
+        });
+
+        $(document).scroll(function () {
+            adjustSidenav();
         });
 
     </script>

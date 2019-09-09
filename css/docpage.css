@@ -181,18 +181,7 @@ nav i {
 .sidebar {
     grid-area: sidebar;
     background-color: pink;
-    height: 300px;
-    position: sticky;
-    top: 64px;
-    height: calc(100vh - 2*64px);
     overflow-y: scroll;
-}
-
-@media screen and (max-width: 600px) {
-    .sidebar {
-        top: 56px;
-        height: calc(100vh - 2*56px);
-    }
 }
 
 .content {
