@@ -16,13 +16,13 @@ html, body {
 
 .header {
     background-color: lightcoral;
-    height: 30px;
+    height: 40px;
     grid-area: header;
 }
 
 .navbar {
     background-color: lightgreen;
-    height: 30px;
+    height: 50px;
     position: sticky;
     top: 0px;
     grid-area: navbar;
@@ -31,16 +31,14 @@ html, body {
 
 .side-wrapper {
     grid-area: sidebar;
-    height: calc(100vh - 2*30px);
-    position: sticky;
-    top: 30px;
+    width: 300px;
     z-index: 1;
     overflow-y: scroll;
 }
 
 .sidebar {
     background-color: lightblue;
-    height: 1300px;
+    height: 1500px;
 }
 
 .content {

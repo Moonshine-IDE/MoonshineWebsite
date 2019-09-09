@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="test.css">
+    <script src="bower_components\jquery\dist\jquery.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="header">header</div>
@@ -14,9 +17,50 @@
         <div class="side-wrapper">
             <div class="sidebar">sidebar</div>
         </div>
-        
-        <div class="content">content</div>   
+
+        <div class="content">content</div>
     </div>
 
+    <script>
+        var navbar = $(".navbar");
+        var sidebar = $(".side-wrapper");
+        var headerHeight;
+        var navbarHeight;
+        var windowHeight;
+
+        function init() {
+            headerHeight = navbar.offset().top;
+            navbarHeight = navbar.height();
+            windowHeight = $(window).height();
+        }
+
+        function adjustSidenav(){
+            var remainingHeaderHeight = Math.max(headerHeight - $(document).scrollTop(), 0);
+            var newTop = remainingHeaderHeight + navbarHeight;
+            var newHeight = windowHeight - remainingHeaderHeight - navbarHeight;
+            sidebar.css({
+                position: "fixed",
+                top: newTop,
+                height: newHeight,
+            });
+        }
+
+        $(document).ready(function () {
+            init();
+            adjustSidenav();
+        });
+
+        $(window).resize(function () {
+            init();
+            adjustSidenav();
+        });
+
+        $(document).scroll(function() {
+            adjustSidenav();
+        });
+
+    </script>
+
 </body>
+
 </html>
