@@ -20,19 +20,12 @@
 
 <body>
 
-    <ul id="slide-out" class="sidenav">
-        <li><a href="#">item</a></li>
-        <li><a href="#">item</a></li>
-        <li><a href="#">item</a></li>
-    </ul>
-
     {% include navbar.html %}
-
-    
+    {% include sidenav-mobile.html %}    
 
     <div class="container docpage-layout">
         <div id="sidenav-wrapper" class="sidebar">
-            {% include sidebar.html %}
+            {% include sidenav-desktop.html %}
         </div>
         <div class="content">
             {{ content }}
