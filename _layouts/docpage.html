@@ -24,7 +24,7 @@
     {% include sidenav-mobile.html %}    
 
     <div class="container docpage-layout">
-        <div id="sidenav-wrapper" class="sidebar">
+        <div id="sidenav-wrapper" class="sidebar sidenav-wrapper">
             {% include sidenav-desktop.html %}
         </div>
         <div class="content">
@@ -37,7 +37,7 @@
     <script src="{{ site.baseurl }}/js/bin/materialize.min.js"></script>
     <script>
         var navbar = $("#navbar");
-        var sidebar = $("#sidenav-wrapper");
+        var sidenav = $(".sidenav-wrapper");
         var headerHeight;
         var navbarHeight;
         var windowHeight;
@@ -52,12 +52,7 @@
             var remainingHeaderHeight = Math.max(headerHeight - $(document).scrollTop(), 0);
             var newTop = remainingHeaderHeight + navbarHeight;
             var newHeight = windowHeight - remainingHeaderHeight - navbarHeight;
-            sidebar.css({
-                position: "fixed",
-                top: newTop,
-                height: newHeight,
-            });
-            $("#sidenav-mobile").css({
+            sidenav.css({
                 position: "fixed",
                 top: newTop,
                 height: newHeight,
