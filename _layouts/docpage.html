@@ -69,6 +69,7 @@
         $(document).ready(function () {
             init();
             adjustSidenav();
+            // $('.sidenav').sidenav();
         });
 
         $(window).resize(function () {
@@ -78,6 +79,12 @@
 
         $(document).scroll(function () {
             adjustSidenav();
+        });
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var options = {};
+            var instances = M.Sidenav.init(elems, options);
         });
 
     </script>
