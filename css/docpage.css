@@ -192,3 +192,10 @@ nav i {
     width: 100%;
     height: auto;
 }
+
+.sidenav li > a {
+    height: auto;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 16px;
+}
