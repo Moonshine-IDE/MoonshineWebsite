@@ -57,12 +57,17 @@
                 top: newTop,
                 height: newHeight,
             });
+            $("#sidenav-mobile").css({
+                position: "fixed",
+                top: newTop,
+                height: newHeight,
+            });
         }
 
         $(document).ready(function () {
             init();
             adjustSidenav();
-            // $('.sidenav').sidenav();
+            $('#sidenav-mobile').sidenav();
         });
 
         $(window).resize(function () {
@@ -72,12 +77,6 @@
 
         $(document).scroll(function () {
             adjustSidenav();
-        });
-    
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.sidenav');
-            var options = {};
-            var instances = M.Sidenav.init(elems, options);
         });
 
     </script>
