@@ -36,23 +36,12 @@
     <!--JavaScript at end of body for optimized loading-->
     <script src="{{ site.baseurl }}/js/bin/materialize.min.js"></script>
     <script>
-        var navbar = $("#navbar");
-        var sidenav = $(".sidenav-wrapper");
-        var headerHeight;
-        var navbarHeight;
-        var windowHeight;
-
-        function init() {
-            headerHeight = navbar.offset().top;
-            navbarHeight = navbar.height();
-            windowHeight = $(window).height();
-        }
 
         function adjustSidenav() {
-            var remainingHeaderHeight = Math.max(headerHeight - $(document).scrollTop(), 0);
-            var newTop = remainingHeaderHeight + navbarHeight;
-            var newHeight = windowHeight - remainingHeaderHeight - navbarHeight;
-            sidenav.css({
+            var st = $("#navbar")[0].getBoundingClientRect().top;
+            var newTop = st + $("#navbar").height();
+            var newHeight = $(window).height() - newTop;
+            $(".sidenav-wrapper").css({
                 position: "fixed",
                 top: newTop,
                 height: newHeight,
@@ -60,13 +49,11 @@
         }
 
         $(document).ready(function () {
-            init();
-            adjustSidenav();
             $('#sidenav-mobile').sidenav();
+            adjustSidenav();            
         });
 
         $(window).resize(function () {
-            init();
             adjustSidenav();
         });
 
