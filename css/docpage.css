@@ -70,8 +70,8 @@ nav i {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: pink;
     overflow-y: scroll;
+    width: 300px;
 }
 
 .content {
@@ -92,4 +92,22 @@ nav i {
 
 a.sidenav-trigger {
     margin: 0px;
+}
+
+#sidenav-mobile li > a {
+    padding: 16px;
+    color: #41567F;
+}
+
+#sidenav-desktop {
+    padding: 16px;
+}
+
+#sidenav-desktop li > a {
+    color: #41567F;
+}
+
+#sidenav-desktop li {
+    padding: 8px;
+    word-wrap: break-word;
 }
