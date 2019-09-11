@@ -48,6 +48,12 @@ h2 {
     margin: 1em;
 }
 
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
 nav i {
     margin: 0px;
     padding: 0px;
