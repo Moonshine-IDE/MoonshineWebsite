@@ -49,7 +49,6 @@
         }
 
         $(document).ready(function () {
-            $('.dropdown-trigger').dropdown();
             $('#sidenav-mobile').sidenav();
             adjustSidenav();            
         });
@@ -61,6 +60,15 @@
         $(document).scroll(function () {
             adjustSidenav();
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var options = {
+            alignment: 'right',
+            coverTrigger: false
+        };
+        var instances = M.Dropdown.init(elems, options);
+    });
 
     </script>
 

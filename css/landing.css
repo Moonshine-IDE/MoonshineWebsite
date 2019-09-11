@@ -65,6 +65,18 @@ nav i {
     line-height: 64px;
 }
 
+.dropdown-content li {
+    background-color: #41567F;
+}
+
+.dropdown-content li > a {
+    color: white;
+}
+
+.dropdown-content li:hover {
+    background-color: #41567F;
+}
+
 #banner {
     background-image: url("../images/andromeda-wide.jpg");
     background-position: center;
