@@ -103,12 +103,24 @@ a.sidenav-trigger {
     color: #41567F;
 }
 
+#sidenav-mobile li > a.active {
+    font-weight: 600;
+}
+
 #sidenav-desktop {
     padding: 16px;
 }
 
 #sidenav-desktop li > a {
     color: #41567F;
+}
+
+#sidenav-desktop li > a:hover {
+    color: #A0ABBF;
+}
+
+#sidenav-desktop li > a.active {
+    font-weight: 600;
 }
 
 #sidenav-desktop li {
