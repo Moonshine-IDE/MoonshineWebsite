@@ -199,3 +199,7 @@ nav i {
     line-height: 20px;
     padding: 8px 16px;
 }
+
+a.sidenav-trigger {
+    margin: 0px;
+}
