@@ -10,10 +10,23 @@
     <li><a href="/pages/form.html" target="_blank">Feedback</a></li>
 </ul>
 
-<nav>
+<nav id="navbar">
     <div class="container nav-wrapper">
         <ul class="left">
-            <li><a href="{{site.baseurl}}/index.html"><i class="material-icons">home</i></a></li>
+            {% if page.url contains "docs" %}
+            <li>
+                <a href="#" data-target="sidenav-mobile" class="sidenav-trigger">
+                    <i class="material-icons left">menu</i>
+                    <span class="hide-on-small-only">MENU</span>
+                </a>
+            </li>
+            {% endif %}
+            <li>
+                <a href="{{site.baseurl}}/index.html">
+                    <i class="material-icons left">home</i>
+                    <span class="hide-on-small-only">HOME</span>
+                </a>
+            </li>
         </ul>
         <ul class="right hide-on-small-only">
             <li><a href="/faq.html">FAQ</a></li>
@@ -24,7 +37,8 @@
         <ul class="right hide-on-med-and-up">
             <li>
                 <a class="dropdown-trigger" href="#!" data-target="nav-dropdown">
-                    MORE<i class="material-icons right">arrow_drop_down</i>
+                    <span>MORE</span>
+                    <i class="material-icons right">arrow_drop_down</i>
                 </a>
             </li>
         </ul>

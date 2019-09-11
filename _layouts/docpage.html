@@ -14,15 +14,18 @@
     <!--Customize material-->
     <link rel="stylesheet" href="/css/docpage.css">
 
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
 </head>
 
 <body>
 
     {% include navbar.html %}
+    {% include sidenav-mobile.html %}    
 
     <div class="container docpage-layout">
-        <div class="sidebar">
-            {% include sidebar.html %}
+        <div id="sidenav-wrapper" class="sidebar sidenav-wrapper hide-on-med-and-down">
+            {% include sidenav-desktop.html %}
         </div>
         <div class="content">
             {{ content }}
@@ -30,20 +33,33 @@
     </div>
 
 
-
-
-
     <!--JavaScript at end of body for optimized loading-->
     <script src="{{ site.baseurl }}/js/bin/materialize.min.js"></script>
     <script>
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.dropdown-trigger');
-            var options = {
-                alignment: 'right',
-                coverTrigger: false
-            };
-            var instances = M.Dropdown.init(elems, options);
+        function adjustSidenav() {
+            var st = $("#navbar")[0].getBoundingClientRect().top;
+            var newTop = st + $("#navbar").height();
+            var newHeight = $(window).height() - newTop;
+            $(".sidenav-wrapper").css({
+                position: "fixed",
+                top: newTop,
+                height: newHeight,
+            });
+        }
+
+        $(document).ready(function () {
+            $('.dropdown-trigger').dropdown();
+            $('#sidenav-mobile').sidenav();
+            adjustSidenav();            
+        });
+
+        $(window).resize(function () {
+            adjustSidenav();
+        });
+
+        $(document).scroll(function () {
+            adjustSidenav();
         });
 
     </script>
