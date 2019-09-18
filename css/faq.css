@@ -12,6 +12,10 @@ h1 {
     margin: 0em 1rem;
 }
 
+h1 > a {
+    color: white;
+}
+
 .card {
     background-color: #2F3F46;
     margin-top: 48px;
