@@ -60,4 +60,12 @@
 
 .adaptive-card .card-action {
     grid-area: action;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.adaptive-card .card-action a {
+    white-space: nowrap;
+    display: inline-block;
+    margin: 8px 0px;
 }
