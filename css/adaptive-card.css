@@ -13,6 +13,8 @@
     grid-area: image;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -43,6 +45,14 @@
         border-top-right-radius: 0px;
         border-top-left-radius: 2px;
         border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .adaptive-card.flipped .card-image {
+        border-top-right-radius: 2px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 2px;
     }
 }
 
