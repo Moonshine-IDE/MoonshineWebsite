@@ -1,15 +1,3 @@
-.dropdown-content li {
-    background-color: #41567F;
-}
-
-.dropdown-content li > a {
-    color: white;
-}
-
-.dropdown-content li:hover {
-    background-color: #41567F;
-}
-
 .card {
     background-color: #2F3F46;
     margin-top: 48px;

@@ -12,31 +12,6 @@ h2 {
     margin: 1em;
 }
 
-nav {
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-}
-
-nav i {
-    margin: 0px;
-    padding: 0px;
-    height: 64px;
-    line-height: 64px;
-}
-
-.dropdown-content li {
-    background-color: #41567F;
-}
-
-.dropdown-content li > a {
-    color: white;
-}
-
-.dropdown-content li:hover {
-    background-color: #41567F;
-}
-
 #banner {
     background-image: url("../images/andromeda-wide.jpg");
     background-position: center;

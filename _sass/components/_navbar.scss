@@ -1,0 +1,20 @@
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+  
+.dropdown-content {
+  
+  li {
+    background-color: $east-bay;
+    
+    &:hover {
+      background-color: $east-bay;
+    }
+  }
+  
+  li > a {
+    color: white;    
+  }
+}  
