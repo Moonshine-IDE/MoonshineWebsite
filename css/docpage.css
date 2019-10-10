@@ -25,17 +25,6 @@ nav {
     grid-area: navbar;
 }
 
-h1 {
-    font-size: 2em;
-    font-weight: 600;
-    line-height: 64px;
-    margin: 0em 1rem;
-}
-
-h1 > a {
-    color: #41567F;
-}
-
 h2 {
     font-size: 2em;
     font-weight: 200;
