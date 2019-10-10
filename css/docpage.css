@@ -1,28 +1,6 @@
-#layout {
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-        "left   title   right"
-        "left   navbar  right";
-}
-
-#title {
-    grid-area: title;
-}
-
 nav {
     position: sticky;
     top: 0px;
-}
-
-#navbar {
-    grid-area: 2 / 1 / span 1 / span 3;
-    margin: 0px;
-}
-
-#navbar-content {
-    grid-area: navbar;
 }
 
 h2 {
