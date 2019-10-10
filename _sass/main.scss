@@ -1,8 +1,11 @@
 @import
-  'base/reset';
+  'abstracts/variables';
 
 @import 
   'vendors/materialize';
+
+@import
+  'base/reset';
 
 @import
   'components/header';
