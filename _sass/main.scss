@@ -1,5 +1,12 @@
+@import
+  'base/reset';
+
 @import 
-    'vendors/materialize';
+  'vendors/materialize';
 
 @import
-    'pages/own';
+  'pages/own';
+
+@import 
+  'themes/default', 
+  'themes/docs';
