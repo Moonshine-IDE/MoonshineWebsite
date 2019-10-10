@@ -10,36 +10,7 @@ layout: landing
         <h2 class="slogan">The Quickest IDE to Get You Started!</h2>
 
         <!-- Mega Button -->
-        <div class="mega-button">
-            <a href="#" class="download-button mega-button-content btn">
-                <span class="download-button-span-1">DOWNLOAD</span>
-                <span class="download-button-span-2">For Selected OS</span>
-            </a>
-            <a href="#" class="dropdown-trigger mega-button-arrow btn" data-target="banner-download-dropdown"><i
-                    class="material-icons">arrow_drop_down</i></a>
-            <table id="banner-download-dropdown" class="dropdown-content">
-                <tr>
-                    <th>Operating System</th>
-                    <th>Stable</th>
-                    <th>Nightly</th>
-                </tr>
-                <tr>
-                    <td>Win</td>
-                    <td class="center"><a
-                            href="https://moonshine-ide.com/downloads/releases/windows/Moonshine-2.4.0.exe"><i
-                                class="material-icons">file_download</i></a></td>
-                    <td class="center"><a href="https://moonshine-ide.com/downloads/releases/dev/windows/"
-                            target="_blank"><i class="material-icons">file_download</i></a></td>
-                </tr>
-                <tr>
-                    <td>MacOS</td>
-                    <td class="center"><a href="https://apps.apple.com/us/app/moonshine/id1099109346" target="_blank"><i
-                                class="material-icons">file_download</i></a></td>
-                    <td class="center"><a href="http://moonshine-ide.com/downloads/releases/dev/macos/"
-                            target="_blank"><i class="material-icons">file_download</i></a></td>
-                </tr>
-            </table>
-        </div>
+        {% include mega-button.html %}
 
         <!-- Screenshot -->
         <div id="screenshot" class="scaled-image" alt="Moonshine IDE screenshot"></div>
