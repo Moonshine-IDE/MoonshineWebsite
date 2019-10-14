@@ -1,40 +1,38 @@
-.sidenav li > a {
-  height: auto;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 8px 16px;
-}
+#sidenav-mobile {
+  
+  li {
 
-a.sidenav-trigger {
-  margin: 0px;
-}
+    a {
+      height: auto;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 16px;
+      color: $east-bay;
 
-#sidenav-mobile li > a {
-  padding: 16px;
-  color: #41567F;
-}
-
-#sidenav-mobile li > a.active {
-  font-weight: 600;
+      &.active {
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 #sidenav-desktop {
   padding: 16px;
-}
 
-#sidenav-desktop li > a {
-  color: #41567F;
-}
+  li {
+    padding: 8px;
+    word-wrap: break-word;
 
-#sidenav-desktop li > a:hover {
-  color: #A0ABBF;
-}
+    a {
+      color: $east-bay;
 
-#sidenav-desktop li > a.active {
-  font-weight: 600;
-}
+      &:hover {
+        color: mix(white, $east-bay, 50%);
+      }
 
-#sidenav-desktop li {
-  padding: 8px;
-  word-wrap: break-word;
+      &.active {
+        font-weight: 600;
+      }
+    }
+  }
 }
