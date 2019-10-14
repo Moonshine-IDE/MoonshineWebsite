@@ -18,3 +18,14 @@ body.theme-dark {
 .card.theme-dark a:hover {
   color: mix(white, $confetti, 50%) !important;
 }
+
+.input-field.theme-dark {
+  
+  input {
+    color: white;
+  }
+  
+  textarea {
+    color: white;
+  }
+}
