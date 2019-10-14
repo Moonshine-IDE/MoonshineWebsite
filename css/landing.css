@@ -6,24 +6,6 @@ textarea {
     color: white;
 }
 
-.tiles-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 24px;
-}
-
-@media screen and (min-width: 600px) {
-    .tiles-layout {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .tiles-layout {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
 .card {
     background-color: #2F3F46;
 }
