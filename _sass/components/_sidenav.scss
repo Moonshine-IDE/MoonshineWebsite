@@ -1,0 +1,40 @@
+.sidenav li > a {
+  height: auto;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 16px;
+}
+
+a.sidenav-trigger {
+  margin: 0px;
+}
+
+#sidenav-mobile li > a {
+  padding: 16px;
+  color: #41567F;
+}
+
+#sidenav-mobile li > a.active {
+  font-weight: 600;
+}
+
+#sidenav-desktop {
+  padding: 16px;
+}
+
+#sidenav-desktop li > a {
+  color: #41567F;
+}
+
+#sidenav-desktop li > a:hover {
+  color: #A0ABBF;
+}
+
+#sidenav-desktop li > a.active {
+  font-weight: 600;
+}
+
+#sidenav-desktop li {
+  padding: 8px;
+  word-wrap: break-word;
+}

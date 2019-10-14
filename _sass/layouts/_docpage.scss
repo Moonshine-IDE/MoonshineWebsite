@@ -1,0 +1,25 @@
+.docpage-layout {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-gap: 48px;
+  grid-template-areas: "sidebar cnt";
+}
+
+@media screen and (max-width: 992px) {
+  .docpage-layout {
+      grid-template-columns: auto;
+      grid-gap: 48px;
+      grid-template-areas: "cnt";
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  overflow-y: scroll;
+  width: 300px;
+}
+
+.content {
+  grid-area: cnt;
+}

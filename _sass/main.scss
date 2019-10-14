@@ -12,9 +12,13 @@
 @import
   'components/navbar',
   'components/mega-button',
-  'components/banner',
   'components/tiles',
-  'components/adaptive-card';
+  'components/adaptive-card',
+  'components/sidenav';
+
+@import
+  'layouts/banner',
+  'layouts/docpage';
 
 @import 
   'themes/default', 
