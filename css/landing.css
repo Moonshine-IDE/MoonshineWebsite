@@ -6,12 +6,6 @@ textarea {
     color: white;
 }
 
-h2 {
-    font-size: 2em;
-    font-weight: 200;
-    margin: 1em;
-}
-
 #banner {
     background-image: url("../images/andromeda-wide.jpg");
     background-position: center;

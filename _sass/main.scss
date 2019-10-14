@@ -5,10 +5,10 @@
   'vendors/materialize';
 
 @import
-  'base/reset';
+  'base/reset',
+  'base/typography';
 
 @import
-  'components/header',
   'components/navbar',
   'components/mega-button';
 
