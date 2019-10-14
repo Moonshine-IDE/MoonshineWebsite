@@ -6,7 +6,7 @@
   grid-template-areas: "sidebar cnt";
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .docpage-layout {
       grid-template-columns: auto;
       grid-gap: 48px;

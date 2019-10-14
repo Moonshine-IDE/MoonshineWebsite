@@ -21,7 +21,7 @@
       "screen";
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .banner-layout {
       width: 85%;
       margin: 48px auto;
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (min-width: 993px) {
+@media (min-width: 993px) {
   .banner-layout {
       width: 70%;
   }

@@ -27,7 +27,7 @@
     padding: 16px;
 }
 
-@media screen and (min-width: 500px) {
+@media (min-width: 500px) {
     .adaptive-card {
         grid-template-columns: 35% 65%;
         grid-template-rows: auto 1fr auto;
@@ -60,7 +60,7 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
     .adaptive-card span.card-title {
         font-size: 2.5rem;
         font-weight: 400;
