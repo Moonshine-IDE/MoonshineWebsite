@@ -1,5 +1,6 @@
 @import
-  'abstracts/variables';
+  'abstracts/variables',
+  'abstracts/helpers';
 
 @import 
   'vendors/materialize';
@@ -10,7 +11,8 @@
 
 @import
   'components/navbar',
-  'components/mega-button';
+  'components/mega-button',
+  'components/banner';
 
 @import 
   'themes/default', 

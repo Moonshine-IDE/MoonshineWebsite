@@ -13,7 +13,7 @@ layout: landing
         {% include mega-button.html %}
 
         <!-- Screenshot -->
-        <div id="screenshot" class="scaled-image" alt="Moonshine IDE screenshot"></div>
+        <div class="screenshot scaled-image" alt="Moonshine IDE screenshot"></div>
 
     </div>
 </div>
@@ -197,7 +197,7 @@ layout: landing
 <script>
 
     function detectOS() {
-        var downloadButtons = document.querySelectorAll('.download-button');
+        var downloadButtons = document.querySelectorAll('.download-button > .mega-button-content');
         var downloadSpans = document.querySelectorAll('.download-button-span-2');
 
         if (navigator.appVersion.indexOf("Win") != -1) {
