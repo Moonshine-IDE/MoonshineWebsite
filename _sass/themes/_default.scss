@@ -6,3 +6,15 @@ body.theme-dark {
 .header.theme-dark a {
   color: white;
 }
+
+.card.theme-dark {
+  background-color: $limed-spruce;
+}
+
+.card.theme-dark a {
+  color: $confetti !important;
+}
+
+.card.theme-dark a:hover {
+  color: mix(white, $confetti, 50%) !important;
+}

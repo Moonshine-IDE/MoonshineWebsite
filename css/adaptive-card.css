@@ -1,3 +1,7 @@
+.cards-layout {
+    margin-top: 3em;
+  }
+
 .adaptive-card {
     display: grid;
     grid-template-columns: auto;
