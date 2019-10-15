@@ -1,12 +1,16 @@
 .social-layout {
   margin-top: 48px;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  gap: 48px;
 }
 
 .newsletter {
-  max-width: 350px;
+  width: 350px;
+  justify-self: right;
 }
 
 .names {
@@ -24,4 +28,9 @@
 
 .subscribe-button {
   margin-top: 48px;
+}
+
+.social-media {
+  width: 350px;
+  justify-self: left;
 }
