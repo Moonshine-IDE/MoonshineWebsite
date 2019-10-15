@@ -20,6 +20,11 @@
   width: 300px;
 }
 
-.content {
+.docs-content {
   grid-area: cnt;
+}
+
+.docs-content img {
+  width: 100%;
+  height: auto;
 }
