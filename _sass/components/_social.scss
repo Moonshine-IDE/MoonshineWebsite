@@ -1,29 +1,35 @@
 .social-layout {
   margin-top: 48px;
   margin-bottom: 48px;
+  display: grid;
+  gap: 48px;
   margin-left: auto;
   margin-right: auto;
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 48px;
+
+  @media (max-width: 1071px) {
+    width: 350px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "newsletter" 
+      "social";
+  }
+  
+  @media (min-width: 1070px) {
+    width: 748px;
+    grid-template-columns: 350px 350px;
+    grid-template-areas: 
+      "newsletter social";
+  }
 }
 
 .newsletter {
-  width: 350px;
-  justify-self: right;
+  grid-area: newsletter;
 }
 
 .names {
-  display: flex;
-  flex-direction: row;
-}
-
-.first-name {
-  margin-right: 10px;
-}
-
-.last-name {
-  margin-left: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 24px;
 }
 
 .subscribe-button {
@@ -31,8 +37,7 @@
 }
 
 .social-media {
-  width: 350px;
-  justify-self: left;
+  grid-area: social;
 }
 
 .row-1 {
@@ -49,11 +54,11 @@
 }
 
 .social-media i {
-  font-size: 96px;
+  font-size: 88px;
   margin: 8px;
-  color: $confetti;
+  color: white;
 
   &:hover {
-    color: white;
+    color: $confetti;
   }
 }
