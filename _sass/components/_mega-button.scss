@@ -17,6 +17,7 @@
   border-bottom-left-radius: 0px;
   display: grid;
   align-items: center;
+  color: black;
 }
 
 .dropdown-content {
@@ -26,7 +27,7 @@
 
 .dropdown-content tr th {
   padding: 10px 20px;
-  background-color: #EEEEEE;
+  background-color: $gallery;
   border-radius: 0px;
 }
 
@@ -35,5 +36,5 @@
 }
 
 .dropdown-content i {
-  color: #E5CA50;
+  color: $confetti;
 }

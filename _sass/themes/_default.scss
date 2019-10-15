@@ -1,0 +1,31 @@
+body.theme-dark {
+  background-color: $timber-green;
+  color: white;
+}
+
+.header.theme-dark a {
+  color: white;
+}
+
+.card.theme-dark {
+  background-color: $limed-spruce;
+}
+
+.card.theme-dark a {
+  color: $confetti !important;
+}
+
+.card.theme-dark a:hover {
+  color: mix(white, $confetti, 50%) !important;
+}
+
+.input-field.theme-dark {
+  
+  input {
+    color: white;
+  }
+  
+  textarea {
+    color: white;
+  }
+}
