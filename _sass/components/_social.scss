@@ -1,0 +1,27 @@
+.social-layout {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.newsletter {
+  max-width: 350px;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-name {
+  margin-right: 10px;
+}
+
+.last-name {
+  margin-left: 10px;
+}
+
+.subscribe-button {
+  margin-top: 48px;
+}
