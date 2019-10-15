@@ -3,6 +3,15 @@ body.theme-dark {
   color: white;
 }
 
+.btn {
+  background-color: mix(white, $confetti, 50%);
+  color: black;
+
+  &:hover {
+    background-color: $confetti;
+  }
+}
+
 .header.theme-dark a {
   color: white;
 }
@@ -12,11 +21,11 @@ body.theme-dark {
 }
 
 .card.theme-dark a {
-  color: $confetti !important;
+  color: mix(white, $confetti, 50%) !important;
 }
 
 .card.theme-dark a:hover {
-  color: mix(white, $confetti, 50%) !important;
+  color: $confetti !important;
 }
 
 .input-field.theme-dark {
