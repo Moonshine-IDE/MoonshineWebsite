@@ -56,7 +56,7 @@
 .social-media i {
   font-size: 88px;
   margin: 8px;
-  color: white;
+  color: mix(white, $confetti, 50%);
 
   &:hover {
     color: $confetti;
