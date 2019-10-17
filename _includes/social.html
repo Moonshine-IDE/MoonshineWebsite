@@ -7,28 +7,19 @@
 
                 <span class="card-title">Subscribe to our newsletter</span>
 
-                <div class="names">                    
-                    
-                    <div class="first-name input-field theme-dark">
-                        <input id="first-name" type="text" class="validate">
-                        <label for="first-name">First Name</label>
-                    </div>
-
-                    <div class="last-name input-field theme-dark">
-                        <input id="last-name" type="text" class="validate">
-                        <label for="last-name">Last Name</label>
-                    </div>
-
-                </div>
-
-                <div class="input-field theme-dark">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                </div>
-
-                <div class="subscribe-button center">
-                    <button type="submit" class="btn">Subscribe</button>
-                </div>
+                <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+                  <!-- First name -->
+                  firstname: <input type="text" name="first_name"/><br/>
+                  <!-- Last name -->
+                  lastname: <input type="text" name="last_name"/><br/>
+                  <!-- Email field (required) -->
+                  email: <input type="text" name="email"/><br/>
+                  <!-- List token -->
+                  <!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+                  <input type="hidden" name="campaign_token" value="KMd3X" />
+                  <!-- Subscriber button -->
+                  <input type="submit" value="Subscribe"/>
+                </form>
 
             </div>
         </div>
