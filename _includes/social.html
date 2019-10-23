@@ -7,28 +7,34 @@
 
                 <span class="card-title">Subscribe to our newsletter</span>
 
-                <div class="names">                    
-                    
+                <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+                  
+                  <div class="names">
+                
                     <div class="first-name input-field theme-dark">
-                        <input id="first-name" type="text" class="validate">
-                        <label for="first-name">First Name</label>
+                      <input id="first-name" type="text" class="validate" name="first_name">
+                      <label for="first-name">First Name</label>
                     </div>
-
+                
                     <div class="last-name input-field theme-dark">
-                        <input id="last-name" type="text" class="validate">
-                        <label for="last-name">Last Name</label>
+                      <input id="last-name" type="text" class="validate" name="last_name">
+                      <label for="last-name">Last Name</label>
                     </div>
-
-                </div>
-
-                <div class="input-field theme-dark">
-                    <input id="email" type="email" class="validate">
+                
+                  </div>
+                
+                  <div class="input-field theme-dark">
+                    <input id="email" type="email" class="validate" name="email">
                     <label for="email">Email</label>
-                </div>
+                  </div>
 
-                <div class="subscribe-button center">
-                    <button type="submit" class="btn">Subscribe</button>
-                </div>
+                  <input type="hidden" name="campaign_token" value="KMd3X" />
+                
+                  <div class="subscribe-button center">
+                    <button type="submit" value="Subscribe" class="btn">Subscribe</button>
+                  </div>
+
+                </form>
 
             </div>
         </div>
