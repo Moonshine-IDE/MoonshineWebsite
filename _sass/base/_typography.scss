@@ -1,14 +1,47 @@
+h6 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 2.0em;
+}
+
 h1 {
+  font-size: 2.2em;
+}
+
+h1.title {
   font-size: 2em;
   font-weight: 600;
   line-height: 64px;
   margin: 0em 1rem;
 }
 
-h2 {
+h2.slogan {
   font-size: 2em;
   font-weight: 200;
   margin: 1em;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+.text-content ul > li {
+  list-style-type: disc;
+  margin-left: 1em;
 }
 
 .card i {
