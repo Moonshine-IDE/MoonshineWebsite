@@ -10,7 +10,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Custom SASS styles-->
-    <link rel="stylesheet" href="/css/main.css"> 
+    <link rel="stylesheet" href="/css/main.css">
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -20,13 +20,13 @@
 
     {% include header.html theme='theme-light' %}
     {% include navbar.html %}
-    {% include sidenav-mobile.html %}    
+    {% include sidenav-mobile.html %}
 
     <div class="container docpage-layout">
         <div id="sidenav-wrapper" class="sidebar sidenav-wrapper hide-on-med-and-down">
             {% include sidenav-desktop.html %}
         </div>
-        <div class="docs-content">
+        <div class="docs-content text-content">
             {{ content }}
         </div>
     </div>
@@ -49,7 +49,7 @@
 
         $(document).ready(function () {
             $('#sidenav-mobile').sidenav();
-            adjustSidenav();            
+            adjustSidenav();
         });
 
         $(window).resize(function () {
@@ -61,13 +61,13 @@
         });
 
         document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.dropdown-trigger');
-        var options = {
-            alignment: 'right',
-            coverTrigger: false
-        };
-        var instances = M.Dropdown.init(elems, options);
-    });
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var options = {
+                alignment: 'right',
+                coverTrigger: false
+            };
+            var instances = M.Dropdown.init(elems, options);
+        });
 
     </script>
 
