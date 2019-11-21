@@ -35,6 +35,17 @@
   padding: 10px 20px;
 }
 
-.dropdown-content i {
-  color: $confetti;
+.dropdown-content a {
+  color: mix(black, $confetti, 20%);
+
+  &:hover {
+    color: mix(black, $confetti, 00%);
+  }
+
+  i {
+    color: mix(white, $confetti, 20%);
+    &:hover {
+      color: mix(white, $confetti, 00%);
+    }
+  }
 }
