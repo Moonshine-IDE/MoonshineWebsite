@@ -1,6 +1,6 @@
 ---
 title: Moonshine IDE - Download
-layout: faq
+layout: default
 permalink: download/
 ---
 Download All Versions of Moonshine IDE

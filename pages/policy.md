@@ -1,6 +1,6 @@
 ---
 title: Moonshine IDE - Send Us Your Feedback
-layout: faq
+layout: default
 ---
 Privacy Policy
 ==============
