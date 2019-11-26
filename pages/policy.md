@@ -1,5 +1,6 @@
 ---
 title: Moonshine IDE - Send Us Your Feedback
+permalink: privacy-policy/
 layout: default
 ---
 Privacy Policy
