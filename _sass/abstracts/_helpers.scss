@@ -5,3 +5,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
