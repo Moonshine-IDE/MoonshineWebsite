@@ -49,3 +49,10 @@
     }
   }
 }
+
+.mega-button table {
+  @media #{$small-and-down} {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+}
