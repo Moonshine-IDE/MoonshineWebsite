@@ -1,0 +1,61 @@
+- question: 
+    Why migrate Flex applications?
+  answer: 
+    Adobe has <a href="https://theblog.adobe.com/adobe-flash-update/" target="_blank">announced</a> that it will end its support of Adobe Flash on Dec 31, 2020. Flex will still run on desktop and mobile using Adobe AIR (<a href="https://airsdk.harman.com/" target="_blank">Harman</a>), but if your application runs in a web browser it's time to move on.
+
+- question:
+    Why use Royale?
+  answer:
+    For the same reasons you chose Flex. Apache Royale® is based on a proven toolchain that includes an AS3/MXML compiler, <a href="https://apache.github.io/royale-docs/get-started/development-tools" target="_blank">quality IDEs</a>, library packages, modules, themes, and more. Most of the tools will be very familiar to your team as they are similar to what they were using in Flex.
+    <br/><br/>
+    And there's another reason&colon; a lot of the code in your existing application will just run as it is.
+
+- question:
+    Does Royale support 3rd party JS libraries?
+  answer:
+    Yes. Royale can interface with 3rd party JS libraries and incorporate them
+    in its toolchain.
+
+- question:
+    Can I do the migration by myself?
+  answer:
+    Yes. <a href="https://royale.apache.org/" target="_blank">Apache Royale®</a> is an open source project that is hosted on <a href="https://github.com/apache/royale-asjs" target="_blank">GitHub</a>. It's free and is backed by a dedicated community of developers. You are encouraged to get <a href="https://royale.apache.org/mailing-lists/" target="_blank">involved and join</a>.
+    <br/><br/>
+    We can still offer you paid support depending on your needs. This can include training, regular meetings, writing missing components, or adding a feature to your <a href="https://moonshine-ide.com/">Moonshine IDE</a>.
+
+- question:
+    Can you do the migration for me?
+  answer:
+    Yes. We have a team of developers who have already successfully migrated
+    applications from Flex to Royale. Some of them are key contributors to
+    the Royale framework, and all of them have a vast experience in Flex.
+    This is a turn-key solution with a fixed cost and milestones for
+    intermediate deliveries. To get an estimate for the work needed and
+    the cost, we can start by signing an NDA so that you can send us your
+    source code and we can analyze it. We can then send you a proposal that
+    contains the cost, the schedule, the deliverables, and the terms.
+
+- question:
+    I don't trust NDAs, but I don't have the resources to do it all by myself. Is there a third option?
+  answer:
+    Yes, there is. The Apache Royale <a href="https://github.com/apache/royale-compiler" target="_blank">compiler</a> can help you create an <a href="https://github.com/apache/royale-asjs/wiki/Generating-an-API-Report" target="_blank">API report</a> based on your current Flex code. You can generate these reports, review them to make sure they contain nothing sensitive, and send them to us. This can serve as a rough estimate for the amount of work involved in emulating the needed APIs in Royale. Note that some APIs are misused, and some can be worked around, so these reports tend to overestimate the scope of the project. But if protecting your internal data is paramount then this can be a good compromise.
+
+- question:
+    After the migration do you offer a support plan?
+  answer:
+    Yes. Our premium customer support center is employed 24/7. Tickets opened by premium
+    customers are answered by a member of the development team within 24
+    hours.
+
+- question:
+    Can you tell us more about your company?
+  answer:
+    (### This should be filled in by Justin)
+
+- question:
+    How do I get started?
+  answer:
+    To get an estimate of the work needed and the cost, please contact us
+    at (### sales email, forwarded to Yishay, Justin, and Piotr). We will try
+    to gather as much information on your application as possible, and work
+    with you to send a proposal.
