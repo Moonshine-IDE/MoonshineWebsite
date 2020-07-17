@@ -27,7 +27,7 @@ General Policies
 The following policies illustrate specific guidelines and procedures for the consistent treatment of Customers in the ordinary course of business. These electronic policies apply to all customers.
 
 - [Acceptable Use Policy](/acceptable-use-policy/)
-- Account Isolation Policy
+- [Account Isolation Policy](/account-isolation-policy/)
 - Billing & Payment Policy
 - Cancellation Policy
 - Contact Information Policy
