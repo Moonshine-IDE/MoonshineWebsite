@@ -9,7 +9,7 @@ Service Level Agreement (SLA)
 Focus on Quality
 ---
 
-STARTcloud, Inc. understands the role it plays in customers’ success. STARTcloud places high expectations on itself and strives to provide quality and affordable service. You will see this reflected in STARTcloud’s service and customer support goals. This Agreement demonstrates the confidence STARTcloud places in its ability to deliver world-class managed hosting services. The primary focus is to treat you the same way STARTcloud expects to be treated. Should you ever find this not to be the case, please contact sales@moonshine-ide.com or +1.217.356.2999.
+STARTcloud, Inc. understands the role it plays in customers’ success. STARTcloud places high expectations on itself and strives to provide quality and affordable service. You will see this reflected in STARTcloud’s service and customer support goals. This Agreement demonstrates the confidence STARTcloud places in its ability to deliver world-class managed hosting services. The primary focus is to treat you the same way STARTcloud expects to be treated. Should you ever find this not to be the case, please contact sales@moonshine-ide.com or +1 302-636-5401.
 
 Hours of Operation
 ---
@@ -75,7 +75,7 @@ The official channel for obtaining technical support from STARTcloud is via e-ma
 
 STARTcloud takes no responsibility for the reliability of e-mail transmission. If a response was sent to the Customer by STARTcloud and can be found in the STARTcloud Contact Management system, customer will not qualify for credits regardless of whether or not the Customer actually received the response from STARTcloud.
 
-Customers may also attempt to obtain support by phone during normal business hours by calling 888.356.2999 (U.S.) or +1.217.356.2999 (international); however, the official channel for support remains via e-mail. STARTcloud makes no guarantee of the availability of phone support at any time. In all cases, for the safety of customers, only registered technical contacts are eligible to open support incidents for an account.
+Customers may also attempt to obtain support by phone during normal business hours by calling 888.356.2999 (U.S.) or +1 302-636-5401 (international); however, the official channel for support remains via e-mail. STARTcloud makes no guarantee of the availability of phone support at any time. In all cases, for the safety of customers, only registered technical contacts are eligible to open support incidents for an account.
  
 ### Remedy & Credits 
 
