@@ -163,3 +163,7 @@ Provider grants Customer the use of revocable, non-portable network IP addresses
 ##### 14. Signatures. 
 
 By initialing all pages and signing below, the Customer signifies that he is authorized to enter into a contract on behalf of the company represented. Further, the Customer acknowledges that he has read, understands and agrees to the terms and conditions of this Agreement.
+
+Rev. 20200717  
+Posted: July 17, 2020  
+In Effect: July 17, 2020

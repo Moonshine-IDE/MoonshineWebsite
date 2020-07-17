@@ -15,6 +15,6 @@ STARTcloud may also take steps to isolate your account should you be found in vi
 
 This document may be modified at any time and will be in effect 30 days after online posting. 
 
-Rev. 20060901  
-Posted: December 1st, 2006  
-In Effect: January 1st, 2007
+Rev. 20200717  
+Posted: July 17, 2020  
+In Effect: July 17, 2020

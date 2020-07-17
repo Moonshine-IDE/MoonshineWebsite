@@ -18,6 +18,6 @@ STARTcloud will contact you within three business days after you submit your req
 
 This document may be modified at any time and will be in effect 30 days after online posting. 
 
-Rev. 20150110  
-Posted: December 1st, 2006  
-In Effect: January 1st, 2007  
+Rev. 20200717  
+Posted: July 17, 2020  
+In Effect: July 17, 2020 

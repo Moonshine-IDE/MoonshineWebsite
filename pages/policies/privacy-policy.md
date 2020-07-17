@@ -247,3 +247,7 @@ If you have any questions about this Privacy Policy, please contact us:
 
 *   By email: support@moonshine-ide.com
 *   By phone number: +1-217-356-2888
+
+Rev. 20200717  
+Posted: July 17, 2020  
+In Effect: July 17, 2020

@@ -77,6 +77,6 @@ Modifications
 
 This document may be modified at any time and will be in effect 30 days after online posting. 
 
-Rev. 20200416  
-Posted: April 16, 2020  
-In Effect: May 15, 2020
+Rev. 20200717  
+Posted: July 17, 2020  
+In Effect: July 17, 2020
