@@ -30,7 +30,7 @@ The following policies illustrate specific guidelines and procedures for the con
 - [Account Isolation Policy](/account-isolation-policy/)
 - [Billing & Payment Policy](/billing-payment-policy/)
 - [Cancellation Policy](/cancellation-policy/)
-- Contact Information Policy
+- [Contact Information Policy](/contact-information-policy)
 
  
 ### Notification of Changes
