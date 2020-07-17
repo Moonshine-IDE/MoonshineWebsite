@@ -22,7 +22,7 @@ This Master Service Agreement (“Agreement”) is made and entered into by and 
 
 1.1 – Provider shall provide the goods and services as detailed in the Proposal (Exhibit A) above. 
 
-1.2 Service Level Agreement – Provider’s responsibilities for providing the services outlined in the attached Proposal (Exhibit A) shall be governed by the Service Level Agreement (“SLA”). The current SLA can be found at Prominic.NET/SLA, and shall be subject to change upon thirty (30) days written notice by Provider. 
+1.2 Service Level Agreement – Provider’s responsibilities for providing the services outlined in the attached Proposal (Exhibit A) shall be governed by the Service Level Agreement (“SLA”). The current SLA can be found at https://moonshine-ide.com/sla, and shall be subject to change upon thirty (30) days written notice by Provider. 
 
 1.3 Additional Services – Any follow on or additional work, including consulting services, that is not contemplated by this Agreement and is requested by Customer shall be performed on a time and materials basis at Provider’s then current rates for such work. 
 
@@ -34,7 +34,7 @@ This Master Service Agreement (“Agreement”) is made and entered into by and 
 
 2.2 Taxes – In addition to the charges set forth above, Customer shall pay all applicable federal, state, local and other taxes which may be imposed by any taxing authority. 
 
-2.3 Payment – Customer will be billed in accordance with Provider’s Billing & Payment Policy, which is found at http://www.Prominic.NET/LegalPolicies. Unless otherwise agreed in advance, the fees for any follow on or additional work not described within this Agreement and requested by Customer shall be performed on a time and materials basis at Provider’s then current rates for such work. 
+2.3 Payment – Customer will be billed in accordance with Provider’s Billing & Payment Policy, which is found at https://www.moonshine-ide.com/legal-policies. Unless otherwise agreed in advance, the fees for any follow on or additional work not described within this Agreement and requested by Customer shall be performed on a time and materials basis at Provider’s then current rates for such work. 
 
 ##### 3. Automatic Renewal. 
 
@@ -44,11 +44,11 @@ This agreement shall automaticially renew at the end of THE initial and any subs
 
 4.1 Termination by Provider – This Agreement may be terminated: 
 
-4.1.1 if Customer fails to pay within 15 days of Provider giving notice to Customer, at the address Prominic has on file for Customer, that Customer has failed to pay any charges or taxes, or 
+4.1.1 if Customer fails to pay within 15 days of Provider giving notice to Customer, at the address STARTcloud has on file for Customer, that Customer has failed to pay any charges or taxes, or 
 
 4.1.2 immediately if Customer becomes insolvent or seeks protection, voluntarily or involuntarily, under any bankruptcy law. 
 
-4.2 Termination by Customer – This Agreement may be terminated upon 30 days prior notice by an authorized representative of Customer viaProminic.NET/CloseAccount. In the event the website in the preceding sentence is not accessible by the Customer, then an authorized representative of the Customer may give notice of termination as defined in Section 13. Notice will be deemed effective when actually received by Provider. 
+4.2 Termination by Customer – This Agreement may be terminated upon 30 days prior notice by an authorized representative of Customer via https://moonshine-ide.com/closeaccount. In the event the website in the preceding sentence is not accessible by the Customer, then an authorized representative of the Customer may give notice of termination as defined in Section 13. Notice will be deemed effective when actually received by Provider. 
 
 4.3 – In the event of any termination/cancellation of this Agreement, Provider may: 
 

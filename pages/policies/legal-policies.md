@@ -1,6 +1,6 @@
 ---
 title: Legal Agreements and Policies
-permalink: policies/
+permalink: legal-policies/
 layout: default
 ---
 Legal Agreements and Policies
@@ -13,12 +13,12 @@ The Master Services Agreement (“MSA”) governs the relationship between Custo
  
 ### [Service Level Agreement](/sla/)
 
-The Service Level Agreement (“SLA”) defines the service parameters Prominic provides, and the remedies available should Prominic fail to meet those levels. All customers are covered under the electronic version of the SLA.
+The Service Level Agreement (“SLA”) defines the service parameters STARTcloud provides, and the remedies available should STARTcloud fail to meet those levels. All customers are covered under the electronic version of the SLA.
 
  
 ### [Privacy Policy](/privacy-policy/)
 
-The Privacy Policy defines Prominic’s commitment towards protecting clients’ personal and sensitive information. Prominic does not sell or rent personal information to third parties!
+The Privacy Policy defines STARTcloud’s commitment towards protecting clients’ personal and sensitive information. STARTcloud does not sell or rent personal information to third parties!
 
  
 General Policies
@@ -35,4 +35,4 @@ The following policies illustrate specific guidelines and procedures for the con
  
 ### Notification of Changes
 
-Prominic reserves the right to change its agreements and policies at any time. In the event of any change, Prominic will provide not less than 30 days notice to its Customers via e-mail or as posted on this webpage.
+STARTcloud reserves the right to change its agreements and policies at any time. In the event of any change, STARTcloud will provide not less than 30 days notice to its Customers via e-mail or as posted on this webpage.
