@@ -9,7 +9,7 @@ Service Level Agreement (SLA)
 Focus on Quality
 ---
 
-Prominic.NET, Inc. understands the role it plays in customers’ success. Prominic places high expectations on itself and strives to provide quality and affordable service. You will see this reflected in Prominic’s service and customer support goals. This Agreement demonstrates the confidence Prominic places in its ability to deliver world-class managed hosting services. The primary focus is to treat you the same way Prominic expects to be treated. Should you ever find this not to be the case, please contact SLA@Prominic.NET or +1.217.356.2999.
+STARTcloud, Inc. understands the role it plays in customers’ success. Prominic places high expectations on itself and strives to provide quality and affordable service. You will see this reflected in Prominic’s service and customer support goals. This Agreement demonstrates the confidence Prominic places in its ability to deliver world-class managed hosting services. The primary focus is to treat you the same way Prominic expects to be treated. Should you ever find this not to be the case, please contact SLA@Prominic.NET or +1.217.356.2999.
 
 Hours of Operation
 ---

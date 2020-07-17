@@ -8,7 +8,7 @@ Legal Agreements and Policies
 
 ### [Master Services Agreement](/msa/)
 
-The Master Services Agreement (“MSA”) governs the relationship between Customers and Prominic.NET, Inc. By default, any Customer who does not manually execute a contract (formerly called the “Internet Service Plan Agreement”) agrees to the terms and conditions of service provided by the electronic version of the MSA.
+The Master Services Agreement (“MSA”) governs the relationship between Customers and STARTcloud, Inc. By default, any Customer who does not manually execute a contract (formerly called the “Internet Service Plan Agreement”) agrees to the terms and conditions of service provided by the electronic version of the MSA.
 
  
 ### [Service Level Agreement](/sla/)

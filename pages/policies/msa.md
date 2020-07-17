@@ -6,7 +6,7 @@ layout: default
 Master Service Agreement (MSA)
 ===
 
-This Master Service Agreement (“Agreement”) is made and entered into by and between Prominic.NET, Inc., an Illinois Corporation (“Provider”), and “Customer,” as indicated in Proposal, attached as “Exhibit A” and made part of this agreement. 
+This Master Service Agreement (“Agreement”) is made and entered into by and between STARTcloud, Inc., an Illinois Corporation (“Provider”), and “Customer,” as indicated in Proposal, attached as “Exhibit A” and made part of this agreement. 
 
 **WHEREAS**, Provider provides a variety of technical and consulting services regarding the sourcing, development, installation and maintenance of hardware, firmware, software, and communications facilities relating to data management and network operations; and 
 
@@ -148,7 +148,7 @@ Provider grants Customer the use of revocable, non-portable network IP addresses
 
 13.1.1 – Notices to Provider delivered to: 
 
-    Prominic.NET, Inc.
+    STARTcloud, Inc.
     P.O. Box 7301
     Champaign, Illinois 61826-7301
     Attention: Contract Administrator

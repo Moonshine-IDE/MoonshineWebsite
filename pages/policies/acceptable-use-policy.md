@@ -5,7 +5,7 @@ layout: default
 ---
 Acceptable Use Policy
 ===
-By subscribing to a Prominic.NET, Inc. service, you agree not to use, or permit the use of that service, for any purpose that Prominic finds unacceptable. For the purposes of this policy, Prominic considers the transmission of spam to be unacceptable. IMPORTANT NOTE: IF YOU ARE FOUND IN VIOLATION OF THIS ACCEPTABLE USE POLICY, YOUR ACCOUNT MAY BE SUSPENDED OR TERMINATED WITHOUT NOTICE, AND WITHOUT REFUND, AT THE SOLE DISCRETION OF PROMINIC.
+By subscribing to a STARTcloud, Inc. service, you agree not to use, or permit the use of that service, for any purpose that Prominic finds unacceptable. For the purposes of this policy, Prominic considers the transmission of spam to be unacceptable. IMPORTANT NOTE: IF YOU ARE FOUND IN VIOLATION OF THIS ACCEPTABLE USE POLICY, YOUR ACCOUNT MAY BE SUSPENDED OR TERMINATED WITHOUT NOTICE, AND WITHOUT REFUND, AT THE SOLE DISCRETION OF PROMINIC.
  
 UNLAWFUL USE
 --- 
