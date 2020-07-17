@@ -29,7 +29,7 @@ The following policies illustrate specific guidelines and procedures for the con
 - [Acceptable Use Policy](/acceptable-use-policy/)
 - [Account Isolation Policy](/account-isolation-policy/)
 - [Billing & Payment Policy](/billing-payment-policy/)
-- Cancellation Policy
+- [Cancellation Policy](/cancellation-policy/)
 - Contact Information Policy
 
  
