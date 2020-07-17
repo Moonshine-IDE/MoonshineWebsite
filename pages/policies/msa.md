@@ -6,7 +6,7 @@ layout: default
 Master Service Agreement (MSA)
 ===
 
-This Master Service Agreement (“Agreement”) is made and entered into by and between STARTcloud, Inc., an Illinois Corporation (“Provider”), and “Customer,” as indicated in Proposal, attached as “Exhibit A” and made part of this agreement. 
+This Master Service Agreement (“Agreement”) is made and entered into by and between STARTcloud, Inc., an Delaware Corporation (“Provider”), and “Customer,” as indicated in Proposal, attached as “Exhibit A” and made part of this agreement. 
 
 **WHEREAS**, Provider provides a variety of technical and consulting services regarding the sourcing, development, installation and maintenance of hardware, firmware, software, and communications facilities relating to data management and network operations; and 
 
@@ -124,7 +124,7 @@ Provider grants Customer the use of revocable, non-portable network IP addresses
 
 11.2 – Provider may assign its rights and obligations hereunder to any successor to all or any substantial part of its business pertaining to this Agreement. Customer may assign this Agreement, together with all rights and obligations herein, solely to a successor to all or any substantial part of its business. 
 
-11.3 – This Agreement shall be interpreted in its entirety in accordance with the substantive laws of the state of Illinois. In the event any provision of this Agreement is found unenforceable under applicable law, the remaining provisions of this Agreement shall nonetheless be enforced to the maximum extent permitted by law consistent with the fundamental intent of the parties. 
+11.3 – This Agreement shall be interpreted in its entirety in accordance with the substantive laws of the state of Delaware. In the event any provision of this Agreement is found unenforceable under applicable law, the remaining provisions of this Agreement shall nonetheless be enforced to the maximum extent permitted by law consistent with the fundamental intent of the parties. 
 
 11.4 – The waiver by either party of a breach or default in any of the provisions of this Agreement by the other party shall not be construed as a waiver of any succeeding breach of the same or other provisions; nor shall any delay or omission on the part of either party to exercise or avail itself of any right, power, or privilege that it has or may have hereunder operate as a waiver of any breach or default by the other party. The prevailing party in any legal proceeding brought by one party against the other party and arising out of or in connection with this Agreement shall be entitled to recover its reasonable legal expenses, including court costs and reasonable attorney fees. 
 
@@ -140,7 +140,7 @@ Provider grants Customer the use of revocable, non-portable network IP addresses
 
 12.1 – Any disputes that arise between the parties with respect to the performance of this Agreement shall be submitted to binding arbitration by the American Arbitration Association to be determined and resolved by said Association under its rules and procedures in effect at the time of submission and the parties hereby agree to share equally in the costs of said arbitration without respect to the outcome. 
 
-12.2 – The final arbitration decision shall be enforceable only through the courts of the state of Illinois located in Champaign County, Illinois, USA. 
+12.2 – The final arbitration decision shall be enforceable only through the courts of the state of Delaware located in New Castle County, Delaware, USA. 
 
 ##### 13. Representation. 
 
@@ -149,12 +149,12 @@ Provider grants Customer the use of revocable, non-portable network IP addresses
 13.1.1 – Notices to Provider delivered to: 
 
     STARTcloud, Inc.
-    P.O. Box 7301
-    Champaign, Illinois 61826-7301
+    251 Little False Drive
+    Wilmington, Delaware 19808
     Attention: Contract Administrator
-    Phone: 217.356.2888
-    Fax: 217.356.3356
-    E-Mail: Support@Prominic.NET 
+    Phone: 302-636-5401
+    Fax: 302-636-5401
+    E-Mail: support@moonshine-ide.com
 
 13.1.2 – Notices to Customer will be delivered to the individual accepting this agreement, unless otherwise communicated in writing by that individual upon initial payment. 
 
