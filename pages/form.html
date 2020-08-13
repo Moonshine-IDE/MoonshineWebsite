@@ -8,14 +8,15 @@ layout: landing
 
         <div class="row">
             <div class="input-field theme-dark">
-                <input type="email" id="email" name="email" class="validate">
+                <input type="email" id="email" name="email" class="validate" required="" aria-required="true">
                 <label for="email">Your Email</label>
             </div>
         </div>
 
         <div class="row">
             <div class="input-field theme-dark">
-                <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                <textarea id="message" name="message" class="materialize-textarea validate" required=""
+                    aria-required="true"></textarea>
                 <label for="message">Your message</label>
             </div>
         </div>
