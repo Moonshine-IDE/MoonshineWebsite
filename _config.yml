@@ -15,3 +15,6 @@ exclude:
   - vendor
   - _build.sh
   - _serve.sh
+
+# Google Analytics
+google_analytics: G-PX9YVENNVH
