@@ -1,6 +1,6 @@
 ---
 title: Create and Build Web Projects
-permalink: docs/moonshine/create_and_build_web_projects
+permalink: /docs/moonshine/create_and_build_web_projects
 layout: docpage
 ---
 

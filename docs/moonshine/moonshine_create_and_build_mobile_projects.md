@@ -1,6 +1,6 @@
 ---
 title: Create and Build Mobile Projects
-permalink: docs/moonshine/create_and_build_mobile_projects
+permalink: /docs/moonshine/create_and_build_mobile_projects
 layout: docpage
 ---
 

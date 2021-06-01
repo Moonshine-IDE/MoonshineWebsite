@@ -1,6 +1,6 @@
 ---
 title: Apache Ant® build
-permalink: docs/moonshine/apache_ant_build
+permalink: /docs/moonshine/apache_ant_build
 layout: docpage
 ---
 
