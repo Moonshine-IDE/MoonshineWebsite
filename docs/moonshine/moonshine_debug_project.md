@@ -1,6 +1,6 @@
 ---
 title: Debug a Project in Moonshine
-folder: moonshine
+permalink: docs/moonshine/debug_project
 layout: docpage
 ---
 

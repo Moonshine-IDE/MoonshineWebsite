@@ -1,12 +1,7 @@
 <ul id="sidenav-mobile" class="sidenav sidenav-wrapper">
     {% for docpage in site.data.moonshine-docs %}
     <li>
-        {% assign url = "/docs/moonshine/" | append: docpage.folder | append: ".html" %}
-        {% if url == page.url %}
-            <a href={{ url }} class="active">{{ docpage.title }}</a>
-        {% else %}
-            <a href={{ url }}>{{ docpage.title }}</a>
-        {% endif %}
+        <a href={{ docpage.link }} class="{% if page.url == docpage.link %}active{% endif %}">{{ docpage.title }}</a>
     </li>
     {% endfor %}
 </ul>

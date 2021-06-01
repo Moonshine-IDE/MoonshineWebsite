@@ -1,6 +1,6 @@
 ---
 title: Create and Build Apache Royale® Projects
-folder: moonshine
+permalink: docs/moonshine/create_and_build_royale_projects
 layout: docpage
 ---
 

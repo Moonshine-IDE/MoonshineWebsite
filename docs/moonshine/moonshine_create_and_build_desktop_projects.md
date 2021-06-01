@@ -1,6 +1,6 @@
 ---
 title: Create and Build Desktop Projects
-folder: moonshine
+permalink: docs/moonshine/create_and_build_desktop_projects
 layout: docpage
 ---
 

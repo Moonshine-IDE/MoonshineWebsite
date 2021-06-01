@@ -1,20 +1,20 @@
 - title: "Set SDK"
-  folder: moonshine_set_sdk
+  link: /docs/moonshine/set_sdk
 
 - title: "Create and Build Projects for Desktop"
-  folder: moonshine_create_and_build_desktop_projects
+  link: /docs/moonshine/create_and_build_desktop_projects
 
 - title: "Create and Build Projects for Web"
-  folder: moonshine_create_and_build_web_projects
+  link: /docs/moonshine/create_and_build_web_projects
 
 - title: "Create and Build Projects for Mobile"
-  folder: moonshine_create_and_build_mobile_projects
+  link: /docs/moonshine/create_and_build_mobile_projects
 
 - title: "Create and Build Projects with Apache Royale"
-  folder: moonshine_create_and_build_royale_projects
+  link: /docs/moonshine/create_and_build_royale_projects
 
 - title: "Debugging"
-  folder: moonshine_debug_project
+  link: /docs/moonshine/debug_project
 
 - title: "Apache Ant Build"
-  folder: moonshine_apache_ant_build
+  link: /docs/moonshine/apache_ant_build
