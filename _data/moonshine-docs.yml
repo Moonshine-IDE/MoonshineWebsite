@@ -1,20 +1,31 @@
-- title: "Set SDK"
+- title: "Moonshien IDE"
   link: /docs/moonshine/set_sdk
+  subtree:
 
-- title: "Create and Build Projects for Desktop"
-  link: /docs/moonshine/create_and_build_desktop_projects
+  - title: "Set SDK"
+    link: /docs/moonshine/set_sdk
 
-- title: "Create and Build Projects for Web"
-  link: /docs/moonshine/create_and_build_web_projects
+  - title: "Create and Build Projects for Desktop"
+    link: /docs/moonshine/create_and_build_desktop_projects
 
-- title: "Create and Build Projects for Mobile"
-  link: /docs/moonshine/create_and_build_mobile_projects
+  - title: "Create and Build Projects for Web"
+    link: /docs/moonshine/create_and_build_web_projects
 
-- title: "Create and Build Projects with Apache Royale"
-  link: /docs/moonshine/create_and_build_royale_projects
+  - title: "Create and Build Projects for Mobile"
+    link: /docs/moonshine/create_and_build_mobile_projects
 
-- title: "Debugging"
-  link: /docs/moonshine/debug_project
+  - title: "Create and Build Projects with Apache Royale"
+    link: /docs/moonshine/create_and_build_royale_projects
 
-- title: "Apache Ant Build"
-  link: /docs/moonshine/apache_ant_build
+  - title: "Debugging"
+    link: /docs/moonshine/debug_project
+
+  - title: "Apache Ant Build"
+    link: /docs/moonshine/apache_ant_build
+
+- title: "Google reCAPTCHA"
+  link:
+  subtree:
+
+  - title: "Communication Overview and Registration"
+    link: /docs/recaptcha/communication-overview-and-registration
