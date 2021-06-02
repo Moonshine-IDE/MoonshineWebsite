@@ -1,7 +1,0 @@
-<ul id="sidenav-desktop">
-    {% for docpage in site.data.moonshine-docs %}
-    <li>
-        <a href={{ docpage.link }} class="{% if page.url == docpage.link %}active{% endif %}">{{ docpage.title }}</a>
-    </li>
-    {% endfor %}
-</ul>

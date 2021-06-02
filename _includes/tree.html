@@ -1,0 +1,10 @@
+<ul id="{{ include.id }}" class="tree {{ include.class }}">
+    {% for item in include.tree %}
+        <li><a href="{{ item.link }}" class="{% if item.link == page.url %}active{% endif %}">
+            {{ item.title }}
+        </a></li>
+        {% if item.subtree %}
+            {% include tree.html tree=item.subtree %}
+        {% endif %}
+    {% endfor %}
+</ul>

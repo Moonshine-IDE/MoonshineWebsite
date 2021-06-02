@@ -23,11 +23,11 @@
 
     {% include header.html theme='theme-light' %}
     {% include navbar.html %}
-    {% include sidenav-mobile.html %}
+    {% include tree.html id="sidenav-mobile" class="sidenav sidenav-wrapper" tree=site.data.moonshine-docs %}
 
     <div class="container docpage-layout">
         <div id="sidenav-wrapper" class="sidebar sidenav-wrapper hide-on-med-and-down">
-            {% include sidenav-desktop.html %}
+            {% include tree.html id="sidenav-desktop" tree=site.data.moonshine-docs %}
         </div>
         <div class="docs-content text-content">
             {{ content }}

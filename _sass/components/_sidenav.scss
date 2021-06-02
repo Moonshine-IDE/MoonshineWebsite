@@ -1,4 +1,9 @@
 #sidenav-mobile {
+
+  ul.tree {
+    padding-left: 16px;
+    padding-bottom: 16px;
+  }
   
   li {
 
@@ -6,7 +11,8 @@
       height: auto;
       font-size: 16px;
       line-height: 20px;
-      padding: 16px;
+      padding-top: 4px;
+      padding-bottom: 4px;
       color: $east-bay;
 
       &.active {
@@ -17,10 +23,15 @@
 }
 
 #sidenav-desktop {
-  padding: 16px;
+
+  ul.tree {
+    padding-left: 16px;
+    padding-bottom: 16px;
+  }
 
   li {
-    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     word-wrap: break-word;
 
     a {
