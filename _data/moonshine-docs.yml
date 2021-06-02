@@ -24,7 +24,7 @@
     link: /docs/moonshine/apache_ant_build
 
 - title: "Google reCAPTCHA"
-  link:
+  link: /docs/recaptcha/communication-overview-and-registration
   subtree:
 
   - title: "Communication Overview and Registration"
