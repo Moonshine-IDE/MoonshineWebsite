@@ -1,6 +1,5 @@
 ---
 title: Debug a Project in Moonshine
-permalink: /docs/moonshine/debug_project
 layout: docpage
 ---
 
