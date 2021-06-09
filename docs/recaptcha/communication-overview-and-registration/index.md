@@ -13,7 +13,7 @@ layout: docpage
 
 Let's design a very simple use case for our reCAPTCHA app. It's going to be about creating new user accounts.
 
-![Front End](.\img\front-end.png)
+![Front End](img/front-end.png)
 
 
 
@@ -23,7 +23,7 @@ First, let's consider how the communication between the front end and the back e
 
 The user is asked to type First Name, Last Name and Email address. After he or she clicks the `Create Account` button the form data will be send to the back end. The server can perform some validation logic like checking if the email address is unique. Then, it is going to send its `Response` back to the front end.
 
-![](.\img\no-recaptcha.png)
+![](img/no-recaptcha.png)
 
 This is simple and easy but adding reCAPTCHA to the mix results in adding a few additional steps.
 
@@ -31,7 +31,7 @@ This is simple and easy but adding reCAPTCHA to the mix results in adding a few 
 
 ### Communication with reCAPTCHA
 
-![](.\img\recaptcha.png)
+![](img/recaptcha.png)
 
 As you can see this is a bit more complex. But why is it?
 
@@ -67,13 +67,13 @@ Got to the: [https://www.google.com/recaptcha/admin/create](https://www.google.c
 
 Provide a name for your app:
 
-![](.\img\registration-name.png)
+![](img/registration-name.png)
 
 ##### Step 3
 
 Then choose reCAPTCHA v3. Only version 3 is going to give you fully "invisible captcha" -- no interaction with the user at any point.
 
-![](.\img\registration-type.png)
+![](img/registration-type.png)
 
 
 
@@ -81,7 +81,7 @@ Then choose reCAPTCHA v3. Only version 3 is going to give you fully "invisible c
 
 Provide the domains you want to use with your reCAPTCHA. If this is going to be a production app you can specify your real domain here. But remember -- if you want to test this app locally you **must** also provide `localhost` as one of your domains.
 
-![](.\img\registration-domains.png)
+![](img/registration-domains.png)
 
 
 
@@ -101,7 +101,7 @@ You will be provided with Site Key and Secret Key pair. Copy them and save somew
 
 This view will be more helpful once you accumulate some traffic on your front end. It can help you decide what number is a good threshold for each of captcha-protected actions available on your site.
 
-![](.\img\analytics.png)
+![](img/analytics.png)
 
 
 
