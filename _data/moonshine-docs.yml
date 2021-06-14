@@ -24,8 +24,8 @@
     link: /docs/moonshine/apache_ant_build
 
 - title: "Google reCAPTCHA"
-  link: /docs/recaptcha/implementing-google-recaptcha-v3-using-apache-royale-and-grails
+  link: /docs/recaptcha/impl
   subtree:
 
   - title: "Communication Overview and Registration"
-    link: /docs/recaptcha/communication-overview-and-registration
+    link: /docs/recaptcha/comm

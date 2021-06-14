@@ -1,6 +1,6 @@
 ---
 title: Implementing Google reCAPTCHA v3 using Apache Royale and Grails
-permalink: /docs/recaptcha/implementing-google-recaptcha-v3-using-apache-royale-and-grails
+permalink: /docs/recaptcha/impl
 layout: docpage
 ---
 # Implementing Google reCAPTCHA v3 using Apache Royale and Grails
