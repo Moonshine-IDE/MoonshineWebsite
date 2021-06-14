@@ -1,6 +1,5 @@
 ---
 title: Communication Overview and Registration
-permalink: /docs/recaptcha/comm
 layout: docpage
 ---
 # Part 2
