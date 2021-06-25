@@ -338,7 +338,7 @@ curl -X POST -H "Content-Type: application/json" -d @body.json http://localhost:
 **Tip:** If user #2 already exists either restart the server or change eamil address to be unique.
 
 #### Testing with Royale Front End
-Our REST API matches now the data our Front End is able to send. Before we can start using our Front End for testing we need to enable [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) in Grails.
+Our REST API matches now the data our Front End is able to send. Before we can start using our Front End for testing we need to enable [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing){:target="_blank"} in Grails.
 
 ###### Step 36
 Go to `grails-app/conf/application.yml` and locate `grails` entry:
@@ -378,3 +378,144 @@ Navigate to `grails-app/services/captchaserver`, right click and select `New -> 
 Add a field with your private token. Keep in mind that when a private token becomes compromised (like this one), it is no longer secure.
 
 ![](img/captcha-service-token.png)
+
+###### Step 41
+Create validateToken method:
+
+```
+public validateToken(String token) {
+		def base = 'https://www.google.com/recaptcha/api'
+		def parameters = 'siteverify?secret=' + secret + '&response=' + token
+		def url = new URL(base + '/' + parameters)
+	}
+```
+As you can see this method takes a token, and then builds a url using this token and the hardcoded secret key.
+
+###### Step 42
+Now we need to make a HTTP POST request to that url and capture the response. Add following code to yur method:
+
+```
+def connection = url.openConnection()
+		
+connection.with {
+	requestMethod = 'POST'
+	doOutput = true  			
+	outputStream.withWriter { }
+	
+	println content.text
+}
+```
+
+This opens the connection using POST method, signals that it is interested in the output and uses writer to put that output into content variable. Then you can print text of the content to the console.
+
+###### Step 43
+ValidateToken method is almost ready for a test, but first we need to use it. Go to `grails-app/controllers/captchaserver/UserControler`. Then:
+- add `CaptchaService captchaService` to the class memebers
+- add `captchaService.validateToken(token)` call in the `save` method (after checking if user is null but before saving anything makes most sense)
+
+![](img/save-method-2.png)
+
+###### Step 44
+Test everything using your Front End. If everything goes right you should see the following response in the console:
+
+![](img/console.png)
+
+###### Step 45
+Curious what will happen if you try to validate with invalid token? Try making a request with curl passing any string as token:
+
+![](img/console-bad-response.png)
+
+#### Making up our mind
+Now, that we have our response from Google, we can make a decision whether we want to accept or reject save user request. The best place to make such a decision would be inside the controller. But right now the only place with enough information is CaptchaService. Let's encapsulate the response and return it back to controller.
+
+###### Step 46
+Go to `grails-app/domain/captchaserver`, right click, add a new Groovy class and name it `CaptchaResponse`.
+
+###### Step 47
+The response object is not that well documented by Google:
+[https://developers.google.com/recaptcha/docs/verify#api-response](https://developers.google.com/recaptcha/docs/verify#api-response){:target="_blank"}
+
+But based on what we saw in the console we can iduce a couple more useful parameters. Add them to your class:
+
+```
+package captchaserver
+
+public class CaptchaResponse   {
+	Boolean success
+	Number score
+	String challenge_ts
+	String hostname
+	String action
+	String[] errorCodes
+	
+	public CaptchaResponse() {
+	}
+}
+```
+
+###### Step 48
+Navigate back to `CaptchaService` class. When we make a request to Google API we get JSON in return. We'd like to parse this JSON into our newly created class. To do this we need **Json Slurper**.
+
+You can import it like this:
+```
+import groovy.json.JsonSlurper
+```
+
+And then use it inside your connection-handling logic like this:
+```
+def jsonSlurper = new JsonSlurper()
+def jsonResponse = content.text
+def captchaResponseMap = jsonSlurper.parseText(jsonResponse)
+def captchaResponse = new CaptchaResponse(captchaResponseMap)
+captchaResponse.errorCodes = captchaResponseMap["error-codes"]        		
+return captchaResponse
+```
+
+###### Step 49
+Don't forget to set validateToken return type to CaptchaResponse.
+
+The final version of this whole class should look like this:
+
+![](img/captcha-service-final.png)
+
+###### Step 50
+Go to the `UserController` class, and enhence the response after validateToken call in the save method:
+
+```
+def response = captchaService.validateToken(token)
+if (response.success == false || response.score < 0.5) {
+	respond([status: 400, captcha: response])
+	return
+}
+```
+
+This means that if the captcha response is false (because e.g. the token was incorrect) or it is correct but received a low score (most likely a bot) we would like to discard the request. To be fully transparent we return HTTP status code 400 and pass the full captcha response from Google.
+
+The treshold of 0.5 is arbitraty. You can pick different values for different actions based on analytics avaliable at: [https://www.google.com/recaptcha/admin/](https://www.google.com/recaptcha/admin/){:target="_blank"}
+
+###### Step 51
+At the very bottom of the save method change the last line from:
+
+```
+respond user, [status: CREATED, view:"save"]
+```
+
+to:
+
+```
+respond([status: 200, user:user, captcha: response])
+```
+
+This makes our responses consistent and let's the Front End have a peak at the captcha response from Google.
+
+###### Step 52
+For a reference this is the final version of the save method:
+
+![](img/save-method-3.png)
+
+#### Summary
+That's it! We received the request at the Back End, validated the token, performed approprieate acction based on the result and returned our response to the Front End.
+
+Now the last thing to do is to test, test and test some more our Forn End and the Back End togeter.
+
+And to modify to suit your needs.
