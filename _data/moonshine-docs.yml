@@ -24,14 +24,17 @@
     link: /docs/moonshine/apache_ant_build
 
 - title: "Google reCAPTCHA"
-  link: /docs/recaptcha/impl
+  link: /docs/recaptcha/introduction
   subtree:
 
-  - title: "Communication Overview and Registration"
-    link: /docs/recaptcha/comm
+  - title: "Introduction"
+    link: /docs/recaptcha/introduction
 
-  - title: "Implementing Front End in Apache Royale"
+  - title: "Architecture and Registration"
+    link: /docs/recaptcha/architecture
+
+  - title: "Implementing Front-End in Apache Royale"
     link: /docs/recaptcha/royale
 
-  - title: "Implementing Back End in Grails"
+  - title: "Implementing Back-End in Grails"
     link: /docs/recaptcha/grails

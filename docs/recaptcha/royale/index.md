@@ -1,10 +1,10 @@
 ---
-title: Implementing Front End in Apache Royale
+title: Implementing Front-End in Apache Royale
 layout: docpage
 ---
-### Part 3
+### Google Invisible Captcha - Part 3
 ---
-# Implementing Front End in Apache Royale
+# Implementing Front-End in Apache Royale
 
 Moonshine IDE is one of the easiest ways to write Apache Royale code.
 
@@ -221,7 +221,7 @@ private function onSignupClick(event:Event) : void
 ###### Step 21
 We're going to add an HTTPService through Royale's mechanism caled [beads](https://apache.github.io/royale-docs/features/strands-and-beads){:target="_blank"}.
 
-Let's add a beads section inside VGroup, and then an HTTP service pointing to our Grails Back End, which we're going to build in the next part.
+Let's add a beads section inside VGroup, and then an HTTP service pointing to our Grails back-end, which we're going to build in the next part.
 
 ```
 <j:beads>
@@ -233,7 +233,7 @@ Let's add a beads section inside VGroup, and then an HTTP service pointing to ou
 </j:beads>
 ```
 
-The URL is a location of our Back End. For this tutorial, we will be building Grails Back End at this exact address.
+The URL is a location of our back-end. For this tutorial, we will be building Grails back-end at this exact address.
 
 ###### Step 22
 Using HTTPService requires adding js namespace:
@@ -284,7 +284,7 @@ private function onSignupClick(event:Event) : void
 ```
 
 #### Testing
-We built a working view for our application. It is capable of sending our form data and receiving the response. No signs of ReCaptcha yet, though. At this point, you may want to switch to [Implementing Back End in Grails](../grails/) to have some server to test against.
+We built a working view for our application. It is capable of sending our form data and receiving the response. No signs of reCAPTCHA yet, though. At this point, you may want to switch to [Implementing back-end in Grails](../grails/) to have some server to test against.
 
 You CAN, in fact, run two server instances with Moonshine at the same time:
 - Grails runs by default at http://localhost:8080/
@@ -309,11 +309,11 @@ private function onComplete(event:Event) : void
 
 ![](img/better-json.png)
 
-#### Adding ReCaptcha
-With the rest of the communication in place adding ReCaptcha is pretty easy. All we need to do is:
+#### Adding reCAPTCHA
+With the rest of the communication in place adding reCAPTCHA is pretty easy. All we need to do is:
 - add a tracker to our page
 - when the button is clicked request an action token from google
-- pass the token together with the data to the Back End
+- pass the token together with the data to the back-end
 
 ###### Step 26
 Go to `src/resources/jewel-index-template.html`. 
@@ -326,12 +326,12 @@ Inside the head section add a line:
 <script src="https://www.google.com/recaptcha/api.js?render=SITE_KEY"></script>
 ```
 
-Substitute SITEK_KEY with the one you obtained during ReCaptcha registration. This is a public key, so it will be visible to all the people browsing your page.
+Substitute SITEK_KEY with the one you obtained during reCAPTCHA registration. This is a public key, so it will be visible to all the people browsing your page.
 
 ![](img/site-key.png)
 
 ###### Step 27
-Build the project and refresh your page. You should see the "protected by ReCaptcha" logo.
+Build the project and refresh your page. You should see the "protected by reCAPTCHA" logo.
 
 ![](img/recaptcha-protected.png)
 
@@ -366,7 +366,7 @@ private function sendRequest(token:String) : void
 
 ###### Step 30
 Now go back to the `onSignupClick` method. We need it to:
-- find google ReCaptcha object embedded in your site by the script we included earlier
+- find google reCAPTCHA object embedded in your site by the script we included earlier
 - make it invoke the `execute` method on that object, passing your site key, and optionally the name of the action your trying to protect
 - receive the token as a response
 - pass it to the `sendRequest` method.
@@ -388,6 +388,6 @@ This is how both methods should look like:
 ![](img/captcha-and-send.png)
 
 #### More Testing
-If you have a working Back End in Grails, you can now test the two applications together. This is how a successful response looks like:
+If you have a working back-end in Grails, you can now test the two applications together. This is how a successful response looks like:
 
 ![](img/success.png)

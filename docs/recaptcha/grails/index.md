@@ -1,10 +1,10 @@
 ---
-title: Implementing Back End in Grails
+title: Implementing Back-End in Grails
 layout: docpage
 ---
-### Part 4
+### Google Invisible Captcha - Part 4
 ---
-# Implementing Back End in Grails
+# Implementing Back-End in Grails
 
 Moonshine IDE is one of the fastest ways to get started with Grails.
 
@@ -34,7 +34,7 @@ This is going to install Grails to the Moonshine's default SDK folder which is:
 - ... on Mac
 
 #### Creating REST API App
-Our back end doesn't need any views. It's going to communicate with the front end via REST API. In Grails, there is a special REST API profile for these kinds of apps. Unfortunately, creating a REST API app from Moonshine is a little tricky. We need to invoke our first command straight from our OS's terminal.
+Our back-end doesn't need any views. It's going to communicate with the front-end via REST API. In Grails, there is a special REST API profile for these kinds of apps. Unfortunately, creating a REST API app from Moonshine is a little tricky. We need to invoke our first command straight from our OS's terminal.
 
 ###### Step 4
 Open up a terminal (cmd, bash, etc.)
@@ -166,7 +166,7 @@ Navigate to `grails-app/controllers/captchaserver/UserController.groovy` and tak
 
 ![](.\img\save-method.png)
 
-This is the method that receives information from our front end. It also returns the final response.
+This is the method that receives information from our front-end. It also returns the final response.
 
 ###### Step 21
 Let's create logic that automatically adds the first user each time our application starts. Go to `grails-app/init/captchaserver/BootStrap.groovy` and update init function from this:
@@ -200,7 +200,7 @@ You should see this:
 #### Testing the REST API
 By now we have a working user controller which can display the current list of saved users. But does it accept HTTP POST requests? Let's find out!
 
-We'll use curl, which is a standard part of any shell (cmd, bash, mac terminal). We can also test using our front end in Royale (or any other technology), but in a lot of cases using curl is simpler.
+We'll use curl, which is a standard part of any shell (cmd, bash, mac terminal). We can also test using our front-end in Royale (or any other technology), but in a lot of cases using curl is simpler.
 
 ###### Step 23
 Go to any location outside your main project, create a new file and name it `body.json`. Open it using any text editor and add the following content:
@@ -233,12 +233,12 @@ Go again to your web browser and check `http://localhost:8080/user`. You should 
 ![](.\img\new-user.png)
 
 #### Captcha Validation
-Right now we have a working MVC-style application -- the view is coded in Royale and Model-Controller is coded in Grails. The data can already flow from the Front End to the Back End via REST API.
+Right now we have a working MVC-style application -- the view is coded in Royale and Model-Controller is coded in Grails. The data can already flow from the front-end to the back-end via REST API.
 
-It's time to add ReCaptcha validation logic:
+It's time to add reCAPTCHA validation logic:
 1. First, we will change the `save` method signature to accept both user and token.
 1. Then, we will connect to Google and validate that token
-1. Then, we will accept or reject the request and return a response to the Front End.
+1. Then, we will accept or reject the request and return a response to the front-end.
 
 ###### Step 26
 Right-click on your main project `captchaserver` and go to settings:
@@ -337,8 +337,8 @@ curl -X POST -H "Content-Type: application/json" -d @body.json http://localhost:
 
 **Tip:** If user #2 already exists, either restart the server or change the email address to be unique.
 
-#### Testing with Royale Front End
-Our REST API matches now the data our Front End can send. Before we can start using our Front End for testing we need to enable [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing){:target="_blank"} in Grails.
+#### Testing with Royale front-end
+Our REST API matches now the data our front-end can send. Before we can start using our front-end for testing we need to enable [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing){:target="_blank"} in Grails.
 
 ###### Step 36
 Go to `grails-app/conf/application.yml` and locate `grails` entry:
@@ -362,7 +362,7 @@ somewhere under the following entry:
 ###### Step 38
 Restart the server. Your CORS settings will not work until you restart.
 
-From now on, you can finally start using your Front End to test instead of curl (if you find it preferable).
+From now on, you can finally start using your front-end to test instead of curl (if you find it preferable).
 
 ![](.\img\royale-grails-together.png)
 
@@ -416,7 +416,7 @@ ValidateToken method is almost ready for a test, but first, we need to use it. G
 ![](img/save-method-2.png)
 
 ###### Step 44
-Test everything using your Front End. If everything goes right, you should see the following response in the console:
+Test everything using your front-end. If everything goes right, you should see the following response in the console:
 
 ![](img/console.png)
 
@@ -506,7 +506,7 @@ to:
 respond([status: 200, user:user, captcha: response])
 ```
 
-This makes our responses consistent and lets the Front End have a peek at the captcha response from Google.
+This makes our responses consistent and lets the front-end have a peek at the captcha response from Google.
 
 ###### Step 52
 For reference, this is the final version of the save method:
@@ -514,8 +514,8 @@ For reference, this is the final version of the save method:
 ![](img/save-method-3.png)
 
 #### Summary
-That's it! We received the request at the Back End, validated the token, performed appropriate action based on the result, and returned our response to the Front End.
+That's it! We received the request at the back-end, validated the token, performed appropriate action based on the result, and returned our response to the front-end.
 
-Now the last thing to do is to test, test, and test some more our Forn End and the Back End together.
+Now the last thing to do is to test, test, and test some more our Forn End and the back-end together.
 
 And to modify to suit your needs.

@@ -1,14 +1,12 @@
 ---
-title: Implementing Google reCAPTCHA v3 using Apache Royale and Grails
+title: Captcha Introduction
 layout: docpage
 ---
-# Implementing Google reCAPTCHA v3 using Apache Royale and Grails
-
+### Google Invisible Captcha - Part 1
 ---
+# Captcha Introduction
 
-## Part 1 - Basic information and architecture overview
-
-##### What are bots?
+#### What are bots?
 
 Over the web, there is a lot of malicious software floating around, constantly trying to exploit web pages. We call these programs robots or bots. They are looking for ways to interact with sites in a way that will provide benefits to their creators.
 
@@ -18,7 +16,7 @@ What bots may want from your website? For example:
 
 - They may want to post fake reviews on your webpage, trying to advertise their own products.
 
-##### What is captcha?
+#### What is captcha?
 
 Captcha is a simple challenge presented on web pages to tell apart humans from bots. One of the most popular captcha providers is Google. Google brands its captcha algorithm as reCAPTCHA. Up to this day, there were three major versions of Google's reCAPTCHA (plus an enterprise one). You may remember older ones with some nostalgia:
 
@@ -42,12 +40,12 @@ Everybody hated the earlier iterations of reCAPTCHA, and for a good reason. Peop
 
 Now you can protect your page without annoying your customers, and this is probably a step in the right direction.
 
-##### How to implement reCAPTCHA to protect your page?
+#### How to implement reCAPTCHA to protect your page?
 
-In these articles, I will show you how you can register for reCAPTCHA v3 and implement it on your website. The examples will be presented in Apache Royale on the front and in Groovy/Grail on the back end. These two technologies allowed our team to build this quickest and easiest but if you want you can easily translate this to your favorite technology stack.
+In these articles, I will show you how you can register for reCAPTCHA v3 and implement it on your website. The examples will be presented in Apache Royale on the front and in Groovy/Grail on the back-end. These two technologies allowed our team to build this quickest and easiest but if you want you can easily translate this to your favorite technology stack.
 
-- Part 1 - registration and communication overview
+- [Part 2 - Architecture and Registration](../architecture/)
 
-- Part 2 - front end in Apache Royale
+- [Part 3 - Implementing Front-End in Apache Royale](../royale/)
 
-- Part 3 - back end in Groovy/Grails
+- [Part 4 - Implementing Back-End in Groovy/Grails](../grails/)
