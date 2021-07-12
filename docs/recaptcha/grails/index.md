@@ -34,7 +34,7 @@ This is going to install Grails to the Moonshine's default SDK folder which is:
 - ... on Mac
 
 #### Creating REST API App
-Our back end doesn't need any views. It's going to communicate with the front end via REST API. In Grails there is a special REST API profile for this kinds of apps. Unfortunately, creating a REST API app from Moonshine is a little tricky. We need to invoke our first command straight from our OS's terminal.
+Our back end doesn't need any views. It's going to communicate with the front end via REST API. In Grails, there is a special REST API profile for these kinds of apps. Unfortunately, creating a REST API app from Moonshine is a little tricky. We need to invoke our first command straight from our OS's terminal.
 
 ###### Step 4
 Open up a terminal (cmd, bash, etc.)
@@ -49,7 +49,7 @@ The command we usually use in Grails would've been:
 
 `grails create-app --profile rest-api project-name`
 
-But since we don't have grails installed system-wide, we need to use the one downloaded to the SDK folder. Therfore, the actual command is:
+But since we don't have grails installed system-wide, we need to use the one downloaded to the SDK folder. Therefore, the actual command is:
 
 `c:\MoonshineSDKs\Grails\grails-3.3.10\bin\grails create-app --profile rest-api captchaserver`
 
@@ -61,7 +61,7 @@ You should have a Grails project that looks like this:
 ![](.\img\rest-template.png)
 
 #### Importing and Running the Project
-It's time to import and run our newly creted project in Moonshine.
+It's time to import and run our newly created project in Moonshine.
 
 ###### Step 8
 Go to `Project -> Open/Import Project`
@@ -72,7 +72,7 @@ Go to `Project -> Open/Import Project`
 Select the folder you created in the previous step.
 
 ###### Step 10
-There will be an error telling you to locate `src` folder. Click `yes`
+There will be an error telling you to locate the `src` folder. Click `yes`
 
 ![](.\img\error.png)
 
@@ -86,7 +86,7 @@ It's time to run our application. Go to `Project -> Build & Run`
 
 ![](.\img\build-run.png)
 
-and wait until build is compleated. 
+and wait until the build is completed. 
 
 ###### Step 13
 Open up a browser and go to `http://localhost:8080`.
@@ -95,15 +95,15 @@ You should see this:
 ![](.\img\running.png)
 
 ###### Step 14
-Grails supports hot reloading. Most of the time if you change anything in code the changes will be immediatly reflected in the app. There are times however, when you will need to stop the server. You can do this at any time by pressing the red button on the status bar:
+Grails supports hot reloading. Most of the time if you change anything in code the changes will be immediately reflected in the app. There are times, however, when you will need to stop the server. You can do this at any time by pressing the red button on the status bar:
 
 ![](.\img\stop-server.png)
 
-One of the time, when you need to stop the server is when you want to invoke a grails command from Moonshine. We're going to do this in the next step, so stop the server now.
+One of the times, when you need to stop the server is when you want to invoke a grails command from Moonshine. We're going to do this in the next step, so stop the server now.
 
 #### Creating a User Object
 
-Now, that we have a running initial project we can add our buisness object. It's going to be a class representing a User with fileds like First Name, Last Name and Email. We want to be abele to create this object via REST API and be able to save it to a database.
+Now, that we have a running initial project we can add our business object. It's going to be a class representing a User with fields like First Name, Last Name, and Email. We want to be able to create this object via REST API and be able to save it to a database.
 
 ###### Step 15
 To create our User object go to: `Project -> Run Grails command`
@@ -128,7 +128,7 @@ Navigate to the newly created User class `grails-app/domain/captchaserver/User.g
 ![](.\img\user-navi.png)
 
 ###### Step 18
-We're going to need our User object to contain firstName, lastname and email fields, all of type String. Add them all to the User class.
+We're going to need our User object to contain firstName, lastname, and email fields, all of type String. Add them all to the User class.
 
 Grails also provides a range of useful constraints for domain object fields: 
 - `email: true` -- will require from the field to be a well-formed email address (like `name@domain.com`)
@@ -138,14 +138,14 @@ Grails also provides a range of useful constraints for domain object fields:
 The final result should look like this:
 ```
 class User {
-	String firstName
-	String lastName
-	String email
+    String firstName
+    String lastName
+    String email
 
     static constraints = {
-    	email (email: true, unique: true)
-    	firstName (blank: false)
-    	lastName (blank: false)
+        email (email: true, unique: true)
+        firstName (blank: false)
+        lastName (blank: false)
     }
 }
 ```
@@ -155,7 +155,7 @@ Now we need to generate a controller for our domain class. Go to: `Project -> Ru
 ```
 grails generate-controller captchaserver.User
 ```
-Beware that "grails" is already typed in. Also, keep in mind you need to use a namespace before the name of the class, in our example it's `captchaserver.User`.
+Beware that "grails" is already typed in. Also, keep in mind you need to use a namespace before the name of the class, in our example, it's `captchaserver.User`.
 
 ![](.\img\full-name.png)
 
@@ -169,7 +169,7 @@ Navigate to `grails-app/controllers/captchaserver/UserController.groovy` and tak
 This is the method that receives information from our front end. It also returns the final response.
 
 ###### Step 21
-Let's create logic that automatically adds the first user each time our applicaton starts. Go to `grails-app/init/captchaserver/BootStrap.groovy` and update init function from this:
+Let's create logic that automatically adds the first user each time our application starts. Go to `grails-app/init/captchaserver/BootStrap.groovy` and update init function from this:
 ```
 def init = { servletContext ->
 }
@@ -186,7 +186,7 @@ def init = { servletContext ->
 }
 ```
 
-You don't need to worry about destroy logic for now. This is because when you're in development mode the database works in `create-drop` mode by default. This means all users entries we add will be forgotten when we restart the server. This is rather handy during development -- we can add the same user over and over again to see if the controller is working correctly. The user with id #1 is added every time application starts to ensure we alwasy hava at least one user to show in a controller.
+You don't need to worry about destroy logic for now. This is because when you're in development mode the database works in `create-drop` mode by default. This means all users entries we add will be forgotten when we restart the server. This is rather handy during development -- we can add the same user over and over again to see if the controller is working correctly. The user with id #1 is added every time application starts to ensure we always have at least one user to show in a controller.
 
 ###### Step 22
 Start the server again by going to `Project -> Build & Run`.
@@ -198,18 +198,18 @@ You should see this:
 
 
 #### Testing the REST API
-By now we have a working user controller which can display current list of saved users. But does it accept HTTP POST requests? Let's find out!
+By now we have a working user controller which can display the current list of saved users. But does it accept HTTP POST requests? Let's find out!
 
-We'll use curl, which is a standard part of any shell (cmd, bash, mac termianl). We can also test using our front end in Ryale (or any other technology), but in a lot of cases using curl is simpler.
+We'll use curl, which is a standard part of any shell (cmd, bash, mac terminal). We can also test using our front end in Royale (or any other technology), but in a lot of cases using curl is simpler.
 
 ###### Step 23
 Go to any location outside your main project, create a new file and name it `body.json`. Open it using any text editor and add the following content:
 
 ```
 {
-	"firstName" : "Sylvester",
-	"lastName" : "Stalone",
-	"email" : "sly@rambo.com"
+    "firstName" : "Sylvester",
+    "lastName" : "Stalone",
+    "email" : "sly@rambo.com"
 }
 ```
 
@@ -221,7 +221,7 @@ curl -X POST -H "Content-Type: application/json" -d @body.json http://localhost:
 ```
 
 This is going to perform an HTTP POST request using the data from the `body.json` file.
-You shoul receive following response:
+You should receive the following response:
 
 ```
 {"id":2,"firstName":"Sylvester","lastName":"Stalone","email":"sly@rambo.com"}
@@ -233,15 +233,15 @@ Go again to your web browser and check `http://localhost:8080/user`. You should 
 ![](.\img\new-user.png)
 
 #### Captcha Validation
-Right now we have a working MVC-style application -- view is coded in Royale and Model-Controller is coded in Grails. The data can already flow from the Front End to the Back End via REST API.
+Right now we have a working MVC-style application -- the view is coded in Royale and Model-Controller is coded in Grails. The data can already flow from the Front End to the Back End via REST API.
 
-It's time to add recaptcha validation logic:
-1. First, we will change `save` method signature to accept both user and token.
+It's time to add ReCaptcha validation logic:
+1. First, we will change the `save` method signature to accept both user and token.
 1. Then, we will connect to Google and validate that token
-1. Then, we will accept or reject the request and return response to the Front End.
+1. Then, we will accept or reject the request and return a response to the Front End.
 
 ###### Step 26
-Right click on your main project `captchaserver` and go to settings:
+Right-click on your main project `captchaserver` and go to settings:
 
 ![](.\img\img/project-settings.png)
 
@@ -250,7 +250,7 @@ Go to `Paths` tab:
 
 ![](.\img\captchaserver-settings.png)
 
-Take a look at existing paths. There's a path for `grails-app/controllers` and `grails-app/services` but Moonshine doesn't know path to `grails-app/domain`!
+Take a look at existing paths. There's a path for `grails-app/controllers` and `grails-app/services` but Moonshine doesn't know the path to `grails-app/domain`!
 
 Let's change that by clicking on `Click to add`!
 
@@ -260,7 +260,7 @@ Click on the `Browse dir` button next to `No value`:
 ![](.\img\no-value.png)
 
 ###### Step 29
-Navigate to your project and select `captchaserver/grails-app/domain` folder. Your final result should look like this:
+Navigate to your project and select the `captchaserver/grails-app/domain` folder. Your final result should look like this:
 
 ![](.\img\captchaserver-settings-domain.png)
 
@@ -285,27 +285,27 @@ Modify the class by adding the fields for user and token and initializing them i
 package captchaserver
 
 public class UserRequest   {
-	User user
-	String token
-	
-	public UserRequest(User user, String token) {
-		this.user = user
-		this.token = token
-	}
+    User user
+    String token
+    
+    public UserRequest(User user, String token) {
+        this.user = user
+        this.token = token
+    }
 }
 ```
 
 ###### Step 33
-Navigate to `grails-app\controllers\UserController.groovy` and find again `save` method.
+Navigate to `grails-app\controllers\UserController.groovy` and find again the `save` method.
 
 ###### Step 34
 Modify the method to accept UserRequest instead of User. Unpack user and token inside to respective variables:
 
 ```
 def save(UserRequest userRequest) {
-    	def user = userRequest.user
-    	def token = userRequest.token
-    	
+        def user = userRequest.user
+        def token = userRequest.token
+        
         if (user == null) {
             render status: NOT_FOUND
             return
@@ -320,12 +320,12 @@ You can now modify `body.json` accordingly:
 
 ```
 {
-	"user" : {
-		"firstName" : "Sylvester",
-		"lastName" : "Stalone",
-		"email" : "sly@rambo.com"
-	},
-	"token" : "abcd"
+    "user" : {
+        "firstName" : "Sylvester",
+        "lastName" : "Stalone",
+        "email" : "sly@rambo.com"
+    },
+    "token" : "abcd"
 }
 ```
 
@@ -335,10 +335,10 @@ and again perform HTTP request:
 curl -X POST -H "Content-Type: application/json" -d @body.json http://localhost:8080/user/
 ```
 
-**Tip:** If user #2 already exists either restart the server or change eamil address to be unique.
+**Tip:** If user #2 already exists, either restart the server or change the email address to be unique.
 
 #### Testing with Royale Front End
-Our REST API matches now the data our Front End is able to send. Before we can start using our Front End for testing we need to enable [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing){:target="_blank"} in Grails.
+Our REST API matches now the data our Front End can send. Before we can start using our Front End for testing we need to enable [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing){:target="_blank"} in Grails.
 
 ###### Step 36
 Go to `grails-app/conf/application.yml` and locate `grails` entry:
@@ -353,29 +353,29 @@ cors:
     enabled: true
 ```
 
-somewher under this entry.
+somewhere under the following entry:
 
 ![](.\img\cors.png)
 
-**Keep in mind YAML files do not allow tabs so you need to use spaces for indentation.**
+**Keep in mind YAML files do not allow tabs, so you need to use spaces for indentation.**
 
 ###### Step 38
 Restart the server. Your CORS settings will not work until you restart.
 
-From now on you can finally start using your Front End to test instead of curl (if you find it preferable).
+From now on, you can finally start using your Front End to test instead of curl (if you find it preferable).
 
 ![](.\img\royale-grails-together.png)
 
 #### Validating Captcha
-Let's start talking to those Google servers in order to validate our request!
+Let's start talking to those Google servers to validate our request!
 
 ###### Step 39
-Navigate to `grails-app/services/captchaserver`, right click and select `New -> Groovy Class`. Name the class `CaptchaService`.
+Navigate to `grails-app/services/captchaserver`, right-click and select `New -> Groovy Class`. Name the class `CaptchaService`.
 
 ![](img/captcha-service-nav.png)
 
 ###### Step 40
-Add a field with your private token. Keep in mind that when a private token becomes compromised (like this one), it is no longer secure.
+Add a field with your private token. Keep in mind, that when a private token becomes compromised (like this one), it is no longer secure.
 
 ![](img/captcha-service-token.png)
 
@@ -384,77 +384,77 @@ Create validateToken method:
 
 ```
 public validateToken(String token) {
-		def base = 'https://www.google.com/recaptcha/api'
-		def parameters = 'siteverify?secret=' + secret + '&response=' + token
-		def url = new URL(base + '/' + parameters)
-	}
+        def base = 'https://www.google.com/recaptcha/api'
+        def parameters = 'siteverify?secret=' + secret + '&response=' + token
+        def url = new URL(base + '/' + parameters)
+    }
 ```
-As you can see this method takes a token, and then builds a url using this token and the hardcoded secret key.
+As you can see, this method takes a token, and then builds a URL using this token and the hardcoded secret key.
 
 ###### Step 42
-Now we need to make a HTTP POST request to that url and capture the response. Add following code to yur method:
+Now we need to make an HTTP POST request to that URL and capture the response. Add the following code to your method:
 
 ```
 def connection = url.openConnection()
-		
+        
 connection.with {
-	requestMethod = 'POST'
-	doOutput = true  			
-	outputStream.withWriter { }
-	
-	println content.text
+    requestMethod = 'POST'
+    doOutput = true             
+    outputStream.withWriter { }
+    
+    println content.text
 }
 ```
 
-This opens the connection using POST method, signals that it is interested in the output and uses writer to put that output into content variable. Then you can print text of the content to the console.
+This opens the connection using the POST method, signals that it is interested in the output, and uses the writer to put this output into a content variable. Then you can print the text of the content to the console.
 
 ###### Step 43
-ValidateToken method is almost ready for a test, but first we need to use it. Go to `grails-app/controllers/captchaserver/UserControler`. Then:
-- add `CaptchaService captchaService` to the class memebers
-- add `captchaService.validateToken(token)` call in the `save` method (after checking if user is null but before saving anything makes most sense)
+ValidateToken method is almost ready for a test, but first, we need to use it. Go to `grails-app/controllers/captchaserver/UserControler`. Then:
+- add `CaptchaService captchaService` to the class members
+- add `captchaService.validateToken(token)` call in the `save` method (after checking if the user is null, but before saving anything, makes the most sense)
 
 ![](img/save-method-2.png)
 
 ###### Step 44
-Test everything using your Front End. If everything goes right you should see the following response in the console:
+Test everything using your Front End. If everything goes right, you should see the following response in the console:
 
 ![](img/console.png)
 
 ###### Step 45
-Curious what will happen if you try to validate with invalid token? Try making a request with curl passing any string as token:
+Curious what will happen if you try to validate with an invalid token? Try making a request with curl, passing any string as a token:
 
 ![](img/console-bad-response.png)
 
 #### Making up our mind
-Now, that we have our response from Google, we can make a decision whether we want to accept or reject save user request. The best place to make such a decision would be inside the controller. But right now the only place with enough information is CaptchaService. Let's encapsulate the response and return it back to controller.
+Now, that we have our response from Google, we can decide whether we want to accept or reject the save user request. The best place to make such a decision would be inside the controller. But right now, the only place with enough information is CaptchaService. Let's encapsulate the response and return it to the controller.
 
 ###### Step 46
-Go to `grails-app/domain/captchaserver`, right click, add a new Groovy class and name it `CaptchaResponse`.
+Go to `grails-app/domain/captchaserver`, right-click, add a new Groovy class, and name it `CaptchaResponse`.
 
 ###### Step 47
 The response object is not that well documented by Google:
 [https://developers.google.com/recaptcha/docs/verify#api-response](https://developers.google.com/recaptcha/docs/verify#api-response){:target="_blank"}
 
-But based on what we saw in the console we can iduce a couple more useful parameters. Add them to your class:
+But based on what we saw in the console, we can induce a couple more useful parameters. Add them to your class:
 
 ```
 package captchaserver
 
 public class CaptchaResponse   {
-	Boolean success
-	Number score
-	String challenge_ts
-	String hostname
-	String action
-	String[] errorCodes
-	
-	public CaptchaResponse() {
-	}
+    Boolean success
+    Number score
+    String challenge_ts
+    String hostname
+    String action
+    String[] errorCodes
+    
+    public CaptchaResponse() {
+    }
 }
 ```
 
 ###### Step 48
-Navigate back to `CaptchaService` class. When we make a request to Google API we get JSON in return. We'd like to parse this JSON into our newly created class. To do this we need **Json Slurper**.
+Navigate back to the `CaptchaService` class. When we make a request to Google API, we get JSON in return. We would like to parse this JSON into our newly created class. To do this, we need **Json Slurper**.
 
 You can import it like this:
 ```
@@ -467,7 +467,7 @@ def jsonSlurper = new JsonSlurper()
 def jsonResponse = content.text
 def captchaResponseMap = jsonSlurper.parseText(jsonResponse)
 def captchaResponse = new CaptchaResponse(captchaResponseMap)
-captchaResponse.errorCodes = captchaResponseMap["error-codes"]        		
+captchaResponse.errorCodes = captchaResponseMap["error-codes"]              
 return captchaResponse
 ```
 
@@ -479,22 +479,22 @@ The final version of this whole class should look like this:
 ![](img/captcha-service-final.png)
 
 ###### Step 50
-Go to the `UserController` class, and enhence the response after validateToken call in the save method:
+Go to the `UserController` class, and enhance the response after validateToken call in the save method:
 
 ```
 def response = captchaService.validateToken(token)
 if (response.success == false || response.score < 0.5) {
-	respond([status: 400, captcha: response])
-	return
+    respond([status: 400, captcha: response])
+    return
 }
 ```
 
-This means that if the captcha response is false (because e.g. the token was incorrect) or it is correct but received a low score (most likely a bot) we would like to discard the request. To be fully transparent we return HTTP status code 400 and pass the full captcha response from Google.
+This means that if the captcha response is false (because, for example, the token was incorrect) or it is correct but received a low score (most likely a bot), we would like to discard the request. To be fully transparent, we return HTTP status code 400 and pass the full captcha response from Google.
 
 The treshold of 0.5 is arbitraty. You can pick different values for different actions based on analytics avaliable at: [https://www.google.com/recaptcha/admin/](https://www.google.com/recaptcha/admin/){:target="_blank"}
 
 ###### Step 51
-At the very bottom of the save method change the last line from:
+At the very bottom of the save method, change the last line from:
 
 ```
 respond user, [status: CREATED, view:"save"]
@@ -506,16 +506,16 @@ to:
 respond([status: 200, user:user, captcha: response])
 ```
 
-This makes our responses consistent and let's the Front End have a peak at the captcha response from Google.
+This makes our responses consistent and lets the Front End have a peek at the captcha response from Google.
 
 ###### Step 52
-For a reference this is the final version of the save method:
+For reference, this is the final version of the save method:
 
 ![](img/save-method-3.png)
 
 #### Summary
-That's it! We received the request at the Back End, validated the token, performed approprieate acction based on the result and returned our response to the Front End.
+That's it! We received the request at the Back End, validated the token, performed appropriate action based on the result, and returned our response to the Front End.
 
-Now the last thing to do is to test, test and test some more our Forn End and the Back End togeter.
+Now the last thing to do is to test, test, and test some more our Forn End and the Back End together.
 
 And to modify to suit your needs.
