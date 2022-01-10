@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/20e96ea772.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/20e96ea772.js"
+      crossorigin="anonymous"
+    ></script>
     <!--Custom SASS styles-->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/images/moonshine-icon.ico" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ page.title }}</title>
-    <meta name="description"
-        content="Moonshine is a free and open source middleweight IDE built with ActionScript 3 for AS3, Apache Flex®, Apache Royale® and Feathers development with Cloud and Desktop support." />
+    <meta
+      name="description"
+      content="Moonshine is a free and open source middleweight IDE built with ActionScript 3 for AS3, Apache Flex®, Apache Royale® and Feathers development with Cloud and Desktop support."
+    />
 
-    {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
-    {% endif %}
-</head>
+    <meta property="og:url" content="http://moonshine-ide.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Moonshine IDE" />
+    <meta
+      property="og:description"
+      content="Moonshine is a free and open source middleweight IDE built with ActionScript 3 for AS3, Apache Flex®, Apache Royale® and Feathers development with Cloud and Desktop support."
+    />
+    <meta property="og:image" content="/images/moonshine-logo-square.jpg" />
 
-<body class="theme-dark">
+    {% if site.google_analytics and jekyll.environment == 'production' %} {%
+    include analytics.html %} {% endif %}
+  </head>
 
-    {% include header.html theme='theme-dark' %}
-    {% include navbar.html %}
-
-    {{ content }}
-
-</body>
-
+  <body class="theme-dark">
+    {% include header.html theme='theme-dark' %} {% include navbar.html %} {{
+    content }}
+  </body>
 </html>
