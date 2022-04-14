@@ -7,6 +7,3 @@ _pdf
 .idea
 vendor/
 .bundle/
-
-*.css.map
-*.css
