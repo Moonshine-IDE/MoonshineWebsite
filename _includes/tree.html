@@ -1,7 +1,7 @@
 <ul id="{{ include.id }}" class="tree {{ include.class }}">
     {% for item in include.tree %}
         {% assign dirlink = item.link | append: '/' %}
-        <li><a href="{{ item.link }}" class="{% if item.link == page.url or dirlink == page.url %}active{% endif %}">
+        <li><a href="{{ item.link | relative_url }}" class="{% if item.link == page.url or dirlink == page.url %}active{% endif %}">
             {{ item.title }}
         </a></li>
         {% if item.subtree %}
