@@ -10,7 +10,7 @@ layout: docpage
 
 2. In Moonshine go to `File -> Settings -> Default SDK`
 
-    ![Screenshot: default SDK](/images/moonshine/default_sdk.png)
+    ![Screenshot: default SDK](./img/default_sdk.png)
 
 3. If you are using Moonshine that bundled with different SDKs, then you can use any of them to set default **Apache Flex® SDK** to Moonshine, or even you can download **Apache Flex® SDK** with **AIR SDK** at [http://flex.apache.org/installer.html](http://flex.apache.org/installer.html){:target="_blank"}
 
@@ -28,7 +28,7 @@ layout: docpage
 
 1. Right click on your project name and select _Settings_ then at the left _Build options_.
 
-    ![Screenshot: custom SDK](/images/moonshine/custom_sdk.png)
+    ![Screenshot: custom SDK](./img/custom_sdk.png)
 
 2. Click on _Change_ link inside the _Custom SDK_ section, this will open a file browse dialogue.
    

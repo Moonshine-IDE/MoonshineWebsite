@@ -12,6 +12,6 @@ layout: docpage
 
 3. Build your project by choosing `Ant -> Build Apache Ant® File` from top menu. In opening file browser dialogue navigate to your **Apache Ant®** folder. Next select Ant script and click _Ant Build_ in order to start **Apache Flex®** project build. Ant build should produce _.swf_ and it’s HTML wrapper file set.
 
-    ![Apache Ant build configuration](/images/moonshine/ant_build_configuration.png)
+    ![Apache Ant build configuration](./img/ant_build_configuration.png)
 
 4. Upon successful completion of the process, installer files can be located at _DEPLOY_ folder inside build folder.

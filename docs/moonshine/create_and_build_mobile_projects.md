@@ -12,7 +12,7 @@ layout: docpage
   
 2. Choosing any above option will open new project creation dialogue:
 
-    ![New Apache Flex Mobile project](/images/moonshine/new_flex_mobile_project.png)
+    ![New Apache Flex Mobile project](./img/new_flex_mobile_project.png)
 
     Editable fields are:
      * Project Name
@@ -26,4 +26,4 @@ layout: docpage
 
 6. To run the project choose `Project -> Build & Run`. You can see command line outputs in Moonshine’s console window (at bottom)
 
-    ![Build and Run Apache Flex Mobile project](/images/moonshine/build_and_run_new_flex_mobile_project-1.png)
+    ![Build and Run Apache Flex Mobile project](./img/build_and_run_new_flex_mobile_project-1.png)
