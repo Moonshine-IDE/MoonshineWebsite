@@ -2,6 +2,8 @@ title: Moonshine IDE
 host: 127.0.0.1
 port: 4000
 
+baseurl: "/MoonshineWebsite"
+
 markdown: kramdown
 theme: minima
 
