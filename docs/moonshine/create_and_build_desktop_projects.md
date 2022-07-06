@@ -17,11 +17,11 @@ layout: docpage
 
 2. Choosing any above option will open the New Project tab:
 
-    ![Screenshot: new Flex desktop project](/images/moonshine/new_flex_desktop_project.png)
+    ![Screenshot: new Flex desktop project](./img/new_flex_desktop_project.png)
 
 3. In _ActionScript Project (SWF, Desktop)_ options you’ll find an extra option to choose between Desktop or Web as the platform type:
 
-    ![Screenshot: new ActionScriipt project dialog](/images/moonshine/new_project_dialog_as.jpg)
+    ![Screenshot: new ActionScriipt project dialog](./img/new_project_dialog_as.jpg)
 
    * Editable fields are:
      * Project Name
@@ -32,12 +32,12 @@ layout: docpage
 
    * Create option immediately creates a new **Apache Flex®** project, open the project in Moonshine workspace (left-hand tree menu) and it’s application file in Moonshine editor
 
-        ![Screenshot: create new Flex desktop project](/images/moonshine/created_new_flex_desktop_project.png)
+        ![Screenshot: create new Flex desktop project](./img/created_new_flex_desktop_project.png)
 
    * Moonshine generates any project with it’s supported types with demo ‘Hello World!‘ text, so you can immediately build the project and check it’s output; an optional **Apache Ant®** build script fully configured so you build a desktop package immediately as well!
 
    * To run the project choose `Project -> Build & Run` or press `CTRL`+`ENTER` (WIN) or `CMD`+`ENTER` (Mac OS). You can see command line output in Moonshine’s console window (at the bottom of the interface)
 
-        ![Screenshot: console build](/images/moonshine/console_build.png)
+        ![Screenshot: console build](./img/console_build.png)
 
    * If your project compiles, an AIR window will open running your code.

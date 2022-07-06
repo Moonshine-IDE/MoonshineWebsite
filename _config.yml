@@ -2,11 +2,14 @@ title: Moonshine IDE
 host: 127.0.0.1
 port: 4000
 
+baseurl:
+
 markdown: kramdown
 theme: minima
 
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 
 exclude:
