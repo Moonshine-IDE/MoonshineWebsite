@@ -1,6 +1,6 @@
 ---
 title: Build Moonshine in Moonshine
-permalink: /docs/moonshine/create_and_build_desktop_projects
+permalink: /docs/moonshine/build_moonshine_in_moonshine
 layout: docpage
 ---
 
