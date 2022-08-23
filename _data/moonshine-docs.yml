@@ -1,40 +1,41 @@
 - title: "Moonshine IDE"
   link: /docs/moonshine/set_sdk
   subtree:
+    - title: "Set SDK"
+      link: /docs/moonshine/set_sdk
 
-  - title: "Set SDK"
-    link: /docs/moonshine/set_sdk
+    - title: "Build Moonshine in Moonshine"
+      link: /docs/moonshine/build_moonshine_in_moonshine
 
-  - title: "Create and Build Projects for Desktop"
-    link: /docs/moonshine/create_and_build_desktop_projects
+    - title: "Create and Build Projects for Desktop"
+      link: /docs/moonshine/create_and_build_desktop_projects
 
-  - title: "Create and Build Projects for Web"
-    link: /docs/moonshine/create_and_build_web_projects
+    - title: "Create and Build Projects for Web"
+      link: /docs/moonshine/create_and_build_web_projects
 
-  - title: "Create and Build Projects for Mobile"
-    link: /docs/moonshine/create_and_build_mobile_projects
+    - title: "Create and Build Projects for Mobile"
+      link: /docs/moonshine/create_and_build_mobile_projects
 
-  - title: "Create and Build Projects with Apache Royale"
-    link: /docs/moonshine/create_and_build_royale_projects
+    - title: "Create and Build Projects with Apache Royale"
+      link: /docs/moonshine/create_and_build_royale_projects
 
-  - title: "Debugging"
-    link: /docs/moonshine/debug_project
+    - title: "Debugging"
+      link: /docs/moonshine/debug_project
 
-  - title: "Apache Ant Build"
-    link: /docs/moonshine/apache_ant_build
+    - title: "Apache Ant Build"
+      link: /docs/moonshine/apache_ant_build
 
 - title: "Google reCAPTCHA"
   link: /docs/recaptcha/introduction
   subtree:
+    - title: "Introduction"
+      link: /docs/recaptcha/introduction
 
-  - title: "Introduction"
-    link: /docs/recaptcha/introduction
+    - title: "Architecture and Registration"
+      link: /docs/recaptcha/architecture
 
-  - title: "Architecture and Registration"
-    link: /docs/recaptcha/architecture
+    - title: "Implementing Front-End in Apache Royale"
+      link: /docs/recaptcha/royale
 
-  - title: "Implementing Front-End in Apache Royale"
-    link: /docs/recaptcha/royale
-
-  - title: "Implementing Back-End in Grails"
-    link: /docs/recaptcha/grails
+    - title: "Implementing Back-End in Grails"
+      link: /docs/recaptcha/grails
