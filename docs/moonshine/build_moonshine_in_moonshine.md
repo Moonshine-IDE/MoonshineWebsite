@@ -4,13 +4,15 @@ permalink: /docs/moonshine/build_moonshine_in_moonshine
 layout: docpage
 ---
 
-1. Install Moonshine IDE
+## Build Moonshine in Moonshine
+
+###### Step 1
+
+#### Install and open Moonshine IDE
 
 Go to https://moonshine-ide.com and download the latest development version of Moonshine IDE. You can also use [this](https://static.moonshine-ide.com/downloads/releases/dev/windows/MoonshineDevelopment-installer.exe) link for direct download.
 
-1. Open Moonshine IDE.
-
-It's going to show Getting Started page. Click on the Download Third-Party Software button.
+Open Moonshine IDE. It's going to show Getting Started page. Click on the Download Third-Party Software button.
 
 ![Downlad SDK Installer](./img/downlad-sdk-installer.png)
 
@@ -18,7 +20,9 @@ On a Widnos system it's going to download Moonshine SDK Installer directly. On a
 
 Proceed with the install.
 
-1. Install SDKs.
+###### Step 2
+
+#### Install SDKs.
 
 Moonshine SDK Installer should open automatically.
 
@@ -28,7 +32,9 @@ You can download and install all supported SDKs using the Downaload Everything N
 
 For building Moonshine IDE you'll need: Harman Air, Java 11, Ant and Git
 
-1. Clone repositories.
+###### Step 3
+
+#### Clone repositories.
 
 Open git menu from the App Bar and click Manage Repositories.
 
@@ -52,7 +58,7 @@ Now we need to clone more repositories that are not on the list.
 
 Click the plus button, provide the link and click Save.
 
-![](./img/add-repository.png)
+![Add Repository](./img/add-repository.png)
 
 When all the repository links are svaed clone them to the disk.
 
@@ -74,7 +80,9 @@ Repos
 |- MockupVisualEditor
 ```
 
-1. Build VisualEditorConverterLib
+###### Step 4
+
+#### Build VisualEditorConverterLib
 
 Your Project View should now tell that your workspace contains three projects:
 
@@ -82,14 +90,16 @@ Your Project View should now tell that your workspace contains three projects:
 
 Make sure VisualEditorConverterLib is selected, go to Project menu and click Build with Apache Ant.
 
-![](./img/build-with-ant.png)
+![Build with Ant](./img/build-with-ant.png)
 
 Make sure the build is successfull in the Console output.
 Please note, that the build artifact is exported **to the other repository**.
 
-![](./img/converter-lib-output.png)
+![Output](./img/converter-lib-output.png)
 
-1. Build MockupVisualEditor with Ant
+###### Step 5
+
+#### Build MockupVisualEditor
 
 Now that VisualEditorConverterLib.swc is copied into MockupVisualEditor/lib/ folder you can build MockupVisualEditor.
 
@@ -105,26 +115,30 @@ Click on the Project menu and select Build with Apache Ant.
 
 Make sure the build is successful.
 
-1. Build Moonshine IDE with Moonshine
+###### Step 6
+
+#### Build Moonshine IDE with Moonshine
 
 Go to `MoonshineDESKTOPevolved\src\MoonshineDESKTOP-app.xml` and comment out line 350:
 
-![](./img/line-350.png)
+![Comment out SecurityScopeBookmark](./img/line-350.png)
 
 This disables SecurityScopeBookmark extension (which you probably don't have) and let's you run and debug the appilcation without issues.
 
 Everything is redy now to build Moonshine-IDE itself. Make sure MoonshineDESKTOPevolved is selected in the Project View, go to Project menu and click on Buil Project (this time no Ant)
 
-![](./img/build-project.png)
+![Buld Project](./img/build-project.png)
 
-1. Debug
+###### Step 7
+
+#### Debug
 
 Set a breakpoint anywhere in the code. A good example is line 187 in `MoonshineDESKTOPevolved\src\MoonshineDESKTOP.mxml` invoked right after start and just before Moonshine IDE performs an automatic update check:
 
-![](./img/breakpoint.png)
+![Set Breakpoint](./img/breakpoint.png)
 
 From the Debug menu select Build & Debug
 
-![](.img/../img/debug.png)
+![Debug](.img/../img/debug.png)
 
 After another build finishes you should see Harman Air splash screen, then Moonshine IDE will launch and pause stepping into the breakpoint.
