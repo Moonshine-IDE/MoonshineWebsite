@@ -75,7 +75,7 @@ Your repository structure on disk shoul look like this:
 ```
 Repos
 |- Moonshine-IDE
-|- Ins
+|- Moonshine-SDK-Installer
 |- VisualEditorConverterLib
 |- MockupVisualEditor
 ```
