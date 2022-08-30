@@ -129,7 +129,49 @@ Everything is redy now to build Moonshine-IDE itself. Make sure MoonshineDESKTOP
 
 ![Buld Project](./img/build-project.png)
 
+
 ###### Step 7
+
+#### Run Moonshine IDE with Moonshine
+
+To run modifed Moonshine IDE click on the Project menu then on a Build & Run option.
+
+![Run Project](./img/run-project.png)
+
+The project will be launched using Harman AIR SDK.
+
+
+###### Step 8
+
+#### Building multiple Moonshine IDE projects
+
+Until this point we were only concered with the main Moonshine IDE project which is MoonshineDESKTOPevolved. Let's see how we can makce changes to other projects wich are also part of the Moonshine IDE.
+
+Click on the Project and then Open/Import Project.
+
+![Import Project](./img/import-project.png)
+
+All the projects are located in the `Moonshine-IDE\ide` folder:
+- FileSystemWatcherWorker
+- MoonshineDESKTOPevolved
+- MoonshineGUICore
+- MoonshineSharedCore
+- MoonshineWEBevolved
+- MoonshineWorker
+
+For example, let's select MoonshineSharedCore and click Select Folder.
+
+Make your changes to the MoonshineSharedCore files.
+
+When you are done, select again MoonshineDESKTOPevolved project.
+
+![Multi Project](./img/multi-project.png)
+
+Because this is Moonshine's main project rebuilding it will also rebuild all of its dependencies.
+
+Click on Project and then Build and Run, and see your changes on live application.
+
+###### Step 9
 
 #### Debug
 
