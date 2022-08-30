@@ -167,7 +167,7 @@ When you are done, select again MoonshineDESKTOPevolved project.
 
 ![Multi Project](./img/multi-project.png)
 
-Because this is Moonshine's main project rebuilding it will also rebuild all of its dependencies.
+Because this is Moonshine's main project rebuilding it will also rebuild all of its dependencies. If you tried to build MoonshineSharedCore directly, you would get an error.
 
 Click on Project and then Build and Run, and see your changes on live application.
 
