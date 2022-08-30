@@ -16,9 +16,9 @@ Open Moonshine IDE. It's going to show Getting Started page. Click on the Downlo
 
 ![Downlad SDK Installer](./img/downlad-sdk-installer.png)
 
-On a Widnos system it's going to download Moonshine SDK Installer directly. On a macOS it's going to take you to a page where you can downlad latest version of Moonshine SDK Installer manually.
+On a Windows system, it's going to download Moonshine SDK Installer directly. On a macOS, it's going to take you to a page where you can download the latest version of Moonshine SDK Installer manually.
 
-Proceed with the install.
+Proceed with the installation.
 
 ###### Step 2
 
@@ -28,15 +28,15 @@ Moonshine SDK Installer should open automatically.
 
 ![Moonshine SDK Installer](./img/moonshine-sdk-installer.png)
 
-You can download and install all supported SDKs using the Downaload Everything Now button. Alternatively, you can pick and choose your SDKs using their respective download buttons.
+You can download and install all supported SDKs using the Download Everything Now button. Alternatively, you can pick and choose your SDKs using their respective download buttons.
 
-For building Moonshine IDE you'll need: Harman Air, Java 11, Ant and Git
+For building Moonshine IDE you'll need Harman Air, Java 11, Ant, and Git.
 
 ###### Step 3
 
 #### Clone repositories.
 
-Open git menu from the App Bar and click Manage Repositories.
+Open the Git menu from the App Bar and click Manage Repositories.
 
 ![Git menu](./img/git-menu.png)
 
@@ -44,7 +44,7 @@ Select Moonshine IDE repository and click Clone.
 
 ![Moonshine IDE Repository](./img/moonshine-ide-repository.png)
 
-Provide a path and confirm the clonning.
+Provide a path and confirm the cloning.
 
 Select MoonshineDESKTOPevolved project and click Open
 
@@ -60,7 +60,7 @@ Click the plus button, provide the link and click Save.
 
 ![Add Repository](./img/add-repository.png)
 
-When all the repository links are svaed clone them to the disk.
+When all the repository links are saved clone them to the disk.
 
 You should open three projects in Moonshine:
 
@@ -70,7 +70,7 @@ You should open three projects in Moonshine:
 
 You don't have to open any projects from the Moonshine-SDK-Installer.
 
-Your repository structure on disk shoul look like this:
+Your repository structure on disk should look like this:
 
 ```
 Repos
@@ -88,11 +88,11 @@ Your Project View should now tell that your workspace contains three projects:
 
 ![Workspace](./img/workspace.png)
 
-Make sure VisualEditorConverterLib is selected, go to Project menu and click Build with Apache Ant.
+Make sure VisualEditorConverterLib is selected, go to the Project menu, and click Build with Apache Ant.
 
 ![Build with Ant](./img/build-with-ant.png)
 
-Make sure the build is successfull in the Console output.
+Make sure the build is successful in the Console output.
 Please note, that the build artifact is exported **to the other repository**.
 
 ![Output](./img/converter-lib-output.png)
@@ -107,7 +107,7 @@ First, in Project View go to the MockupVisualEditor/build.xml file and uncomment
 
 ![Uncomment line 7](./img/line-7.png)
 
-This is neccessary for copying the artifact to Moonshine IDE.
+This is necessary for copying the artifact to Moonshine IDE.
 
 Make sure MockupVisualEditor is selected in the Project View.
 
@@ -123,9 +123,9 @@ Go to `MoonshineDESKTOPevolved\src\MoonshineDESKTOP-app.xml` and comment out lin
 
 ![Comment out SecurityScopeBookmark](./img/line-350.png)
 
-This disables SecurityScopeBookmark extension (which you probably don't have) and let's you run and debug the appilcation without issues.
+This disables the SecurityScopeBookmark extension (which you probably don't have) and lets you run and debug the application without issues.
 
-Everything is redy now to build Moonshine-IDE itself. Make sure MoonshineDESKTOPevolved is selected in the Project View, go to Project menu and click on Buil Project (this time no Ant)
+Everything is ready now to build Moonshine-IDE itself. Make sure MoonshineDESKTOPevolved is selected in the Project View, go to the Project menu, and click on Buil Project (this time no Ant)
 
 ![Buld Project](./img/build-project.png)
 
@@ -134,7 +134,7 @@ Everything is redy now to build Moonshine-IDE itself. Make sure MoonshineDESKTOP
 
 #### Run Moonshine IDE with Moonshine
 
-To run modifed Moonshine IDE click on the Project menu then on a Build & Run option.
+To run modified Moonshine IDE click on the Project menu and then on the Build & Run option.
 
 ![Run Project](./img/run-project.png)
 
@@ -145,7 +145,7 @@ The project will be launched using Harman AIR SDK.
 
 #### Building multiple Moonshine IDE projects
 
-Until this point we were only concered with the main Moonshine IDE project which is MoonshineDESKTOPevolved. Let's see how we can makce changes to other projects wich are also part of the Moonshine IDE.
+Until this point, we were only concerned with the main Moonshine IDE project which is MoonshineDESKTOPevolved. Let's see how we can make changes to other projects wich are also part of the Moonshine IDE.
 
 Click on the Project and then Open/Import Project.
 
@@ -169,7 +169,7 @@ When you are done, select again MoonshineDESKTOPevolved project.
 
 Because this is Moonshine's main project rebuilding it will also rebuild all of its dependencies. If you tried to build MoonshineSharedCore directly, you would get an error.
 
-Click on Project and then Build and Run, and see your changes on live application.
+Click on Project and then Build and Run, and see your changes on the live application.
 
 ###### Step 9
 
@@ -183,4 +183,4 @@ From the Debug menu select Build & Debug
 
 ![Debug](.img/../img/debug.png)
 
-After another build finishes you should see Harman Air splash screen, then Moonshine IDE will launch and pause stepping into the breakpoint.
+Moonshine IDE will launch and pause, stepping into the breakpoint.
