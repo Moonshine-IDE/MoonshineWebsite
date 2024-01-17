@@ -6510,6 +6510,13 @@ strong {
 .card .card-content .card-title {
   margin-bottom: 1em; }
 
+.cta-card.card-title {
+  font-size: 2em; }
+
+.cta-card p {
+  font-size: 1.5em;
+  font-weight: 200; }
+
 form.feedback {
   padding: 16px; }
 
@@ -6846,6 +6853,11 @@ body.theme-dark {
 
 .card.theme-dark a:hover {
   color: #e5ca52 !important; }
+
+.cta-card .card-action .btn, .cta-card .card-action .btn-large, .cta-card .card-action .btn-small {
+  color: black !important; }
+  .cta-card .card-action .btn:hover, .cta-card .card-action .btn-large:hover, .cta-card .card-action .btn-small:hover {
+    color: black !important; }
 
 .input-field.theme-dark input {
   color: white; }
