@@ -28,12 +28,12 @@ body.theme-dark {
   color: $confetti !important;
 }
 
-.cta-card .card-action .btn {
+.cta-card .card-action a.btn {
   color: black !important;
+}
 
-  &:hover {
-    color: black !important;
-  }
+.cta-card .card-action .btn a.btn:hover {
+  color: black !important;
 }
 
 .input-field.theme-dark {

@@ -6854,10 +6854,11 @@ body.theme-dark {
 .card.theme-dark a:hover {
   color: #e5ca52 !important; }
 
-.cta-card .card-action .btn, .cta-card .card-action .btn-large, .cta-card .card-action .btn-small {
+.cta-card .card-action a.btn, .cta-card .card-action a.btn-large, .cta-card .card-action a.btn-small {
   color: black !important; }
-  .cta-card .card-action .btn:hover, .cta-card .card-action .btn-large:hover, .cta-card .card-action .btn-small:hover {
-    color: black !important; }
+
+.cta-card .card-action .btn a.btn:hover, .cta-card .card-action .btn-large a.btn:hover, .cta-card .card-action .btn-small a.btn:hover, .cta-card .card-action .btn a.btn-large:hover, .cta-card .card-action .btn-large a.btn-large:hover, .cta-card .card-action .btn-small a.btn-large:hover, .cta-card .card-action .btn a.btn-small:hover, .cta-card .card-action .btn-large a.btn-small:hover, .cta-card .card-action .btn-small a.btn-small:hover {
+  color: black !important; }
 
 .input-field.theme-dark input {
   color: white; }
