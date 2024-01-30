@@ -39,3 +39,9 @@
 
     - title: "Implementing Back-End in Grails"
       link: /docs/recaptcha/grails
+
+- title: "SuperHumanInstaller"
+  link: /docs/superhumaninstaller/piechart
+  subtree:
+    - title: "Pie Chart"
+      link: /docs/superhumaninstaller/piechart
