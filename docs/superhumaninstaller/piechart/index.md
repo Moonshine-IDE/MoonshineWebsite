@@ -66,6 +66,22 @@ Now, the fun part begins – creating the Pie Chart!
 
 ![](.\img\form-done.png)
 
+## Building and deploying the project
+1. With the PieChartNsf project selected, go to `Project -> Build on Vagrant`. Choose the server you set up earlier.
+2. With the project still selected, go to `Project -> Deploy Domino Database`
+3. Now it's time to create Java Agents responsible for fetching and updating the data. Go to `Project -> Generate Java Agents`. When prompted, select the parent directory, so Java Agents are next to your NSF project.
+4. Now select the Java Agents project, and go to `Project -> Run on Vagrant`. Wait for the agents to deploy.
+
+## Using Apache Royale ECharts template
+
+1. Download the example repository: https://github.com/Moonshine-IDE/PieChartExample
+2. Extract the zip file and copy PieChartRoyale folder, so it sits next to PieChartNsf and PieChartNsf_JavaAgents folders.
+3. In Moonshine-IDE, go to `Project -> Open/Import Project` and select PieChartRoyale.
+4. Right click on the PieChartRoyale project. Go to `Settings -> Build Options -> Custom SDK` and select the latest Apache Royale nightly version (which you can download with Moonshine SDK Installer).
+5. Go to `Project -> Build Project` to build locally.
+6. Then, go to `Project -> Deploy to Vagrant Server` and choose your created server.
+7. Change the lauch URL to `https://domino.hostname.certifier.com/PieChartRoyale/js-release/index.html`. Make sure to substitute hostname and certifier with your own.
+
 To be continued...
 
 <!-- And there you have it! By following these steps, you're well on your way to creating a dynamic and visually appealing pie chart. Stay tuned for more posts where we delve deeper into customizing and enhancing our chart.
