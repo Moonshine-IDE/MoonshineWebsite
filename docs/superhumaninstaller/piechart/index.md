@@ -3,7 +3,9 @@ title: Creating a Dynamic Pie Chart uisng Super.Human.Installer™ and Moonshine
 layout: docpage
 ---
 
+###### Feb 2nd, 2024
 # Creating a Dynamic Pie Chart uisng Super.Human.Installer™ and Moonshine IDE™
+---
 
 We're excited to share with you a step-by-step guide on creating a dynamic pie chart using some incredible tools. Whether you're a seasoned developer or just starting out, this walkthrough promises to be both informative and enjoyable!
 
