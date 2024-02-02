@@ -55,7 +55,7 @@ Now, the fun part begins – creating the Pie Chart!
    - Open Moonshine IDE™ and go to `File -> New -> Domino on Disk Project`. Name your project `PieChartNsf` and click 'Create'.
 
 2. **Configuration:**
-   - Right-click on the project in the project list, go to `Settings -> Domino Tab -> Target Server`, and enter your hostname and organization certifier. Don't forget to save these settings!
+   - Right-click on the project in the project list, go to `Settings -> Domino Tab -> Target Server`, and enter your hostname and organization certifier. In our case, it's `mars/planets`. Don't forget to save these settings!
 
 ![](.\img\target-server.png)
 
@@ -91,7 +91,7 @@ Now, the fun part begins – creating the Pie Chart!
 4. Right click on the PieChartRoyale project. Go to `Settings -> Build Options -> Custom SDK` and select the latest Apache Royale nightly version (which you can download with Moonshine SDK Installer).
 5. Go to `Project -> Build Project` to build locally.
 6. Then, go to `Project -> Deploy to Vagrant Server` and choose your created server.
-7. Change the lauch URL to `https://domino.hostname.certifier.com/PieChartRoyale/js-release/index.html`. Make sure to substitute hostname and certifier with your own.
+7. Change the lauch URL to `https://domino.mars.planets.com/PieChartRoyale/js-release/index.html`. Make sure to substitute hostname and certifier with your own.
 
 To be continued...
 
