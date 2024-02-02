@@ -1,9 +1,9 @@
 ---
-title: Creating a Dynamic Pie Chart uisng SuperHumanInstaller and Moonshine-IDE
+title: Creating a Dynamic Pie Chart uisng SuperHumanInstaller and Moonshine IDE™
 layout: docpage
 ---
 
-# Creating a Dynamic Pie Chart uisng SuperHumanInstaller and Moonshine-IDE
+# Creating a Dynamic Pie Chart uisng SuperHumanInstaller and Moonshine IDE™
 
 We're excited to share with you a step-by-step guide on creating a dynamic pie chart using some incredible tools. Whether you're a seasoned developer or just starting out, this walkthrough promises to be both informative and enjoyable!
 
@@ -30,8 +30,8 @@ Setting up your environment correctly is crucial. Here's how to do it:
 
 With our server ready, let's set up the development environment:
 
-1. **Moonshine IDE & SDK:**
-   - Download and install [Moonshine IDE](https://moonshine-ide.com/) and [Moonshine SDK Installer](https://moonshine-ide.com/download-sdk-installer/). These will be our tools for the actual development process.
+1. **Moonshine IDE™ & SDK:**
+   - Download and install [Moonshine IDE™](https://moonshine-ide.com/) and [Moonshine SDK Installer](https://moonshine-ide.com/download-sdk-installer/). These will be our tools for the actual development process.
 
 2. **Preparing the Tools:**
    - Use the SDK Installer to download Git and the latest Apache Royale nightly version. These are essential for our project development.
@@ -41,7 +41,7 @@ With our server ready, let's set up the development environment:
 Now, the fun part begins – creating the Pie Chart!
 
 1. **Project Setup:**
-   - Open Moonshine-IDE and go to `File -> New -> Domino on Disk Project`. Name your project `PieChartNsf` and click 'Create'.
+   - Open Moonshine IDE™ and go to `File -> New -> Domino on Disk Project`. Name your project `PieChartNsf` and click 'Create'.
 
 2. **Configuration:**
    - Right-click on the project in the project list, go to `Settings -> Domino Tab -> Target Server`, and enter your hostname and organization certifier. Don't forget to save these settings!
@@ -76,7 +76,7 @@ Now, the fun part begins – creating the Pie Chart!
 
 1. Download the example repository: https://github.com/Moonshine-IDE/PieChartExample
 2. Extract the zip file and copy PieChartRoyale folder, so it sits next to PieChartNsf and PieChartNsf_JavaAgents folders.
-3. In Moonshine-IDE, go to `Project -> Open/Import Project` and select PieChartRoyale.
+3. In Moonshine IDE™, go to `Project -> Open/Import Project` and select PieChartRoyale.
 4. Right click on the PieChartRoyale project. Go to `Settings -> Build Options -> Custom SDK` and select the latest Apache Royale nightly version (which you can download with Moonshine SDK Installer).
 5. Go to `Project -> Build Project` to build locally.
 6. Then, go to `Project -> Deploy to Vagrant Server` and choose your created server.
