@@ -1,4 +1,4 @@
-- title: "Moonshine IDE"
+- title: "Moonshine IDE™"
   link: /docs/moonshine/set_sdk
   subtree:
     - title: "Set SDK"
@@ -40,7 +40,7 @@
     - title: "Implementing Back-End in Grails"
       link: /docs/recaptcha/grails
 
-- title: "SuperHumanInstaller"
+- title: "Super.Human.Installer™"
   link: /docs/superhumaninstaller/piechart
   subtree:
     - title: "Pie Chart"
