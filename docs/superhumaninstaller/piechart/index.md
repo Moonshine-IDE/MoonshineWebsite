@@ -46,6 +46,11 @@ With our server ready, let's set up the development environment:
 
 2. **Preparing the Tools:**
    - Use the SDK Installer to download Git and the latest Apache Royale nightly version. These are essential for our project development.
+   - Open `File -> Settings`, choose `Vagrant` tab and make sure that the server instance you created is visible in Moonshine IDE™.
+
+   ![](.\img\moonshine-settings.png)
+
+   ![](.\img\vagrant-boxes.png)
 
 ## Building the Pie Chart Database Project
 
