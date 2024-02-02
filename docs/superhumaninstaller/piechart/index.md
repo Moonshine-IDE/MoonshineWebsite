@@ -15,7 +15,7 @@ Before diving in, let's make sure we have all the necessary tools:
 
 1. **VirtualBox:** This is a fantastic, free open-source hosted hypervisor for x86 virtualization. It's going to be the backbone of our setup.
 2. **Vagrant:** A superb tool for building and managing virtual machine environments. It makes handling different development environments a breeze.
-3. **Super.Human.Installer™:** The key to setting up your server environment efficiently. Trust me, this makes things a lot easier!
+3. **Super.Human.Installer™:** The key to setting up your server environment efficiently. This makes things a lot easier!
 
 ## The First Steps: Setting Up Your Environment
 
@@ -25,7 +25,14 @@ Setting up your environment correctly is crucial. Here's how to do it:
    - First, grab and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads), [Vagrant](https://developer.hashicorp.com/vagrant/downloads), and [Super.Human.Installer™](https://superhumaninstaller.com/). These tools are going to be the foundation of our project.
 
 2. **Server Time:**
-   - Next up, set up at least one server with Domino 12.0.1. You can find detailed instructions at [superhumaninstaller.com](https://superhumaninstaller.com#configuration-steps). Remember to note down your hostname and organization certifier.
+   - Next up, set up at least one server with Domino 12.0.1. 
+   **Warning: You need to use this exact version, Domino 12.0.1 for the example to work**
+   - You can find detailed instructions at [superhumaninstaller.com](https://superhumaninstaller.com#configuration-steps). Remember to note down your hostname and organization certifier.
+   - When finished your configuration should look like this:
+   
+   ![](.\img\full-config.png)
+   
+   In this example we're uisng `mars` as the hostname and `planests` as the certifier.
    - A pro tip: Don't forget to set up your etc/hosts!
 
 ## Crafting the Development Environment
