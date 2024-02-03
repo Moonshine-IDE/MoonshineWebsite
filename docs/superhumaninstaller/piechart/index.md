@@ -75,9 +75,21 @@ Now, the fun part begins – creating the Pie Chart!
 
 4. **Adding Data:**
    - We'll input data in the form of country names and their corresponding percentage areas. ECharts pie chart expects data in 'name' and 'value' pairs, and that's exactly how we'll set up our columns.
-   - Click the 'Add' button to create the 'name' and 'value' columns, populating them as shown in the screenshots.
+   - Click the 'Add' button to create the name field. Use 
+   ```
+   Name: name
+   Label: referer
+   Type: Text
+   ```
 
 ![add-name](.\img\add-name.png)
+
+   - Add the value filed. Use 
+   ```
+   Name: value
+   Label: visits
+   Type: number
+   ```
 
 ![add-value](.\img\add-value.png)
 
@@ -88,26 +100,43 @@ Now, the fun part begins – creating the Pie Chart!
 
 ## Building and deploying database and agents
 1. With the PieChartNsf project selected, go to `Project -> Build on Vagrant`. Choose the server you set up earlier.
+![build-vagrant](.\img\build-vagrant.png)
+
 2. With the project still selected, go to `Project -> Deploy Domino Database`
 3. Now it's time to create Java Agents responsible for fetching and updating the data. Go to `Project -> Generate Java Agents`. When prompted, select the parent directory, so Java Agents are next to your NSF project.
 4. Now select the Java Agents project, and go to `Project -> Run on Vagrant`. Wait for the agents to deploy.
 
-## Creating frontend Apache Royale projects
+## Creating Apache Royale CRUD project
 
 In this stage of our tutorial, we are utilizing two Apache Royale projects to demonstrate a comprehensive data management and visualization workflow. The first is an auto-generated CRUD (Create, Read, Update, Delete) project, tasked with communicating with Java Agents for modifying the database. This includes creating, editing, and removing records. The second component is an Apache ECharts project, dedicated to presenting this data through an illustrative pie chart. For practicality, we have sourced a template project from GitHub to expedite this process. While it's entirely feasible to integrate these two projects into a single entity, for clarity and ease of understanding in this example, we will maintain them as separate projects.
+
+1. With `PieChartNsf` project selected, go to `Project -> Generate Apache Royale Project`. Select the parent directory, so the `PieChartNsfRoyaleApplication` sits next to the Nsf and JavaAgents projects.
+2. Right click newly creted project and go to `Settings`. Choose `Build Options`, `Custom SDK` and point to the latest Apache Royale nightly version (which you can download with Moonshine SDK Installer).
+3. Go to `Project -> Build Project` to build on your local machine first.
+4. With Apache Royale Application project selected, go to `Project -> Deploy on Vagrant Server`. Your URL should be populated automatically like this: `http://domino.mars.planets.com/PieChartNsfRoyaleApplication/js-debug/index.html` where 'mars' and 'planets' are your hostname and certifier. Click `Submit`.
+5. A CRUD interface welcome page shuld open:
+
+![crud-welcome](.\img\crud-welcome.png)
+
+6. Use the web interface to populate the data like this:
+
+![crud-done](.\img\crud-done.png)
 
 ## Using Apache Royale ECharts template
 
 1. Download the example repository: https://github.com/Moonshine-IDE/PieChartExample
 2. Extract the zip file and copy PieChartRoyale folder, so it sits next to PieChartNsf and PieChartNsf_JavaAgents folders.
 3. In Moonshine IDE™, go to `Project -> Open/Import Project` and select PieChartRoyale.
-4. Right click on the PieChartRoyale project. Go to `Settings -> Build Options -> Custom SDK` and select the latest Apache Royale nightly version (which you can download with Moonshine SDK Installer).
+4. Right click on the PieChartRoyale project. Go to `Settings -> Build Options -> Custom SDK` and select the latest Apache Royale nightly version.
 5. Go to `Project -> Build Project` to build locally.
 6. Then, go to `Project -> Deploy to Vagrant Server` and choose your created server.
-7. Change the lauch URL to `https://domino.mars.planets.com/PieChartRoyale/js-release/index.html`. Make sure to substitute hostname and certifier with your own.
+7. Your URL should be populated automatically: https://domino.mars.planets.com/PieChartRoyale/js-debug/index.html with your hostname and certifier replaced.
 
-To be continued...
+This is the final result of the Pie Chart project:
 
-<!-- And there you have it! By following these steps, you're well on your way to creating a dynamic and visually appealing pie chart. Stay tuned for more posts where we delve deeper into customizing and enhancing our chart.
+![chart-done](.\img\chart-done.png)
 
-Happy coding! -->
+
+And there you have it! By following these steps, you're well on your way to creating a dynamic and visually appealing pie chart. Stay tuned for more posts where we delve deeper into customizing and enhancing our chart.
+
+Happy coding!
