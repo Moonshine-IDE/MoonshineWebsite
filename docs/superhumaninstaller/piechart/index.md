@@ -11,6 +11,10 @@ We're excited to share with you a step-by-step guide on creating a dynamic pie c
 
 Data visualization plays a pivotal role in business settings, serving as an essential tool for decision-making, communication, and presentation. In an era where data is continuously growing in volume, complexity, and speed, the ability to effectively visualize data is not just a luxury but a necessity. Tools like Apache ECharts, an open-source JavaScript visualization library, offer a wide array of customizable chart options, including dynamic pie charts, which are excellent for representing part-to-whole relationships and making comparative analysis intuitive and impactful. For more information and to explore the library's features, visit the [Apache ECharts website](https://echarts.apache.org).
 
+In this tutorial, we'll guide you through setting up a virtual machine that hosts a Domino database, which will store data detailing the number of website visits per referrer. To make this data accessible, we'll implement a REST API managed by Java Agents. On the frontend, we will deploy two Apache Royale projects. The first project is designed for efficiently editing the data, ensuring a user-friendly experience. The second project focuses on data representation, where we will create a dynamic pie chart to visually display the website visit statistics. This chart implements an example from ECharts website, as shown here:
+
+![sample-chart](./img/sample-chart.png)
+
 ## Getting Ready: Tools of the Trade
 
 Before diving in, let's make sure we have all the necessary tools:
@@ -32,7 +36,7 @@ Setting up your environment correctly is crucial. Here's how to do it:
    - You can find detailed instructions at [superhumaninstaller.com](https://superhumaninstaller.com#configuration-steps). Remember to note down your hostname and organization certifier.
    - When finished your configuration should look like this:
    
-   ![](.\img\full-config.png)
+   ![full-config](.\img\full-config.png)
    
    In this example we're uisng `mars` as the hostname and `planests` as the certifier.
    - A pro tip: Don't forget to set up your etc/hosts!
@@ -48,9 +52,9 @@ With our server ready, let's set up the development environment:
    - Use the SDK Installer to download Git and the latest Apache Royale nightly version. These are essential for our project development.
    - Open `File -> Settings`, choose `Vagrant` tab and make sure that the server instance you created is visible in Moonshine IDE™.
 
-   ![](.\img\moonshine-settings.png)
+   ![moonshine-settings](.\img\moonshine-settings.png)
 
-   ![](.\img\vagrant-boxes.png)
+   ![vagrant-boxes](.\img\vagrant-boxes.png)
 
 ## Building the Pie Chart Database Project
 
@@ -62,31 +66,35 @@ Now, the fun part begins – creating the Pie Chart!
 2. **Configuration:**
    - Right-click on the project in the project list, go to `Settings -> Domino Tab -> Target Server`, and enter your hostname and organization certifier. In our case, it's `mars/planets`. Don't forget to save these settings!
 
-![](.\img\target-server.png)
+![target-server](.\img\target-server.png)
 
 3. **Designing the Database:**
    - Navigate to `src/main/formbuilder/PieChartNsf.dfb` in your project and open it. This is where we'll be adding the data for our pie chart.
 
-![](.\img\form.png)
+![form](.\img\form.png)
 
 4. **Adding Data:**
    - We'll input data in the form of country names and their corresponding percentage areas. ECharts pie chart expects data in 'name' and 'value' pairs, and that's exactly how we'll set up our columns.
    - Click the 'Add' button to create the 'name' and 'value' columns, populating them as shown in the screenshots.
 
-![](.\img\add-name.png)
+![add-name](.\img\add-name.png)
 
-![](.\img\add-value.png)
+![add-value](.\img\add-value.png)
 
 5. **The Final Look:**
    - Once you've added your data, the table should look something like this (refer to the screenshots for a visual guide).
 
-![](.\img\form-done.png)
+![form-done](.\img\form-done.png)
 
-## Building and deploying the project
+## Building and deploying database and agents
 1. With the PieChartNsf project selected, go to `Project -> Build on Vagrant`. Choose the server you set up earlier.
 2. With the project still selected, go to `Project -> Deploy Domino Database`
 3. Now it's time to create Java Agents responsible for fetching and updating the data. Go to `Project -> Generate Java Agents`. When prompted, select the parent directory, so Java Agents are next to your NSF project.
 4. Now select the Java Agents project, and go to `Project -> Run on Vagrant`. Wait for the agents to deploy.
+
+## Creating frontend Apache Royale projects
+
+In this stage of our tutorial, we are utilizing two Apache Royale projects to demonstrate a comprehensive data management and visualization workflow. The first is an auto-generated CRUD (Create, Read, Update, Delete) project, tasked with communicating with Java Agents for modifying the database. This includes creating, editing, and removing records. The second component is an Apache ECharts project, dedicated to presenting this data through an illustrative pie chart. For practicality, we have sourced a template project from GitHub to expedite this process. While it's entirely feasible to integrate these two projects into a single entity, for clarity and ease of understanding in this example, we will maintain them as separate projects.
 
 ## Using Apache Royale ECharts template
 
