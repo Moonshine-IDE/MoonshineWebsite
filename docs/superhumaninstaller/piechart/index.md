@@ -1,10 +1,10 @@
 ---
-title: Creating a Dynamic Pie Chart uisng Super.Human.Installer™ and Moonshine IDE™
+title: Creating a Dynamic Pie Chart using Super.Human.Installer™ and Moonshine IDE™
 layout: docpage
 ---
 
 ###### Feb 2nd, 2024
-# Creating a Dynamic Pie Chart uisng Super.Human.Installer™ and Moonshine IDE™
+# Creating a Dynamic Pie Chart using Super.Human.Installer™ and Moonshine IDE™
 ---
 
 We're excited to share with you a step-by-step guide on creating a dynamic pie chart using some incredible tools. Whether you're a seasoned developer or just starting out, this walkthrough promises to be both informative and enjoyable!
@@ -38,7 +38,7 @@ Setting up your environment correctly is crucial. Here's how to do it:
    
    ![full-config](.\img\full-config.png)
    
-   In this example we're uisng `mars` as the hostname and `planests` as the certifier.
+   In this example we're using `mars` as the hostname and `planests` as the certifier.
    - A pro tip: Don't forget to set up your etc/hosts!
 
 ## Crafting the Development Environment
@@ -84,7 +84,7 @@ Now, the fun part begins – creating the Pie Chart!
 
 ![add-name](.\img\add-name.png)
 
-   - Add the value filed. Use 
+   - Add the value field. Use 
    ```
    Name: value
    Label: visits
@@ -114,7 +114,7 @@ In this stage of our tutorial, we are utilizing two Apache Royale projects to de
 2. Right click newly creted project and go to `Settings`. Choose `Build Options`, `Custom SDK` and point to the latest Apache Royale nightly version (which you can download with Moonshine SDK Installer).
 3. Go to `Project -> Build Project` to build on your local machine first.
 4. With Apache Royale Application project selected, go to `Project -> Deploy on Vagrant Server`. Your URL should be populated automatically like this: `http://domino.mars.planets.com/PieChartNsfRoyaleApplication/js-debug/index.html` where 'mars' and 'planets' are your hostname and certifier. Click `Submit`.
-5. A CRUD interface welcome page shuld open:
+5. The CRUD interface welcome page shuld open:
 
 ![crud-welcome](.\img\crud-welcome.png)
 
