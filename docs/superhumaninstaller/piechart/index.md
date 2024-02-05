@@ -56,6 +56,16 @@ With our server ready, let's set up the development environment:
 
    ![vagrant-boxes](.\img\vagrant-boxes.png)
 
+   - **Optional**: If you don't see your server instance automatically, you can attempt a manual connection. First, click the plus button at the bottom of the Vagrant settings page. Then enter:
+   ```
+   Label: mars.planets.com
+   Base URL: http://restapi.mars.planets.com:8080
+   ```
+   where 'mars' is your hostname and 'planets' is your certifier. The local path can be left blank. Finally, ensure that you see a green checkmark next to 'Status: Ready'.
+
+   ![manual-instnace](.\img\manual-instance.png)
+
+
 ## Building the Pie Chart Database Project
 
 Now, the fun part begins – creating the Pie Chart!
