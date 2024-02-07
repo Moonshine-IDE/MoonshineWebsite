@@ -54,10 +54,17 @@ Setting up your environment correctly is crucial. Here's how to do it:
 With our server ready, let's set up the development environment:
 
 1. **Moonshine IDE™ & SDK:**
-   - Download and install [Moonshine IDE™](https://moonshine-ide.com/){:target="_blank"} and [Moonshine SDK Installer](https://moonshine-ide.com/download-sdk-installer/){:target="_blank"}. These will be our tools for the actual development process.
+   - Download and install the latest [Moonshine IDE™](https://moonshine-ide.com/){:target="_blank"}. To follow along you will need the lastes development version
+   
+   ![mooshine-dev](.\img\moonshine-dev.png)
+
+   Also download [Moonshine SDK Installer](https://moonshine-ide.com/download-sdk-installer/){:target="_blank"}. These will be our tools for the actual development process.
 
 2. **Preparing the Tools:**
-   - Use the SDK Installer to download Git and the latest Apache Royale nightly version. These are essential for our project development.
+   - Use the SDK Installer to download the latest Apache Royale nightly version. It is needed for out frontend projects.
+
+   ![skd-installer](.\img\sdk-installer.png)
+
    - Open `File -> Settings`, choose `Vagrant` tab and make sure that the server instance you created is visible in Moonshine IDE™.
 
    ![moonshine-settings](.\img\moonshine-settings.png)
