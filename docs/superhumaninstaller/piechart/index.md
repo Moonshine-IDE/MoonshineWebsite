@@ -9,7 +9,7 @@ layout: docpage
 
 We're excited to share with you a step-by-step guide on creating a dynamic pie chart using some incredible tools. Whether you're a seasoned developer or just starting out, this walkthrough promises to be both informative and enjoyable!
 
-Data visualization plays a pivotal role in business settings, serving as an essential tool for decision-making, communication, and presentation. In an era where data is continuously growing in volume, complexity, and speed, the ability to effectively visualize data is not just a luxury but a necessity. Tools like Apache ECharts, an open-source JavaScript visualization library, offer a wide array of customizable chart options, including dynamic pie charts, which are excellent for representing part-to-whole relationships and making comparative analysis intuitive and impactful. For more information and to explore the library's features, visit the [Apache ECharts website](https://echarts.apache.org).
+Data visualization plays a pivotal role in business settings, serving as an essential tool for decision-making, communication, and presentation. In an era where data is continuously growing in volume, complexity, and speed, the ability to effectively visualize data is not just a luxury but a necessity. Tools like Apache ECharts, an open-source JavaScript visualization library, offer a wide array of customizable chart options, including dynamic pie charts, which are excellent for representing part-to-whole relationships and making comparative analysis intuitive and impactful. For more information and to explore the library's features, visit the [Apache ECharts website](https://echarts.apache.org){:target="_blank"} .
 
 In this tutorial, we'll guide you through setting up a virtual machine that hosts a Domino database, which will store data detailing the number of website visits per referrer. To make this data accessible, we'll implement a REST API managed by Java Agents. On the frontend, we will deploy two Apache Royale projects. The first project is designed for efficiently editing the data, ensuring a user-friendly experience. The second project focuses on data representation, where we will create a dynamic pie chart to visually display the website visit statistics. This chart implements an example from ECharts website, as shown here:
 
@@ -28,25 +28,33 @@ Before diving in, let's make sure we have all the necessary tools:
 Setting up your environment correctly is crucial. Here's how to do it:
 
 1. **Installing the Essentials:**
-   - First, grab and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads), [Vagrant](https://developer.hashicorp.com/vagrant/downloads), and [Super.Human.Installer™](https://superhumaninstaller.com/). These tools are going to be the foundation of our project.
+   - First, grab and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads){:target="_blank"}, [Vagrant](https://developer.hashicorp.com/vagrant/downloads){:target="_blank"}, and [Super.Human.Installer™](https://superhumaninstaller.com/){:target="_blank"}. These tools are going to be the foundation of our project.
 
 2. **Server Time:**
    - Next up, set up at least one server with Domino 12.0.1. 
    **Warning: You need to use this exact version, Domino 12.0.1 for the example to work**
-   - You can find detailed instructions at [superhumaninstaller.com](https://superhumaninstaller.com#configuration-steps). Remember to note down your hostname and organization certifier.
+   - You can find detailed instructions at [superhumaninstaller.com](https://superhumaninstaller.com#configuration-steps){:target="_blank"}. Remember to note down your hostname and organization certifier.
    - When finished your configuration should look like this:
    
    ![full-config](.\img\full-config.png)
    
    In this example we're using `mars` as the hostname and `planests` as the certifier.
-   - A pro tip: Don't forget to set up your etc/hosts!
+   - Start the server and wait for the provisioning process to complete. When done, the server entry should look like this:
+
+   ![mars-done](.\img\mars-done.png)
+
+   - A welcome page should open up automatically. You can always bring it back clikcing on the world icon.
+
+   ![welcome-page](.\img\welcome-page.png)
+
+   - Don't forget to set up etc/hosts! Without it, the mapping between your hostname/certifier and your local IP address will not work. Follow the instructions on the welcome page and try accessing link 2) Portal. If you can access it, everything is set up correctly.
 
 ## Crafting the Development Environment
 
 With our server ready, let's set up the development environment:
 
 1. **Moonshine IDE™ & SDK:**
-   - Download and install [Moonshine IDE™](https://moonshine-ide.com/) and [Moonshine SDK Installer](https://moonshine-ide.com/download-sdk-installer/). These will be our tools for the actual development process.
+   - Download and install [Moonshine IDE™](https://moonshine-ide.com/){:target="_blank"} and [Moonshine SDK Installer](https://moonshine-ide.com/download-sdk-installer/){:target="_blank"}. These will be our tools for the actual development process.
 
 2. **Preparing the Tools:**
    - Use the SDK Installer to download Git and the latest Apache Royale nightly version. These are essential for our project development.
