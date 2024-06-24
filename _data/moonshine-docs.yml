@@ -45,3 +45,9 @@
   subtree:
     - title: "Pie Chart"
       link: /docs/superhumaninstaller/piechart
+
+- title: "Moonshine.dev"
+  link: /docs/moonshine.dev/introduction_to_mxhx
+  subtree:
+    - title: "Introduction to MXHX"
+      link: /docs/moonshine.dev/introduction_to_mxhx
