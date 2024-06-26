@@ -42,11 +42,19 @@ Getting started with MXHX and Feathers UI is straightforward. Follow these steps
 
 1\. To begin using MXHX with Feathers UI, start by navigating to [Moonshine.dev](https://www.moonshine.dev/) and clicking on the 'TRY NOW' button on the WYSIWYG Editor card.
 
-2\. Click the 'New Canvas' button to create a new workspace. In the WYSIWYG Editor, you'll see a side panel on the left with the Components tab open and the main area in the center with the Designer tab selected.
+2\. Click the 'New Canvas' button to create a new workspace. 
+
+3\. In the WYSIWYG Editor, you'll see a side panel on the left with the Components tab opened
+
+![Screenshot: Components Tabs](./img/components.png)
+
+4\. You'll also see the main area in the center with the Designer tab selected.
+
+![Screenshot: Designer Tabs](./img/designer.png)
 
 3\. Select the Label component from the side panel and place it on the designer canvas. Next, add the TextInput component below the Label. It should look like this:
 
-![Screenshot: Designer and Components Tabs](./img/designer-components-tab.png)
+
 
 4\. Switch to the Code tab to view the underlying code, which should look something like this:
 

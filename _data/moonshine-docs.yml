@@ -47,7 +47,7 @@
       link: /docs/superhumaninstaller/piechart
 
 - title: "Moonshine.dev"
-  link: /docs/moonshine.dev/introduction_to_mxhx
+  link: /docs/moonshine.dev/why_moonshinedev_is_your_new_best_friend_for_building_user_interfaces
   subtree:
-    - title: "Introduction to MXHX"
-      link: /docs/moonshine.dev/introduction_to_mxhx
+    - title: "Why Moonshine.dev is Your New Best Friend for Building User Interfaces"
+      link: /docs/moonshine.dev/why_moonshinedev_is_your_new_best_friend_for_building_user_interfaces
