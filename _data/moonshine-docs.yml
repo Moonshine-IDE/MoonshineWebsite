@@ -47,13 +47,19 @@
       link: /docs/superhumaninstaller/piechart
 
 - title: "Moonshine.dev Blog Series"
-  link: /docs/moonshine.dev/ui-development-series
+  link: https://www.moonshine.dev/post/why-moonshine-dev-is-your-new-best-friend-for-building-user-interfaces
   subtree:
     - title: "Why Moonshine.dev is Your New Best Friend for Building User Interfaces"
-      link: /docs/moonshine.dev/why_moonshinedev_is_your_new_best_friend_for_building_user_interfaces
+      link: https://www.moonshine.dev/post/why-moonshine-dev-is-your-new-best-friend-for-building-user-interfaces
 
     - title: "Diving into MXHX"
-      link: /docs/moonshine.dev/diving_into_mxhx
+      link: https://www.moonshine.dev/post/diving-into-mxhx
 
     - title: "Styling MXHX Forms"
-      link: /docs/moonshine.dev/styling_mxhx_forms
+      link: https://www.moonshine.dev/post/styling-mxhx-forms
+
+    - title: "Using Nested Layouts in MXHX"
+      link: https://www.moonshine.dev/post/using-nested-layouts-in-mxhx
+
+    - title: "How to Use Moonshine.dev AI Assistant for Easy Forms Generation"
+      link: https://www.moonshine.dev/post/how-to-use-moonshine-dev-ai-assistant-for-easy-forms-generation-in-mxhx-and-feathersui
